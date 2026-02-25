@@ -1993,12 +1993,12 @@ The company believes in delivering utmost satisfaction to the customers by intro
     price: "Varied Budget Options",
     location: "Techzone 4 Greater Noida West, Greater Noida",
     images: [
-      "/public/Team Photo/golden grande.jpg",
-      "/public/Team Photo/golden grande 1.jpg",
-      "/public/Team Photo/golden grande 2.jpg",
-      "/public/Team Photo/golden grande 3.jpg",
-      "/public/Team Photo/golden grande 4.jpg",
-      "/public/Team Photo/golden grande 5.jpg"
+      "/images/golden-grande.jpg",
+      "/images/golden-grande-1.jpg",
+      "/images/golden-grande-2.jpg",
+      "/images/golden-grande-3.jpg",
+      "/images/golden-grande-4.jpg",
+      "/images/golden-grande-5.jpg"
     ],
     video: "/public/Team Photo/golden-grande-video.mp4",
     videoThumbnail: "/public/Team Photo/golden grande 5.jpg",
@@ -2234,12 +2234,12 @@ The company believes in delivering utmost satisfaction to the customers by intro
     price: "₹27.6 Lakh – ₹1.34 Crore",
     location: "Sector 16B, Greater Noida West (Noida Extension)",
     images: [
-      "/public/Team Photo/apex.jpg",
-      "/public/Team Photo/apex 2.jpg",
-      "/public/Team Photo/apex 3.jpg",
-      "/public/Team Photo/apex 4.jpg",
-      "/public/Team Photo/apex 5.jpg",
-      "/public/Team Photo/apex 6.jpg"
+      "/images/apex.jpg",
+      "/images/apex-2.jpg",
+      "/images/apex-3.jpg",
+      "/images/apex-4.jpg",
+      "/images/apex-5.jpg",
+      "/images/apex-6.jpg"
     ],
     video: null,
     videoThumbnail: null,
@@ -2402,12 +2402,12 @@ The company believes in delivering utmost satisfaction to the customers by intro
   "price": "₹47 Lakhs – ₹55.25 Lakhs",
   "location": "Techzone IV, Amprapali Dream Valley, Greater Noida / Sector 4, Greater Noida West",
   "images": [
-    "/public/Team Photo/ATS 1.png",
-    "/public/Team Photo/ATS 2.png",
-    "/public/Team Photo/ATS 3.png",
-   "/public/Team Photo/ATS 4.png",
-   "/public/Team Photo/ATS 5.png",
-   "/public/Team Photo/ATS 6.png"
+    "/images/ATS1.png",
+    "/images/ATSS2.png",
+    "/images/ATSS3.png",
+   "/images/ATSS4.png",
+   "/images/ATSS5.png",
+   "/images/ATSS6.png"
   ],
   "video": null,
   "videoThumbnail": null,
@@ -2843,12 +2843,12 @@ The company believes in delivering utmost satisfaction to the customers by intro
     price: "₹85 Lakhs - ₹2.5 Crores",
     location: "Techzone IV, Amprapali Dream Valley, Itehra, Greater Noida, Uttar Pradesh 201009",
     images: [
-      "/public/Team Photo/golden i.jpg",
-      "/public/Team Photo/golden i 1.jpg",
-      "/public/Team Photo/golden i 2.jpg",
-      "/public/Team Photo/golden i 3.jpg",
-      "/public/Team Photo/golden i 4.jpg",
-      "/public/Team Photo/golden i 5.jpg"
+      "/images/golden-i.jpg",
+      "/images/goldeni-1.jpg",
+      "/images/goldeni-2.jpg",
+      "/images/goldeni-3.jpg",
+      "/images/goldeni-4.jpg",
+      "/images/goldeni-5.jpg"
     ],
     video: "/public/Team Photo/Golden i.mp4",
     videoThumbnail: "/public/Team Photo/golden i 5.jpg",

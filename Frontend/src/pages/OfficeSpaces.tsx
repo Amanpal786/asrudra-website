@@ -55,7 +55,7 @@ const Commercial = () => {
       "bedrooms": 0,
       "bathrooms":"comman toilet",
       "area": "(400-10000)sq ft",
-      "image": "/public/Team Photo/golden i.jpg",
+      "image": "/images/golden-i.jpg",
       "features": ["Intelligent Building", "Smart Office Solutions", "Flexible Workspaces", "Premium Finishes"],
       "amenities": {
         "Technology": ["IoT Integration", "Smart Access Control"],
@@ -78,7 +78,7 @@ const Commercial = () => {
       "bedrooms": 1,
       "bathrooms": 1,
       "area": "3800 sq ft",
-      "image": "/public/Team Photo/apex.jpg",
+      "image": "/images/apex.jpg",
       "features": ["IT Park Location", "Green Building Certified", "Modern Infrastructure", "Scalable Spaces"],
       "amenities": {
         "Sustainability": ["LEED Certified", "Rainwater Harvesting"],
@@ -100,7 +100,7 @@ const Commercial = () => {
       "bedrooms": 0,
       "bathrooms": "comman",
       "area": "520 sq ft",
-      "image": "/public/Team Photo/golden grande.jpg",
+      "image": "/images/golden-grande.jpg",
       "features": ["Corporate Headquarters", "Customizable Floors", "Premium Lobbies", "Executive Elevators"],
       "amenities": {
         "Exclusive": ["Private Terraces", "Executive Dining"],
@@ -144,7 +144,7 @@ const Commercial = () => {
       "bedrooms": 0,
       "bathrooms": "comman toilet",
       "area": "171sq ft",
-      "image": "public/Team Photo/ATS 1.png",
+      "image": "/images/ATS1.png",
       "features": ["Tech-Enabled Campus", "Collaborative Workspaces", "Innovation Labs", "Dedicated IT Infrastructure"],
       "amenities": {
         "Innovation": ["Incubation Center", "R&D Facilities"],
@@ -158,50 +158,50 @@ const Commercial = () => {
       "dateAdded": "2019-01-20"
     },
     // More odd ID properties can be added here
-    {
-      "id": 13,
-      "title": "Tech Hub Office Space",
-      "location": "Hyderabad HITEC City",
-      "price": "₹4.2 Crores",
-      "type": "office",
-      "bedrooms": 0,
-      "bathrooms": 6,
-      "area": "4500 sq ft",
-      "image": "https://images.unsplash.com/photo-1542744173-8e7e53415bb0",
-      "features": ["IT Park Location", "Modern Infrastructure", "Conference Rooms", "Cafeteria"],
-      "amenities": {
-        "Business": ["Meeting Rooms", "Video Conferencing"],
-        "Facilities": ["Power Backup", "Security"]
-      },
-      "rating": 4.7,
-      "developer": "Tech Developers",
-      "possession": "Ready to Move",
-      "approvals": ["RERA Approved", "HMDA Approved"],
-      "popularity": 95,
-      "dateAdded": "2024-03-15"
-    },
-    {
-      "id": 15,
-      "title": "Corporate Business Center",
-      "location": "Chennai OMR",
-      "price": "₹3.8 Crores",
-      "type": "office",
-      "bedrooms": 0,
-      "bathrooms": 5,
-      "area": "4000 sq ft",
-      "image": "https://images.unsplash.com/photo-1600607687989-c8baf9dd6a91",
-      "features": ["IT Corridor", "Custom Interiors", "Premium Facilities", "Dedicated Support"],
-      "amenities": {
-        "Professional": ["Business Lounge", "Client Meeting Rooms"],
-        "Facilities": ["Cafeteria", "Fitness Center"]
-      },
-      "rating": 4.6,
-      "developer": "Corporate Builders",
-      "possession": "Ready to Move",
-      "approvals": ["RERA Approved", "CMDA Approved"],
-      "popularity": 93,
-      "dateAdded": "2024-02-10"
-    }
+    // {
+    //   "id": 13,
+    //   "title": "Tech Hub Office Space",
+    //   "location": "Hyderabad HITEC City",
+    //   "price": "₹4.2 Crores",
+    //   "type": "office",
+    //   "bedrooms": 0,
+    //   "bathrooms": 6,
+    //   "area": "4500 sq ft",
+    //   "image": "https://images.unsplash.com/photo-1542744173-8e7e53415bb0",
+    //   "features": ["IT Park Location", "Modern Infrastructure", "Conference Rooms", "Cafeteria"],
+    //   "amenities": {
+    //     "Business": ["Meeting Rooms", "Video Conferencing"],
+    //     "Facilities": ["Power Backup", "Security"]
+    //   },
+    //   "rating": 4.7,
+    //   "developer": "Tech Developers",
+    //   "possession": "Ready to Move",
+    //   "approvals": ["RERA Approved", "HMDA Approved"],
+    //   "popularity": 95,
+    //   "dateAdded": "2024-03-15"
+    // },
+    // {
+    //   "id": 15,
+    //   "title": "Corporate Business Center",
+    //   "location": "Chennai OMR",
+    //   "price": "₹3.8 Crores",
+    //   "type": "office",
+    //   "bedrooms": 0,
+    //   "bathrooms": 5,
+    //   "area": "4000 sq ft",
+    //   "image": "https://images.unsplash.com/photo-1600607687989-c8baf9dd6a91",
+    //   "features": ["IT Corridor", "Custom Interiors", "Premium Facilities", "Dedicated Support"],
+    //   "amenities": {
+    //     "Professional": ["Business Lounge", "Client Meeting Rooms"],
+    //     "Facilities": ["Cafeteria", "Fitness Center"]
+    //   },
+    //   "rating": 4.6,
+    //   "developer": "Corporate Builders",
+    //   "possession": "Ready to Move",
+    //   "approvals": ["RERA Approved", "CMDA Approved"],
+    //   "popularity": 93,
+    //   "dateAdded": "2024-02-10"
+    // }
   ];
 
   const developersList = [...new Set(commercialProperties.map(p => p.developer))];
