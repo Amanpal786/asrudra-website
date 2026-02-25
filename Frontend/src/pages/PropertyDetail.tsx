@@ -1809,12 +1809,12 @@ With an emphasis on affordability blended with comfort, La Residentia Group aims
     price: "₹1 Crore",
     location: "Techzone 4 Greater Noida West, Greater Noida",
     images: [
-      "/Team Photo/nx one 1.jpg",
-      "/public/Team Photo/nx one 5.png",
-      "/public/Team Photo/nx one layout.jpg",
-      "/public/Team Photo/NX ONE 8.png",
-      "/public/Team Photo/nx one work.jpg",
-      "/public/Team Photo/NX ONE 7.png"
+      "/images/nx1.jpg",
+      "/images/nx one 5.png",
+      "/images/nx one layout.jpg",
+      "/images/NX ONE 8.png",
+      "/images/nx one work.jpg",
+      "/images/NX ONE 7.png"
     ],
     video: "/public/Team Photo/ARK VIDEO.mp4",
     videoThumbnail: "/public/Team Photo/nx one 6.png",

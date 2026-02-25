@@ -33,7 +33,7 @@ const Commercial = () => {
       "bedrooms": 0,
       "bathrooms": "comman toilet",
       "area": "856 sq.ft",
-      "image": "/public/Team Photo/nx one 1.jpg",
+      "image": "/Team Photo/nx one 1.jpg",
       "features": ["Premium Corporate Space", "High-Speed Internet", "Meeting Rooms", "Cafeteria"],
       "amenities": {
         "Business": ["Conference Hall", "Video Conferencing"],
