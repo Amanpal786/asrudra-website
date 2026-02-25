@@ -23,7 +23,7 @@ const Footer = () => {
   useEffect(() => {
     const fetchFooterData = async () => {
       try {
-        const res = await fetch("http://https://asrudra-backend-1.onrender.com/footer");
+        const res = await fetch("https://asrudra-backend-1.onrender.com/footer");
         const data = await res.json();
         setFooterData(data);
       } catch (err) {
@@ -46,7 +46,7 @@ const Footer = () => {
     setSubscribeStatus("");
 
     try {
-      const res = await fetch("http://https://asrudra-backend-1.onrender.com/subscriber", {
+      const res = await fetch("https://asrudra-backend-1.onrender.com/subscriber", {
         method: "POST",
         headers: { "Content-Type": "application/json" },
         body: JSON.stringify({ email: subscriberEmail }),

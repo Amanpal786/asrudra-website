@@ -51,10 +51,10 @@ const ResalePage = () => {
       try {
         setIsLoading(true);
         if (activeTab === "buy") {
-          const res = await axios.get("http://https://asrudra-backend-1.onrender.com/api/properties");
+          const res = await axios.get("https://asrudra-backend-1.onrender.com/api/properties");
           setResaleProperties(res.data);
         } else if (activeTab === "my-listings" && user) {
-          const res = await axios.get(`http://https://asrudra-backend-1.onrender.com/api/properties/user/${user._id}`);
+          const res = await axios.get(`https://asrudra-backend-1.onrender.com/api/properties/user/${user._id}`);
           setMyProperties(res.data);
         }
       } catch (err) {
@@ -91,7 +91,7 @@ const ResalePage = () => {
 
     try {
       setIsLoading(true);
-      await axios.post("http://https://asrudra-backend-1.onrender.com/api/properties", form, {
+      await axios.post("https://asrudra-backend-1.onrender.com/api/properties", form, {
         headers: { 
           "Content-Type": "multipart/form-data",
           Authorization: `Bearer ${localStorage.getItem("token")}`
