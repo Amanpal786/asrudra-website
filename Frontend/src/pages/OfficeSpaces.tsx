@@ -122,7 +122,7 @@ const Commercial = () => {
       "bedrooms": 0,
       "bathrooms": "comman",
       "area": "120sq.ft-3200sq ft",
-      "image": "/public/Team Photo/apex.jpg",
+      "image": "/images/apex.jpg",
       "features": ["IT/ITES Ready", "Plug-and-Play Offices", "Conference Facilities", "Ample Parking"],
       "amenities": {
         "Business": ["Training Center", "Meeting Rooms"],
