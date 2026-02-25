@@ -1,7 +1,7 @@
 import React, { useState, useEffect, useRef } from "react";
 import { useParams, Link } from "react-router-dom";
 import { motion, AnimatePresence } from "framer-motion";
-import Layout from "../components/Layout";
+import Layout from "../../src/components/Layout";
 import {
   Card,
   CardContent,
@@ -1810,14 +1810,14 @@ With an emphasis on affordability blended with comfort, La Residentia Group aims
     location: "Techzone 4 Greater Noida West, Greater Noida",
     images: [
       "/images/nx1.jpg",
-      "/images/nx one 5.png",
-      "/images/nx one layout.jpg",
-      "/images/NX ONE 8.png",
-      "/images/nx one work.jpg",
-      "/images/NX ONE 7.png"
+      "/images/nx5.png",
+      "/images/nx-layout.jpg",
+      "/images/nx8.png",
+      "/images/nx-work.jpg",
+      "/images/nx7.png"
     ],
     video: "/public/Team Photo/ARK VIDEO.mp4",
-    videoThumbnail: "/public/Team Photo/nx one 6.png",
+    videoThumbnail: "/images/nx6.png",
     bathrooms: "Common Toilet",
     parking: 1,
     area: "856 sq ft",
