@@ -1,0 +1,130 @@
+[{
+  "_id": {
+    "$oid": "68723a6a74866e217e4bad07"
+  },
+  "fullName": "shib",
+  "email": "admin@buildestate.com",
+  "phoneNumber": "8127585449",
+  "message": "hello",
+  "createdAt": {
+    "$date": "2025-07-12T10:35:22.051Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "68723b6774866e217e4bad0d"
+  },
+  "fullName": "Shivam Tiwari",
+  "email": "it@asrudrasolutions.com",
+  "phoneNumber": "8127585449",
+  "message": "Enquiry page is connected successfully! 🎉",
+  "createdAt": {
+    "$date": "2025-07-12T10:39:35.885Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "687253098c7b9ff41639e4a3"
+  },
+  "fullName": "utsav",
+  "email": "accountant@asrudrasolutions.com",
+  "phoneNumber": "80598 98124",
+  "message": "testing for enquary",
+  "createdAt": {
+    "$date": "2025-07-12T12:20:25.461Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "687387d8aefd47a7480e5899"
+  },
+  "fullName": "Shubham Gupta",
+  "email": "SG@GMAIL.COM",
+  "phoneNumber": "8588057819",
+  "message": "ARE YOU LOOKING PROPERTY",
+  "createdAt": {
+    "$date": "2025-07-13T10:18:00.066Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "6873a99693ed2874dcf67184"
+  },
+  "fullName": "muskan",
+  "email": "mus@gmail.com",
+  "phoneNumber": "98989898777",
+  "message": "testing for price ",
+  "createdAt": {
+    "$date": "2025-07-13T12:41:58.396Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "6874a86b4446590f90a5b128"
+  },
+  "fullName": "ARYAN",
+  "email": "ARYAN@GMAIL.COM",
+  "phoneNumber": "9718652674",
+  "message": "ENQURY FOR COMMERCIAL",
+  "createdAt": {
+    "$date": "2025-07-14T06:49:15.919Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "687b6e657c50d31b7883980f"
+  },
+  "fullName": "sidhant",
+  "email": "sidanand46@gmail.com",
+  "phoneNumber": "8360434549",
+  "message": "sidhant me miss use kiya aur complane nhi daalne de raha tha , ",
+  "createdAt": {
+    "$date": "2025-07-19T10:07:33.942Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "687b87c27c50d31b78839991"
+  },
+  "fullName": "sidhant",
+  "email": "sidanand46@gmail.com",
+  "phoneNumber": "8360434549",
+  "message": "HELLO MAM",
+  "createdAt": {
+    "$date": "2025-07-19T11:55:46.909Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "68822f3daa02f4848351c439"
+  },
+  "fullName": "sidhant",
+  "email": "sidanand46@gmail.com",
+  "phoneNumber": "8360434549",
+  "message": "",
+  "createdAt": {
+    "$date": "2025-07-24T13:03:57.796Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "68822f8baa02f4848351c447"
+  },
+  "fullName": "Shubham Gupta",
+  "email": "SG@GMAIL.COM",
+  "phoneNumber": "8588057819",
+  "message": "HELLO MAM",
+  "createdAt": {
+    "$date": "2025-07-24T13:05:15.147Z"
+  },
+  "__v": 0
+}]

@@ -1,0 +1,135 @@
+[
+  {
+    "propertyId": 101,
+    "title": "Luxury 3BHK Apartment in Sector 75",
+    "location": "Noida, Sector 75",
+    "price": "₹1.25 Cr",
+    "type": "residential",
+    "area": "1800 sq.ft",
+    "image": "https://images.unsplash.com/photo-1600585154340-be6161a56a0c", 
+    "features": ["Swimming Pool", "Gym", "Club House", "Kids Play Area"],
+    "amenities": {
+      "Lifestyle": ["Swimming Pool", "Yoga Deck", "Jogging Track"],
+      "Security": ["24/7 Surveillance", "Guarded Gates"],
+      "Convenience": ["Power Backup", "Rainwater Harvesting"]
+    },
+    "rating": 4.8,
+    "bedrooms": 3,
+    "bathrooms": 2,
+    "floors": 12,
+    "facing": "East",
+    "possession": "Ready to Move",
+    "approvals": ["RERA Approved", "Bank Loan Available"],
+    "description": "Spacious 3BHK luxury apartment with top-class amenities and seamless connectivity to metro and malls."
+  },
+  {
+    "propertyId": 102,
+    "title": "Premium Commercial Office Space",
+    "location": "Gurgaon, Cyber City",
+    "price": "₹2.75 Cr",
+    "type": "commercial",
+    "area": "2500 sq.ft",
+    "image": "https://images.unsplash.com/photo-1582407947304-fd86f028f716",
+    "features": ["Central AC", "24x7 Security", "Elevators", "Power Backup"],
+    "amenities": {
+      "Infrastructure": ["High-Speed Elevators", "Fiber Optic Connectivity"],
+      "Facilities": ["Pantry", "Conference Rooms"],
+      "Services": ["Housekeeping", "IT Support"]
+    },
+    "rating": 4.6,
+    "cabins": 4,
+    "openSeats": 25,
+    "facing": "North-East",
+    "possession": "Immediate",
+    "approvals": ["Fire NOC", "Commercial License"],
+    "description": "Furnished office space ideal for startups and MNCs with modern facilities and prime location advantages."
+  },
+  {
+    "propertyId": 103,
+    "title": "Residential Plot in Sector 150",
+    "location": "Noida, Sector 150",
+    "price": "₹95 Lakh",
+    "type": "plot",
+    "area": "250 sq. yards",
+    "image": "https://images.unsplash.com/photo-1600607687989-c8baf9dd6a91",
+    "features": ["Gated Society", "Green Zone", "Wide Road Access"],
+    "amenities": {
+      "Location": ["Near Proposed Metro", "Adjacent to Park"],
+      "Legal": ["Clear Title", "Approved Layout"]
+    },
+    "rating": 4.7,
+    "plotType": "residential",
+    "facing": "West",
+    "possession": "Available Now",
+    "approvals": ["RERA Approved", "Freehold"],
+    "description": "Residential plot in a well-planned township with lush greenery and infrastructure ready for construction."
+  },
+  {
+    "propertyId": 104,
+    "title": "Ultra Luxury 4BHK Penthouse",
+    "location": "Delhi, Golf Course Road",
+    "price": "₹4.5 Cr",
+    "type": "residential",
+    "area": "3200 sq.ft",
+    "image": "https://images.unsplash.com/photo-1618221195710-dd6b41faaea6",
+    "features": ["Private Terrace", "Smart Home Automation", "Jacuzzi", "Home Theater"],
+    "amenities": {
+      "Exclusive": ["Concierge Service", "Private Elevator"],
+      "Wellness": ["Spa", "Temperature Controlled Pool"],
+      "Security": ["Biometric Access", "VIP Security"]
+    },
+    "rating": 4.9,
+    "bedrooms": 4,
+    "bathrooms": 3,
+    "floors": 18,
+    "facing": "South-West",
+    "possession": "Dec 2024",
+    "approvals": ["RERA Approved", "OC Received"],
+    "description": "Breathtaking penthouse with panoramic city views featuring premium finishes and exclusive amenities."
+  },
+  {
+    "propertyId": 105,
+    "title": "Tech Park Office Space",
+    "location": "Bangalore, Whitefield",
+    "price": "₹3.2 Cr",
+    "type": "commercial",
+    "area": "3000 sq.ft",
+    "image": "https://images.unsplash.com/photo-1497366811353-6870744d04b2",
+    "features": ["Dedicated Parking", "Fiber Optic Ready", "Cafeteria", "EV Charging"],
+    "amenities": {
+      "Tech": ["Server Room", "High-Speed Internet"],
+      "Facilities": ["Food Court", "Fitness Center"],
+      "Access": ["Near IT Park", "Shuttle Service"]
+    },
+    "rating": 4.7,
+    "cabins": 6,
+    "openSeats": 40,
+    "facing": "North",
+    "possession": "Ready to Occupy",
+    "approvals": ["STPI Approved", "LEED Certified"],
+    "description": "Cutting-edge office space in Bangalore's tech corridor with world-class infrastructure and amenities."
+  },
+  {
+    "propertyId": 106,
+    "title": "Premium 2BHK Apartment",
+    "location": "Mumbai, Bandra West",
+    "price": "₹2.8 Cr",
+    "type": "residential",
+    "area": "1200 sq.ft",
+    "image": "https://images.unsplash.com/photo-1512917774080-9991f1c4c750",
+    "features": ["Sea View", "Modular Kitchen", "Walk-in Closet", "Balcony"],
+    "amenities": {
+      "Lifestyle": ["Infinity Pool", "Sky Lounge"],
+      "Security": ["CCTV", "Trained Guards"],
+      "Convenience": ["Retail Shops", "Car Wash Bay"]
+    },
+    "rating": 4.8,
+    "bedrooms": 2,
+    "bathrooms": 2,
+    "floors": 25,
+    "facing": "West",
+    "possession": "Ready to Move",
+    "approvals": ["RERA Approved", "MCGM Approved"],
+    "description": "Chic 2BHK apartment in Mumbai's premium neighborhood offering luxury living with stunning sea views."
+  }
+]

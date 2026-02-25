@@ -1,0 +1,442 @@
+{
+  "id": 101,
+  "title": "Sky Garden Residency",
+  "location": "Banjara Hills, Hyderabad",
+  "price": "₹85 Lakhs",
+  "type": "Residential",
+  "area": "1250 sq ft",
+  "bedrooms": 3,
+  "bathrooms": 2,
+  "floor": "12th Floor",
+  "age": "Under Construction",
+  "facing": "East",
+  "images": [
+    "https://images.unsplash.com/photo-1564013799919-ab600027ffc6?w=600&h=400&fit=crop",
+    "https://images.unsplash.com/photo-1545324418-cc1a3fa10c00?w=600&h=400&fit=crop",
+    "https://images.unsplash.com/photo-1512917774080-9991f1c4c750?w=600&h=400&fit=crop"
+  ],
+  "features": [
+    "Swimming Pool",
+    "Gymnasium",
+    "Club House",
+    "Children Play Area",
+    "Security System",
+    "Power Backup",
+    "Elevator",
+    "Parking Space",
+    "Garden Area",
+    "Community Hall"
+  ],
+  "amenities": {
+    "Security Features": [
+      "24/7 Security",
+      "CCTV Surveillance",
+      "Intercom"
+    ],
+    "Recreational": [
+      "Swimming Pool",
+      "Gymnasium",
+      "Club House",
+      "Garden"
+    ],
+    "Utilities": [
+      "Power Backup",
+      "Water Supply",
+      "Elevator",
+      "Parking"
+    ]
+  },
+  "description": "Experience luxury living at Sky Garden Residency, a premium project offering a perfect blend of comfort, style, and sustainability.",
+  "rating": 4.5,
+  "developer": "EstateHub Developers",
+  "possession": "December 2025",
+  "totalFloors": 18,
+  "totalUnits": 144
+}
+{
+  "id": 102,
+  "title": "Sky Garden Residency",
+  "location": "Banjara Hills, Hyderabad",
+  "price": "₹5cr ",
+  "type": "Residential",
+  "area": "1250 sq ft",
+  "bedrooms": 3,
+  "bathrooms": 2,
+  "floor": "12th Floor",
+  "age": "Under Construction",
+  "facing": "East",
+  "images": [
+    "https://images.unsplash.com/photo-1564013799919-ab600027ffc6?w=600&h=400&fit=crop",
+    "https://images.unsplash.com/photo-1545324418-cc1a3fa10c00?w=600&h=400&fit=crop",
+    "https://images.unsplash.com/photo-1512917774080-9991f1c4c750?w=600&h=400&fit=crop"
+  ],
+  "features": [
+    "Swimming Pool",
+    "Gymnasium",
+    "Club House",
+    "Children Play Area",
+    "Security System",
+    "Power Backup",
+    "Elevator",
+    "Parking Space",
+    "Garden Area",
+    "Community Hall"
+  ],
+  "amenities": {
+    "Security Features": [
+      "24/7 Security",
+      "CCTV Surveillance",
+      "Intercom"
+    ],
+    "Recreational": [
+      "Swimming Pool",
+      "Gymnasium",
+      "Club House",
+      "Garden"
+    ],
+    "Utilities": [
+      "Power Backup",
+      "Water Supply",
+      "Elevator",
+      "Parking"
+    ]
+  },
+  "description": "Experience luxury living at Sky Garden Residency, a premium project offering a perfect blend of comfort, style, and sustainability.",
+  "rating": 4.5,
+  "developer": "EstateHub Developers",
+  "possession": "December 2025",
+  "totalFloors": 18,
+  "totalUnits": 144
+}
+{
+  "id": 103,
+  "title": "Sky Garden Residency",
+  "location": "Banjara Hills, Hyderabad",
+  "price": "₹1cr ",
+  "type": "Residential",
+  "area": "1250 sq ft",
+  "bedrooms": 3,
+  "bathrooms": 2,
+  "floor": "12th Floor",
+  "age": "Under Construction",
+  "facing": "East",
+  "images": [
+    "https://images.unsplash.com/photo-1564013799919-ab600027ffc6?w=600&h=400&fit=crop",
+    "https://images.unsplash.com/photo-1545324418-cc1a3fa10c00?w=600&h=400&fit=crop",
+    "https://images.unsplash.com/photo-1512917774080-9991f1c4c750?w=600&h=400&fit=crop"
+  ],
+  "features": [
+    "Swimming Pool",
+    "Gymnasium",
+    "Club House",
+    "Children Play Area",
+    "Security System",
+    "Power Backup",
+    "Elevator",
+    "Parking Space",
+    "Garden Area",
+    "Community Hall"
+  ],
+  "amenities": {
+    "Security Features": [
+      "24/7 Security",
+      "CCTV Surveillance",
+      "Intercom"
+    ],
+    "Recreational": [
+      "Swimming Pool",
+      "Gymnasium",
+      "Club House",
+      "Garden"
+    ],
+    "Utilities": [
+      "Power Backup",
+      "Water Supply",
+      "Elevator",
+      "Parking"
+    ]
+  },
+  "description": "Experience luxury living at Sky Garden Residency, a premium project offering a perfect blend of comfort, style, and sustainability.",
+  "rating": 4.5,
+  "developer": "EstateHub Developers",
+  "possession": "December 2025",
+  "totalFloors": 18,
+  "totalUnits": 144
+}
+{
+  "id": 104,
+  "title": "Sky Garden Residency",
+  "location": "Banjara Hills, Hyderabad",
+  "price": "₹3cr ",
+  "type": "Residential",
+  "area": "1250 sq ft",
+  "bedrooms": 3,
+  "bathrooms": 2,
+  "floor": "12th Floor",
+  "age": "Under Construction",
+  "facing": "East",
+  "images": [
+    "https://images.unsplash.com/photo-1564013799919-ab600027ffc6?w=600&h=400&fit=crop",
+    "https://images.unsplash.com/photo-1545324418-cc1a3fa10c00?w=600&h=400&fit=crop",
+    "https://images.unsplash.com/photo-1512917774080-9991f1c4c750?w=600&h=400&fit=crop"
+  ],
+  "features": [
+    "Swimming Pool",
+    "Gymnasium",
+    "Club House",
+    "Children Play Area",
+    "Security System",
+    "Power Backup",
+    "Elevator",
+    "Parking Space",
+    "Garden Area",
+    "Community Hall"
+  ],
+  "amenities": {
+    "Security Features": [
+      "24/7 Security",
+      "CCTV Surveillance",
+      "Intercom"
+    ],
+    "Recreational": [
+      "Swimming Pool",
+      "Gymnasium",
+      "Club House",
+      "Garden"
+    ],
+    "Utilities": [
+      "Power Backup",
+      "Water Supply",
+      "Elevator",
+      "Parking"
+    ]
+  },
+  "description": "Experience luxury living at Sky Garden Residency, a premium project offering a perfect blend of comfort, style, and sustainability.",
+  "rating": 4.5,
+  "developer": "EstateHub Developers",
+  "possession": "December 2025",
+  "totalFloors": 18,
+  "totalUnits": 144
+}
+{
+  "id": 105,
+  "title": "Sky Garden Residency",
+  "location": "Banjara Hills, Hyderabad",
+  "price": "₹2cr ",
+  "type": "Residential",
+  "area": "1250 sq ft",
+  "bedrooms": 3,
+  "bathrooms": 2,
+  "floor": "12th Floor",
+  "age": "Under Construction",
+  "facing": "East",
+  "images": [
+    "https://images.unsplash.com/photo-1564013799919-ab600027ffc6?w=600&h=400&fit=crop",
+    "https://images.unsplash.com/photo-1545324418-cc1a3fa10c00?w=600&h=400&fit=crop",
+    "https://images.unsplash.com/photo-1512917774080-9991f1c4c750?w=600&h=400&fit=crop"
+  ],
+  "features": [
+    "Swimming Pool",
+    "Gymnasium",
+    "Club House",
+    "Children Play Area",
+    "Security System",
+    "Power Backup",
+    "Elevator",
+    "Parking Space",
+    "Garden Area",
+    "Community Hall"
+  ],
+  "amenities": {
+    "Security Features": [
+      "24/7 Security",
+      "CCTV Surveillance",
+      "Intercom"
+    ],
+    "Recreational": [
+      "Swimming Pool",
+      "Gymnasium",
+      "Club House",
+      "Garden"
+    ],
+    "Utilities": [
+      "Power Backup",
+      "Water Supply",
+      "Elevator",
+      "Parking"
+    ]
+  },
+  "description": "Experience luxury living at Sky Garden Residency, a premium project offering a perfect blend of comfort, style, and sustainability.",
+  "rating": 4.5,
+  "developer": "EstateHub Developers",
+  "possession": "December 2025",
+  "totalFloors": 18,
+  "totalUnits": 144
+}
+[
+  {
+    "id": 107,
+    "title": "Sky Garden Residency",
+    "location": "Banjara Hills, Hyderabad",
+    "price": "₹2.1 Cr",
+    "type": "Residential",
+    "area": "1350 sq ft",
+    "bedrooms": 3,
+    "bathrooms": 2,
+    "floor": "14th Floor",
+    "age": "Under Construction",
+    "facing": "North-East",
+    "images": [
+      "https://images.unsplash.com/photo-1600585154340-be6161a56a0c?w=600&h=400&fit=crop",
+      "https://images.unsplash.com/photo-1600585154251-0c4f9bc93b7a?w=600&h=400&fit=crop",
+      "https://images.unsplash.com/photo-1600585154207-0d6e8c3f1df4?w=600&h=400&fit=crop"
+    ],
+    "features": [
+      "Swimming Pool", "Gymnasium", "Club House", "Children Play Area",
+      "Security System", "Power Backup", "Elevator", "Parking Space", "Garden Area", "Community Hall"
+    ],
+    "amenities": {
+      "Security Features": ["24/7 Security", "CCTV Surveillance", "Intercom"],
+      "Recreational": ["Swimming Pool", "Gymnasium", "Club House", "Garden"],
+      "Utilities": ["Power Backup", "Water Supply", "Elevator", "Parking"]
+    },
+    "description": "Elegant 3BHK apartment with skyline views and high-end interiors. A perfect home in the heart of the city.",
+    "rating": 4.6,
+    "developer": "EstateHub Developers",
+    "possession": "December 2025",
+    "totalFloors": 18,
+    "totalUnits": 144
+  },
+  {
+    "id": 108,
+    "title": "Sky Garden Residency",
+    "location": "Banjara Hills, Hyderabad",
+    "price": "₹2.8 Cr",
+    "type": "Residential",
+    "area": "1600 sq ft",
+    "bedrooms": 4,
+    "bathrooms": 3,
+    "floor": "17th Floor",
+    "age": "Under Construction",
+    "facing": "West",
+    "images": [
+      "https://images.unsplash.com/photo-1582407947304-fd86f028f716?w=600&h=400&fit=crop",
+      "https://images.unsplash.com/photo-1604014237684-37c94c2782d7?w=600&h=400&fit=crop",
+      "https://images.unsplash.com/photo-1599423300746-b62533397364?w=600&h=400&fit=crop"
+    ],
+    "features": [
+      "Swimming Pool", "Gymnasium", "Club House", "Children Play Area",
+      "Security System", "Power Backup", "Elevator", "Parking Space", "Garden Area", "Community Hall"
+    ],
+    "amenities": {
+      "Security Features": ["24/7 Security", "CCTV Surveillance", "Intercom"],
+      "Recreational": ["Swimming Pool", "Gymnasium", "Club House", "Garden"],
+      "Utilities": ["Power Backup", "Water Supply", "Elevator", "Parking"]
+    },
+    "description": "Spacious 4BHK corner unit with luxury fittings and panoramic city views. Ideal for large families.",
+    "rating": 4.7,
+    "developer": "EstateHub Developers",
+    "possession": "December 2025",
+    "totalFloors": 18,
+    "totalUnits": 144
+  },
+  {
+    "id": 109,
+    "title": "Sky Garden Residency",
+    "location": "Banjara Hills, Hyderabad",
+    "price": "₹1.9 Cr",
+    "type": "Residential",
+    "area": "1200 sq ft",
+    "bedrooms": 3,
+    "bathrooms": 2,
+    "floor": "11th Floor",
+    "age": "Under Construction",
+    "facing": "South",
+    "images": [
+      "https://images.unsplash.com/photo-1600585154162-78fd6e6edaa1?w=600&h=400&fit=crop",
+      "https://images.unsplash.com/photo-1600585154172-596d27b44d0b?w=600&h=400&fit=crop",
+      "https://images.unsplash.com/photo-1600585154281-330c2f8d2d9b?w=600&h=400&fit=crop"
+    ],
+    "features": [
+      "Swimming Pool", "Gymnasium", "Club House", "Children Play Area",
+      "Security System", "Power Backup", "Elevator", "Parking Space", "Garden Area", "Community Hall"
+    ],
+    "amenities": {
+      "Security Features": ["24/7 Security", "CCTV Surveillance", "Intercom"],
+      "Recreational": ["Swimming Pool", "Gymnasium", "Club House", "Garden"],
+      "Utilities": ["Power Backup", "Water Supply", "Elevator", "Parking"]
+    },
+    "description": "Affordable yet premium 3BHK apartment with modern layout and high-speed connectivity.",
+    "rating": 4.4,
+    "developer": "EstateHub Developers",
+    "possession": "December 2025",
+    "totalFloors": 18,
+    "totalUnits": 144
+  },
+  {
+    "id": 110,
+    "title": "Sky Garden Residency",
+    "location": "Banjara Hills, Hyderabad",
+    "price": "₹3.5 Cr",
+    "type": "Residential",
+    "area": "1750 sq ft",
+    "bedrooms": 4,
+    "bathrooms": 4,
+    "floor": "Penthouse",
+    "age": "Under Construction",
+    "facing": "East",
+    "images": [
+      "https://images.unsplash.com/photo-1613977257363-b7b1e6633a71?w=600&h=400&fit=crop",
+      "https://images.unsplash.com/photo-1560448204-e02f11c3d0e2?w=600&h=400&fit=crop",
+      "https://images.unsplash.com/photo-1582407947304-fd86f028f716?w=600&h=400&fit=crop"
+    ],
+    "features": [
+      "Swimming Pool", "Gymnasium", "Club House", "Children Play Area",
+      "Security System", "Power Backup", "Elevator", "Parking Space", "Garden Area", "Community Hall"
+    ],
+    "amenities": {
+      "Security Features": ["24/7 Security", "CCTV Surveillance", "Intercom"],
+      "Recreational": ["Swimming Pool", "Gymnasium", "Club House", "Garden"],
+      "Utilities": ["Power Backup", "Water Supply", "Elevator", "Parking"]
+    },
+    "description": "Luxurious 4BHK penthouse with private terrace, smart automation, and top-of-the-line fittings.",
+    "rating": 4.9,
+    "developer": "EstateHub Developers",
+    "possession": "December 2025",
+    "totalFloors": 18,
+    "totalUnits": 144
+  },
+  {
+    "id": 111,
+    "title": "Sky Garden Residency",
+    "location": "Banjara Hills, Hyderabad",
+    "price": "₹1.75 Cr",
+    "type": "Residential",
+    "area": "1150 sq ft",
+    "bedrooms": 2,
+    "bathrooms": 2,
+    "floor": "10th Floor",
+    "age": "Under Construction",
+    "facing": "North",
+    "images": [
+      "https://images.unsplash.com/photo-1505691938895-1758d7feb511?w=600&h=400&fit=crop",
+      "https://images.unsplash.com/photo-1544435252-02006ac638b9?w=600&h=400&fit=crop",
+      "https://images.unsplash.com/photo-1588854337221-4d1f1f265fa4?w=600&h=400&fit=crop"
+    ],
+    "features": [
+      "Swimming Pool", "Gymnasium", "Club House", "Children Play Area",
+      "Security System", "Power Backup", "Elevator", "Parking Space", "Garden Area", "Community Hall"
+    ],
+    "amenities": {
+      "Security Features": ["24/7 Security", "CCTV Surveillance", "Intercom"],
+      "Recreational": ["Swimming Pool", "Gymnasium", "Club House", "Garden"],
+      "Utilities": ["Power Backup", "Water Supply", "Elevator", "Parking"]
+    },
+    "description": "Ideal 2BHK flat for young couples or investors, offering comfort and modern features.",
+    "rating": 4.3,
+    "developer": "EstateHub Developers",
+    "possession": "December 2025",
+    "totalFloors": 18,
+    "totalUnits": 144
+  }
+]

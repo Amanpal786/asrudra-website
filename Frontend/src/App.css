@@ -1,0 +1,69 @@
+/* Root container styling */
+#root {
+  max-width: 1280px;
+  margin: 0 auto;           /* Center horizontally */
+  padding: 0 1rem;          /* Removed top padding, only horizontal */
+  text-align: center;
+  box-sizing: border-box;
+}
+
+/* Logo styles */
+.logo {
+  margin: 0;
+  height: 6em;
+  padding: 1rem;
+  transition: filter 300ms ease;
+  will-change: filter;
+}
+
+.logo:hover {
+  filter: drop-shadow(0 0 2em #646cffaa);
+}
+
+.logo.react:hover {
+  filter: drop-shadow(0 0 2em #61dafbaa);
+}
+
+/* Optional animated logo spin */
+@keyframes logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+/* Apply spin only when motion is allowed */
+@media (prefers-reduced-motion: no-preference) {
+  a:nth-of-type(2) .logo {
+    animation: logo-spin 20s linear infinite;
+  }
+}
+
+/* Card container */
+.card {
+  padding: 1.5rem;
+  background: #fff;
+  border-radius: 0.5rem;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.05);
+}
+
+/* Documentation text */
+.read-the-docs {
+  color: #888;
+  font-size: 0.9rem;
+  margin-top: 0;
+}
+
+/* Global Reset for top margin/padding */
+body,
+html {
+  margin-top: 0;
+  margin-bottom: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Inter', sans-serif;
+  background-color: #f9f9f9;
+  overflow-x: hidden;
+}

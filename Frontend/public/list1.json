@@ -1,0 +1,112 @@
+{
+  "categories": [
+    {
+      "id": "office",
+      "title": "Office Spaces",
+      "description": "Premium office spaces in prime business districts with modern amenities and flexible leasing options.",
+      "count": "42",
+      "path": "/office-spaces",
+      "gradient": "from-blue-400 to-blue-600",
+      "properties": [
+        {
+          "id": 101,
+          "title": "NX-ONE OFFICE SPACES",
+          "price": "₹8190/sq ft",
+          "location": "B214 TOWER-4 NX-ONE TECHZONE 4 ",
+          "image": "photo-1497366811353-6870744d04b2",
+          "area": "859 sq ft"
+        },
+        {
+          "id": 102,
+          "title": "Golden Grande",
+          "price": "₹ ",
+          "location": "Techzone 4 Greater Noida West ",
+          "image": "photo-1522071820081-009f0129c71c",
+          "area": "Desk + Meeting Room Access"
+        },
+        {
+          "id": 103,
+          "title": "Apex Park Square ",
+          "price": "₹30 lakh",
+          "location": "lower Ground Floor ",
+          "image": "photo-1542744173-8e7e53415bb0",
+          "area": "100 sq ft"
+        }
+      ]
+    },
+    {
+      "id": "residential",
+      "title": "Residential Properties",
+      "description": "Beautiful homes ranging from modern apartments to luxury villas in desirable neighborhoods.",
+      "count": "156",
+      "path": "/residential",
+      "gradient": "from-green-400 to-green-600",
+      "properties": [
+        {
+          "id": 201,
+          "title": "Nirala Estate(2&3 BHK Apartments- Phase 5)",
+          "price": "₹",
+          "location": "Techzone-iv,Greater Noida West",
+          "image": "photo-1560448204-e02f11c3d0e2",
+          "bedrooms":"2 & 3 BHK ",
+          "parking": 2,
+          "area": "2,400 sq ft"
+        },
+        {
+          "id": 202,
+          "title": "Modern Family Home",
+          "price": "₹850,000",
+          "location": "Suburban Heights",
+          "image": "photo-1600585154340-be6161a56a0c",
+          "bedrooms": 4,
+          "parking": 2,
+          "area": "3,200 sq ft"
+        },
+        {
+          "id": 203,
+          "title": "Downtown Studio Apartment",
+          "price": "₹320,000",
+          "location": "City Center",
+          "image": "photo-1605276374104-dee2a0ed3cd6",
+          "bedrooms": 1,
+          "parking": 1,
+          "area": "800 sq ft"
+        }
+      ]
+    },
+    {
+      "id": "plots",
+      "title": "Plots & Land",
+      "description": "Prime land parcels for development, investment, or personal use with clear titles and good accessibility.",
+      "count": "38",
+      "path": "/plots-land",
+      "gradient": "from-orange-400 to-orange-600",
+      "properties": [
+        {
+          "id": 301,
+          "title": "Residential Development Plot",
+          "price": "₹250,000",
+          "location": "North Expansion Area",
+          "image": "photo-1479839672679-a46483c0e7c8",
+          "area": "0.75 Acres"
+        },
+        {
+          "id": 302,
+          "title": "Commercial Land Parcel",
+          "price": "₹1.8M",
+          "location": "Highway Commercial Zone",
+          "image": "photo-1477959858617-67f85cf4f1df",
+          "area": "2.5 Acres"
+        },
+        {
+          "id": 303,
+          "title": "Agricultural Farm Land",
+          "price": "₹450,000",
+          "location": "Rural Valley District",
+          "image": "photo-1500382017468-9049fed747ef",
+          "area": "10 Acres"
+        }
+      ]
+    }
+  ]
+}

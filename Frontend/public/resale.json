@@ -1,0 +1,38 @@
+[
+  {
+    "_id": "1",
+    "title": "2BHK Resale Flat in Noida",
+    "location": "Noida Sector 76",
+    "price": "45 Lakh",
+    "type": "Apartment",
+    "area": "1050",
+    "bedrooms": "2",
+    "bathrooms": "2",
+    "description": "Ready to move 2BHK resale flat with park view.",
+    "images": ["/uploads/flat1.jpg"]
+  },
+  {
+    "_id": "2",
+    "title": "3BHK Independent House in Ghaziabad",
+    "location": "Raj Nagar Extension",
+    "price": "75 Lakh",
+    "type": "Independent House",
+    "area": "1500",
+    "bedrooms": "3",
+    "bathrooms": "3",
+    "description": "Well-maintained 3BHK resale house in prime location.",
+    "images": ["/uploads/house1.jpg"]
+  },
+  {
+    "_id": "3",
+    "title": "Plot for Resale in Greater Noida",
+    "location": "Greater Noida West",
+    "price": "35 Lakh",
+    "type": "Plot",
+    "area": "1800",
+    "bedrooms": "0",
+    "bathrooms": "0",
+    "description": "Residential plot available in Gated Society.",
+    "images": ["/uploads/plot1.jpg"]
+  }
+]

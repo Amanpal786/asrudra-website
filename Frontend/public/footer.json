@@ -1,0 +1,50 @@
+{
+  "headerLinks": [
+    { "name": "Home", "path": "/" },
+    { "name": "About", "path": "/about" },
+    { "name": "Gallery", "path": "/gallery" },
+    { "name": "Residential", "path": "/residential" },
+    { "name": "Office", "path": "/office" },
+    { "name": "Plots", "path": "/plots" },
+    { "name": "Login", "path": "/login" },
+    { "name": "Wishlist", "path": "/wishlist" },
+    { "name": "Comparison", "path": "/comparison" }
+  ],
+  "services": [
+    "Property Sales",
+    "Property Rentals",
+    "Property Management",
+    "Investment Consulting",
+    "Market Analysis",
+    "Legal Assistance"
+  ],
+  "locations": [
+    "Downtown District",
+    "Business Quarter",
+    "Suburban Areas",
+    "Waterfront Properties",
+    "Tech Hub Zone",
+    "Historic District"
+  ],
+  "contactInfo": {
+    "address": [
+      "123 Real Estate Avenue",
+      "Business District",
+      "New Delhi, India - 110001"
+    ],
+    "phones": [
+      "+91 9876543210",
+      "+91 9012345678"
+    ],
+    "emails": [
+      "info@estatehub.com",
+      "sales@estatehub.com"
+    ]
+  },
+  "socials": {
+    "facebook": "https://l.facebook.com/l.php?u=https%3A%2F%2Fwww.instagram.com%2Fas_rudra_solutions&h=ASUCLdPZJbka8u9kIq5n7GH05FQpiLsZQ7FuSjbs7_Gq1QE-yS1PONR6cbZnZ2Gaka-IehBO26eoaRhZjzjcJiuyS88LhhW0VQ_UpktMZ9hs7JkChoGOrOgmQ5ra-0SviSyzsyO_OL3qBJxybvc85ZUflCRWIXi89p-knQ",
+    "twitter": "https://www.twitter.com/estatehub",
+    "instagram": "https://www.bing.com/ck/a?!&&p=ce77c39c795b5c8f32153c85428b11fe8560d81b6f42a1ce427b76473512421aJmltdHM9MTc3MTU0NTYwMA&ptn=3&ver=2&hsh=4&fclid=15a2928d-63c5-67e6-2300-80bb627766f9&psq=as+rudra+solutions+instagram&u=a1aHR0cHM6Ly93d3cuaW5zdGFncmFtLmNvbS9hc19ydWRyYV9zb2x1dGlvbnMv",
+    "linkedin": "https://www.linkedin.com/company/estatehub"
+  }
+}
