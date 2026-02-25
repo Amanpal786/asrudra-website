@@ -27,7 +27,7 @@ const ContactPage = () => {
     setIsSubmitting(true);
 
     try {
-      const response = await axios.post("http://localhost:4001/enquiry", formData);
+      const response = await axios.post("http://https://asrudra-backend-1.onrender.com/enquiry", formData);
       
       if (response.status === 200) {
         setSubmitSuccess(true);

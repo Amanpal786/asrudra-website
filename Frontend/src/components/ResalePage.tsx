@@ -51,10 +51,10 @@ const ResalePage = () => {
       try {
         setIsLoading(true);
         if (activeTab === "buy") {
-          const res = await axios.get("http://localhost:4001/api/properties");
+          const res = await axios.get("http://https://asrudra-backend-1.onrender.com/api/properties");
           setResaleProperties(res.data);
         } else if (activeTab === "my-listings" && user) {
-          const res = await axios.get(`http://localhost:4001/api/properties/user/${user._id}`);
+          const res = await axios.get(`http://https://asrudra-backend-1.onrender.com/api/properties/user/${user._id}`);
           setMyProperties(res.data);
         }
       } catch (err) {
@@ -91,7 +91,7 @@ const ResalePage = () => {
 
     try {
       setIsLoading(true);
-      await axios.post("http://localhost:4001/api/properties", form, {
+      await axios.post("http://https://asrudra-backend-1.onrender.com/api/properties", form, {
         headers: { 
           "Content-Type": "multipart/form-data",
           Authorization: `Bearer ${localStorage.getItem("token")}`
@@ -110,7 +110,7 @@ const ResalePage = () => {
         images: [],
       });
       // Refresh my listings
-      const res = await axios.get(`http://localhost:4001/api/properties/user/${user._id}`);
+      const res = await axios.get(`http://https://asrudra-backend-1.onrender.com/api/properties/user/${user._id}`);
       setMyProperties(res.data);
       setActiveTab("my-listings");
     } catch (err) {
@@ -124,7 +124,7 @@ const ResalePage = () => {
   const handleDeleteProperty = async (id: string) => {
     if (window.confirm("Are you sure you want to delete this property?")) {
       try {
-        await axios.delete(`http://localhost:4001/api/properties/${id}`, {
+        await axios.delete(`http://https://asrudra-backend-1.onrender.com/api/properties/${id}`, {
           headers: {
             Authorization: `Bearer ${localStorage.getItem("token")}`
           }

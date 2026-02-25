@@ -13,7 +13,7 @@ const Wishlist = () => {
   useEffect(() => {
     const fetchWishlist = async () => {
       try {
-        const response = await axios.get('http://localhost:4001/Property');
+        const response = await axios.get('http://https://asrudra-backend-1.onrender.com/Property');
         setWishlistProperties(response.data || []);
       } catch (error) {
         console.error('Error fetching wishlist:', error);

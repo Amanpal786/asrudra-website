@@ -64,7 +64,7 @@ const LocationSection = () => {
 
       setIsSearching(true);
       try {
-        const response = await axios.get("http://localhost:4001/Property");
+        const response = await axios.get("http://https://asrudra-backend-1.onrender.com/Property");
         const allProperties = response.data;
 
         const query = searchQuery.toLowerCase();

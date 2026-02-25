@@ -503,7 +503,7 @@ const ContactForm = ({ onClose }: { onClose: () => void }) => {
 
       console.log('Sending enquiry to API:', apiPayload);
 
-      const response = await fetch('http://localhost:4001/enquiry', {
+      const response = await fetch('http://https://asrudra-backend-1.onrender.com/enquiry', {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json',

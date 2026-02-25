@@ -18,7 +18,7 @@ const Exclusive = () => {
   useEffect(() => {
     const fetchProperties = async () => {
       try {
-        const response = await axios.get('http://localhost:4001/exclusive');
+        const response = await axios.get('http://https://asrudra-backend-1.onrender.com/exclusive');
         setProperties(response.data);
         setLoading(false);
       } catch (error) {
