@@ -87,7 +87,7 @@ const categoriesData: Category[] = [
     title: "Residential Properties",
     description: "Beautiful homes, apartments, and villas for families and individuals",
     count: "245",
-    path: "http://localhost:8080/residential",
+    path: "/residential",
     gradient: "from-blue-500 to-purple-600",
     stats: {
       total: 245,
@@ -175,7 +175,7 @@ const categoriesData: Category[] = [
     title: "Commercial Spaces",
     description: "Office buildings, retail spaces, and commercial properties",
     count: "128",
-    path: "http://localhost:8080/office-spaces", // Updated path
+    path: "/commercial", // Updated path
     gradient: "from-green-500 to-blue-600",
     stats: {
       total: 128,
@@ -239,7 +239,7 @@ const categoriesData: Category[] = [
     title: "Rental Properties",
     description: "Apartments, studios, and houses available for rent",
     count: "189",
-    path: "http://localhost:8080/rental",
+    path: "/rental",
     gradient: "from-orange-500 to-red-600",
     stats: {
       total: 189,
