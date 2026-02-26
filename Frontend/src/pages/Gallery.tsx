@@ -47,12 +47,12 @@ const Gallery = () => {
       date: 'December 24 , 2024',
       description: 'Annual Company Event 2024 – celebrating success, teamwork, and excellence at our yearly R&R! Let’s honor achievements and create lasting memories together.',
       images: [
-        '/public/Team Photo/award.png',
-        '/public/Team Photo/4 sbdm.png',
-        '/public/Team Photo/legends team.png',
-        '/public/Team Photo/1riya.jpg',
-        '/public/Team Photo/raj2.png',
-        '/public/Team Photo/backend.png'
+        '/images/award.png',
+        '/images/4 sbdm.png',
+        '/images/legends team.png',
+        '/images/1riya.jpg',
+        '/images/raj2.png',
+        '/images/backend.png'
       ]
     },
     {
