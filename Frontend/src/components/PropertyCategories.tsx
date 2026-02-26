@@ -98,7 +98,7 @@ const categoriesData: Category[] = [
     properties: [
       {
         id: 1,
-        title: "NX ONE",
+        title: "Nirala Estate",
         price: "₹80 lakhs - 1.5cr",
         location: " NOIDA EXTENSION ",
         image: "/images/nx1.jpg",
@@ -122,8 +122,8 @@ const categoriesData: Category[] = [
       },
       {
         id: 2,
-        title: "ATS",
-        price: "₹ 90 L - 2.38 Cr",
+        title: "Sikka Kaamya Greens",
+        price: "₹ 1.04 - 2.25 Cr",
         location: "noida extension techzone 4 nirala estate",
         image: "/images/ATS1.png",
         bedrooms: 4,
@@ -146,8 +146,8 @@ const categoriesData: Category[] = [
       },
       {
         id: 3,
-        title: "Golden Grande",
-        price: "₹60 Lakhs",
+        title: "FORBES",
+        price: "₹1.44 cr - 2cr",
         location: "Noida Extention",
         image: '/images/golden-grande.jpg',
         bedrooms: 3,
@@ -181,15 +181,15 @@ const categoriesData: Category[] = [
       total: 128,
       forSale: 45,
       forRent: 83,
-      averagePrice: "$1.2M"
+      averagePrice: "12 lakhs"
     },
     properties: [
       {
         id: 4,
-        title: "Downtown Office Tower",
-        price: "$3,200,000",
+        title: "NX ONE",
+        price: "80 lakhs",
         location: "Financial District, NY",
-        image: "/images/ATS4.png",
+        image: "/images/nx1.jpg",
         bedrooms: 0,
         bathrooms: 12,
         parking: 50,
@@ -210,8 +210,8 @@ const categoriesData: Category[] = [
       },
       {
         id: 5,
-        title: "Modern Office Space",
-        price: "₹11999 sq ft",
+        title: "ATS",
+        price: "90 lakhs",
         location: "NX ONE GAUR CHOWK NOIDA EXTENSION",
         image: "/images/ATS5.png",
         bedrooms: 0,
@@ -232,6 +232,8 @@ const categoriesData: Category[] = [
           image: "photo-1487412720507-e7ab37603c6f"
         }
       }
+      
+
     ]
   },
   {
@@ -277,7 +279,7 @@ const categoriesData: Category[] = [
         title: "NX ONE  OFFICE",
         price: "₹ 35,000/month (includes maintenance)",
         location: "Gaur Chowk Noida Extension",
-        image: "/images/la34.webp",
+        image: "/images/la34.jpg",
         bedrooms: 0,
         bathrooms: "Common Toilet",
         parking: 1,
