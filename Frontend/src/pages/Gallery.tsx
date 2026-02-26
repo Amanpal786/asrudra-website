@@ -75,7 +75,7 @@ const Gallery = () => {
       date: 'DECEMBER 22, 2025',
       description: ' Anurodh Yadav is a Recognizing our top performer and celebrating achievements across all departments. Awards were given for excellence in sales, customer service, and innovation.',
       images: [
-        '/images/anu.jpg',
+        '/images/anu1.jpg',
         '/images/EMPLOYEE OF THE YEAR 2.png',
         '/images/EMPLOYEE OF THE YEAR 3.png ',
         '/images/EMPLOYEE OF THE YEAR.png '      ]
