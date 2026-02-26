@@ -2000,7 +2000,7 @@ The company believes in delivering utmost satisfaction to the customers by intro
       "/images/golden-grande-4.jpg",
       "/images/golden-grande-5.jpg"
     ],
-    video: "images/golden.mp4",
+    // video: "images/golden.mp4",
     videoThumbnail: "/public/Team Photo/golden grande 5.jpg",
     bathrooms: "Common Toilet",
     parking: "Ample Parking",
@@ -2851,7 +2851,7 @@ The company believes in delivering utmost satisfaction to the customers by intro
       "/images/goldeni-5.jpg"
     ],
     // video: "/public/Team Photo/Golden i.mp4",
-    videoThumbnail: "/public/Team Photo/golden i 5.jpg",
+    // videoThumbnail: "/public/Team Photo/golden i 5.jpg",
     bathrooms: "Common & Private Toilets",
     parking: 2,
     area: "600 - 2000 sq ft",
