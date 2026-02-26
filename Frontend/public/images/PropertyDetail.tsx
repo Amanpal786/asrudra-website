@@ -2403,11 +2403,11 @@ The company believes in delivering utmost satisfaction to the customers by intro
   "location": "Techzone IV, Amprapali Dream Valley, Greater Noida / Sector 4, Greater Noida West",
   "images": [
     "/images/ATS1.png",
-    "/images/ATSS2.png",
-    "/images/ATSS3.png",
-   "/images/ATSS4.png",
-   "/images/ATSS5.png",
-   "/images/ATSS6.png"
+    "/images/ATS2.png",
+    "/images/ATS3.png",
+   "/images/ATS4.png",
+   "/images/ATS5.png",
+   "/images/ATS6.png"
   ],
   "video": null,
   "videoThumbnail": null,
