@@ -72,9 +72,9 @@ const Gallery = () => {
     },
     {
       id: 3,
-      title: 'EMPLOYEE OF THE YEAR AWARDS 2024',
-      date: 'DECEMBER 22, 2024',
-      description: 'Recognizing our top performers and celebrating achievements across all departments. Awards were given for excellence in sales, customer service, and innovation.',
+      title: 'EMPLOYEE OF THE YEAR AWARDS 2025',
+      date: 'DECEMBER 22, 2025',
+      description: ' Anurodh Yadav is a Recognizing our top performer and celebrating achievements across all departments. Awards were given for excellence in sales, customer service, and innovation.',
       images: [
         '/public/Team Photo/EMPLOYEE OF THE YEAR.png',
         '/public/Team Photo/EMPLOYEE OF THE YEAR 2.png',
