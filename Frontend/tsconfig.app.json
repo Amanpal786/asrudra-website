@@ -26,5 +26,5 @@
       "@/*": ["./src/*"]
     }
   },
-  "include": ["src", "public/images/PropertyDetail.tsx"]
+  "include": ["src", "public/director/images/PropertyDetail.tsx"]
 }

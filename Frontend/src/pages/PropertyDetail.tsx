@@ -1,7 +1,7 @@
 import React, { useState, useEffect, useRef } from "react";
 import { useParams, Link } from "react-router-dom";
 import { motion, AnimatePresence } from "framer-motion";
-import Layout from "../../src/components/Layout";
+import Layout from "../components/Layout";
 import {
   Card,
   CardContent,

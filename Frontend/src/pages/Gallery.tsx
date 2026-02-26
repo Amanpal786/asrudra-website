@@ -65,8 +65,8 @@ const Gallery = () => {
         '/images/nx-one 3.png',
         '/images/nx one 4.png',
         '/images/nx one 7.png',
-        '/images/nx one 6.png',
-         '/images/nx one 8.png'
+        '/images/nx one .jpeg',
+         '/images/nx one 3.jpg'
       ]
     },
     {
