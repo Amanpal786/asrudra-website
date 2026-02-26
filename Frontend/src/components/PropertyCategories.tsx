@@ -277,7 +277,7 @@ const categoriesData: Category[] = [
         title: "NX ONE  OFFICE",
         price: "₹ 35,000/month (includes maintenance)",
         location: "Gaur Chowk Noida Extension",
-        image: "/images/nx2.jpg",
+        image: "/images/la34.webp",
         bedrooms: 0,
         bathrooms: "Common Toilet",
         parking: 1,
