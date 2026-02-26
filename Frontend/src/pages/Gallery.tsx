@@ -61,13 +61,12 @@ const Gallery = () => {
       date: 'SEPTEMBER 8, 2025',
       description: 'NX One T-5 – Ultra-Luxury Commercial Spaces Experience world-class amenities: gym, swimming pool, auditorium, meeting halls & kids’ play zone — where luxury meets productivity.',
       images: [
-        '/public/Team Photo/nx-one 2.png',
-        '/public/Team Photo/nx-one 2.png',
-        '/public/Team Photo/nx-one 3.png',
-        '/public/Team Photo/nx one 4.png',
-        '/public/Team Photo/nx one 7.png',
-        '/public/Team Photo/nx one 6.png',
-         '/public/Team Photo/nx one 8.png'
+        '/images/nx-one 2.png',
+        '/images/nx-one 3.png',
+        '/images/nx one 4.png',
+        '/images/nx one 7.png',
+        '/images/nx one 6.png',
+         '/images/nx one 8.png'
       ]
     },
     {
@@ -76,10 +75,10 @@ const Gallery = () => {
       date: 'DECEMBER 22, 2025',
       description: ' Anurodh Yadav is a Recognizing our top performer and celebrating achievements across all departments. Awards were given for excellence in sales, customer service, and innovation.',
       images: [
-        '/public/Team Photo/EMPLOYEE OF THE YEAR.png',
-        '/public/Team Photo/EMPLOYEE OF THE YEAR 2.png',
-        '/public/Team Photo/EMPLOYEE OF THE YEAR 3.png ',
-        '/public/Team Photo/EMPLOYEE OF THE YEAR.png '      ]
+        '/images/anu.jpg',
+        '/images/EMPLOYEE OF THE YEAR 2.png',
+        '/images/EMPLOYEE OF THE YEAR 3.png ',
+        '/images/EMPLOYEE OF THE YEAR.png '      ]
     }
   ];
 
