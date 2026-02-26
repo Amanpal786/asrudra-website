@@ -1816,7 +1816,7 @@ With an emphasis on affordability blended with comfort, La Residentia Group aims
       "/images/nx-work.jpg",
       "/images/nx7.png"
     ],
-    video: "/public/Team Photo/ARK VIDEO.mp4",
+    video: "images/arkvideo.mp4",
     videoThumbnail: "/images/nx6.png",
     bathrooms: "Common Toilet",
     parking: 1,
@@ -2000,7 +2000,7 @@ The company believes in delivering utmost satisfaction to the customers by intro
       "/images/golden-grande-4.jpg",
       "/images/golden-grande-5.jpg"
     ],
-    video: "/public/Team Photo/golden-grande-video.mp4",
+    video: "images/golden.mp4",
     videoThumbnail: "/public/Team Photo/golden grande 5.jpg",
     bathrooms: "Common Toilet",
     parking: "Ample Parking",
@@ -2407,7 +2407,7 @@ The company believes in delivering utmost satisfaction to the customers by intro
     "/images/ATS3.png",
    "/images/ATS4.png",
    "/images/ATS5.png",
-   "/images/ATS6.png"
+   "/images/ATS6.png" 
   ],
   "video": null,
   "videoThumbnail": null,
@@ -2850,7 +2850,7 @@ The company believes in delivering utmost satisfaction to the customers by intro
       "/images/goldeni-4.jpg",
       "/images/goldeni-5.jpg"
     ],
-    video: "/public/Team Photo/Golden i.mp4",
+    // video: "/public/Team Photo/Golden i.mp4",
     videoThumbnail: "/public/Team Photo/golden i 5.jpg",
     bathrooms: "Common & Private Toilets",
     parking: 2,
