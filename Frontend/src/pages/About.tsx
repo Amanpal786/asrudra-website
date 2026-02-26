@@ -265,7 +265,7 @@ const teamMembers = [
 const backendTeam = [
   {
     name: "Shivam Tiwari",
-    role: "IT Engineer & Web Developer",
+    role: "FULL STACK DEVELOPER ",
     image: "/Team Photo/Shivam Tiwari 1.png",
     experience: 2.5,
     qualification: {
@@ -284,7 +284,7 @@ const backendTeam = [
 
    {
     name: "Aryan Sengar",
-    role: "Developer",
+    role: " Frontend Developer",
     image: "/Team Photo/Aryan Sengar.jpg",
     experience: 0.3,
     qualification: {
@@ -323,21 +323,21 @@ const backendTeam = [
   },
   {
     name: "Utsav Jha",
-    role: "Finance & Accounts Manager",
+    role: "Accounts Manager",
     image: "/Team Photo/utsav.jpg",
     experience: 4,
     qualification: {
-      degree: "Chartered Accountant",
+      degree: "Accountant",
       year: 2018
     },
-    professionalBackground: "Chartered Accountant with 4 years experience in real estate finance and accounting.",
+    professionalBackground: "Accountant with 4 years experience in real estate finance and accounting.",
     keyAchievements: [
       "Implemented financial tracking systems improving accuracy by 25%",
       "Reduced operational costs by 15% through budget optimization",
       "Streamlined invoice processing time by 40%",
       "Developed financial forecasting models with 90% accuracy"
     ],
-    personalInterests: ["Stock Market", "Cricket", "Reading"]
+    personalInterests: [ "Cricket", "Reading"]
   },
 {
     name: "AMAN PAL",
@@ -363,7 +363,7 @@ const backendTeam = [
   // {
   //   name: "AYUSHI PAL",
   //   role: "HR Recruiter",
-  //   image: "/Team Photo/ayushi.jpg",
+  //   // image: "/Team Photo/ayushi.jpg",
   //   experience: 2 ,
   //   qualification: {
   //     degree: "BTECH CS (IT)",

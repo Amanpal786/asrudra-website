@@ -205,7 +205,7 @@ const DirectorsSection = () => {
       ],
       description: 'Dynamic leader with sharp focus on driving sales and enhancing revenue. His strategic vision has been instrumental in the company\'s expansion and continued excellence.',
       hobbies: ['Networking', 'Business strategy', 'Market analysis'],
-      image: '/director/amitsir.jpg',
+      image: '/director/anew.jpg',
       projects: '10K',
       clients: '8K'
     },
@@ -223,7 +223,7 @@ const DirectorsSection = () => {
       ],
       description: 'Visionary leader with energetic approach to work. Heads the Sales department and is the driving force behind company growth.',
       hobbies: ['Cricket', 'Badminton', 'Poetry', 'Shayari'],
-      image: '/director/subodhsir.jpg',
+      image: '/director/snew.jpg',
       projects: 320,
       clients: 2100
     },
