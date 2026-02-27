@@ -23,9 +23,10 @@ const Header = () => {
     { name: "About", path: "/about", icon: Info },
     { name: "Gallery", path: "/gallery", icon: GalleryHorizontal },
     // { name: "Login", path: "/login", icon: LogIn },
-    { name: "Wishlist", path: "/wishlist", icon: Heart },
+    // { name: "Wishlist", path: "/wishlist", icon: Heart },
     { name: "Comparison", path: "/comparison", icon: BarChart3 },
   ];
+  const [isProjectOpen, setIsProjectOpen] = useState(false);
 
   const isActive = (path: string) => location.pathname === path;
 
@@ -64,6 +65,44 @@ const Header = () => {
                 <span>{item.name}</span>
               </Link>
             ))}
+            {/* Projects Dropdown */}
+            {/* Projects Dropdown */}
+            <div className="relative">
+              <button
+                onClick={() => setIsProjectOpen(!isProjectOpen)}
+                className={`flex items-center space-x-1 px-3 py-1.5 rounded-md text-sm transition-all duration-300
+                  ${
+                    location.pathname === "/residential" ||
+                    location.pathname === "/office-spaces"
+                      ? "bg-black text-white"
+                      : "text-gray-600 hover:bg-black hover:text-white"
+                  }
+                `}
+              >
+                Projects
+              </button>
+
+              {isProjectOpen && (
+                <div className="absolute top-10 left-0 bg-white shadow-lg rounded-md w-48 z-50">
+                  
+                  <Link
+                    to="/residential"
+                    className="block px-4 py-2 font-medium text-gray-700 hover:bg-blue-100 hover:text-blue-700 transition-all duration-200"
+                  >
+                    Residential
+                  </Link>
+
+                  <Link
+                    to="/office-spaces"
+                    className="block px-4 py-2 font-medium text-gray-700 hover:bg-blue-100 hover:text-blue-700 transition-all duration-200"
+                  >
+                    Commercial
+                  </Link>
+
+                </div>
+              )}
+            </div>
+
           </nav>
 
           {/* Mobile Menu Toggle */}
