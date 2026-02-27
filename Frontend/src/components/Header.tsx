@@ -87,14 +87,14 @@ const Header = () => {
                   
                   <Link
                     to="/residential"
-                    className="block px-4 py-2 font-medium text-gray-700 hover:bg-blue-100 hover:text-blue-700 transition-all duration-200"
+                    className="block px-4 py-2 font-small text-gray-700 hover:bg-blue-100 hover:text-blue-700 transition-all duration-200"
                   >
                     Residential
                   </Link>
 
                   <Link
                     to="/office-spaces"
-                    className="block px-4 py-2 font-medium text-gray-700 hover:bg-blue-100 hover:text-blue-700 transition-all duration-200"
+                    className="block px-4 py-2 font-small text-gray-700 hover:bg-blue-100 hover:text-blue-700 transition-all duration-200"
                   >
                     Commercial
                   </Link>
