@@ -27,11 +27,11 @@ const Residential = () => {
       "id": 6,
       "title": "Nirala Estate",
       "location": "GH - 04, Techzone 4, Greater Noida",
-      "price": " ₹90.57 L - 2.31 Cr",
+      "price": " ₹1.5Cr -3 Cr",
       "type": "residential",
       "bedrooms": 3,
       "bathrooms": 2,
-      "area": "1250 sq ft",
+      "area": "995 - 1897 sq ft",
       "image": "https://www.nirala-estate.in/img/nirala-estate-1.jpg",
       "features": ["Swimming Pool", "Gymnasium", "Club House", "Parking"],
       "amenities": {
@@ -48,12 +48,12 @@ const Residential = () => {
     {
       "id": 8,
       "title": "FORBES",
-      "location": "Gurgaon Sector 70",
-      "price": "₹1.44 cr - 1.65 cr",
+      "location": "Noida Extension",
+      "price": "₹ 3.75cr - 4.6 cr",
       "type": "residential",
       "bedrooms": 3,
       "bathrooms": 3,
-      "area": "1850 sq ft",
+      "area": "2690-3307 sq ft",
       "image": "https://tse1.mm.bing.net/th/id/OIP.gLvtvuLWz0yjckLNiYT3YgHaEc?rs=1&pid=ImgDetMain&o=7&rm=3",
       "features": ["Clubhouse", "Jogging Track", "Tennis Court"],
       "amenities": {
@@ -61,11 +61,34 @@ const Residential = () => {
         "Community": ["Amphitheater", "Senior Citizen Zone"]
       },
       "rating": 4.7,
-      "developer": "Nirala",
+      "developer": "Forbes",
       "possession": "Dec 2025",
       "approvals": ["RERA Approved", "Banks Approved"],
       "popularity": 92,
       "dateAdded": "2024-02-20"
+    },
+
+     {
+      "id": 14,
+      "title": "CRC MAESTA",
+      "location": "Greater Noida West",
+      "price": "₹2.9 Cr - ₹6.5 Cr",
+      "type": "residential",
+      "bedrooms": 3,
+      "bathrooms": 2,
+      "area": "1280 - 2175 sq ft",
+      "image": "https://th.bing.com/th/id/OIP.whRg_l4aGA03_pq8XMGDjQHaEH?w=266&h=180&c=7&r=0&o=7&dpr=1.3&pid=1.7&rm=3",
+      "features": ["Affordable Luxury", "Green Spaces", "Power Backup"],
+      "amenities": {
+        "Community": ["Retail Shops", "Community Hall"],
+        "Connectivity": ["Shuttle Service", "Near Metro"]
+      },
+      "rating": 4.4,
+      "developer": "CRC",
+      "possession": "Oct 2024",
+      "approvals": ["RERA Approved", "Bank Approved"],
+      "popularity": 88,
+      "dateAdded": "2024-02-15"
     },
     // {
     //   "id": 10,
@@ -90,14 +113,39 @@ const Residential = () => {
     //   "dateAdded": "2024-03-10"
     // },
     {
-      "id": 12,
-      "title": "Sikka Kaamya Greens",
-      "location": "Bangalore Whitefield",
-      "price": "1.04 - 2.25 Cr",
+      "id": 26,
+      "title": "La Residentia ",
+      "location": "Noida Extension",
+      "price": "₹ 75 L - 1.76 Cr",
       "type": "residential",
       "bedrooms": 3,
-      "bathrooms": 3,
-      "area": "2100 sq ft",
+      "bathrooms": 2,
+      "area": "880 - 1200 sq ft",
+      "image": "https://newprojects.99acres.com/projects/3c/La_Residentia/images/h12.jpg",
+      "features": ["Compact Luxury", "City Views", "Modern Interiors"],
+      "amenities": {
+        "Community": ["Rooftop Garden", "Community Hall"],
+        "Convenience": ["Retail Spaces", "Cafeteria"]
+      },
+      "rating": 4.5,
+      "developer": "La Residentia",
+      "possession": "Ready to Move",
+      "approvals": ["RERA Approved", "PMC Approved"],
+      "popularity": 89,
+      "dateAdded": "2024-01-20"
+    },
+
+
+
+    {
+      "id": 12,
+      "title": "Sikka Kaamya Greens",
+      "location": "Noida Extension",
+      "price": "1.04 - 3.48 Cr",
+      "type": "residential",
+      "bedrooms": 3,
+      "bathrooms": 2,
+      "area": "3872 sq ft",
       "image": "https://img.staticmb.com/mbimages/project/Photo_h310_w462/Project-Photo-36-Sikka-Kaamya-Greens-Noida-5070349_600_800_310_462.jpg",
       "features": ["Sky Lounge", "Yoga Deck", "Kids Play Area"],
       "amenities": {
@@ -111,28 +159,7 @@ const Residential = () => {
       "popularity": 96,
       "dateAdded": "2024-01-25"
     },
-    {
-      "id": 14,
-      "title": "CRC MAESTA",
-      "location": "Greater Noida West",
-      "price": "70 L - 2.38 Cr",
-      "type": "residential",
-      "bedrooms": 2,
-      "bathrooms": 2,
-      "area": "1200 sq ft",
-      "image": "https://th.bing.com/th/id/OIP.whRg_l4aGA03_pq8XMGDjQHaEH?w=266&h=180&c=7&r=0&o=7&dpr=1.3&pid=1.7&rm=3",
-      "features": ["Affordable Luxury", "Green Spaces", "Power Backup"],
-      "amenities": {
-        "Community": ["Retail Shops", "Community Hall"],
-        "Connectivity": ["Shuttle Service", "Near Metro"]
-      },
-      "rating": 4.4,
-      "developer": "Nirala",
-      "possession": "Oct 2024",
-      "approvals": ["RERA Approved", "Bank Approved"],
-      "popularity": 88,
-      "dateAdded": "2024-02-15"
-    },
+   
     // {
     //   "id": 22,
     //   "title": "Godrej Nature's Basket",
@@ -157,9 +184,9 @@ const Residential = () => {
     // },
     {
       "id": 16,
-      "title": "Sobha Dream Gardens",
-      "location": "Bangalore Sarjapur",
-      "price": "₹ 67.68 L - 1.03 Cr",
+      "title": "SOBHA",
+      "location": "Noida Extension",
+      "price": "₹ 00 L - 00 Cr",
       "type": "residential",
       "bedrooms": 3,
       "bathrooms": 3,
@@ -177,28 +204,28 @@ const Residential = () => {
       "popularity": 94,
       "dateAdded": "2024-02-28"
     },
-    {
-      "id": 18,
-      "title": "Sikka Premium Towers",
-      "location": "Noida Extention",
-      "price": "₹33.28 Lac - 1.00 Crs",
-      "type": "residential",
-      "bedrooms": 5,
-      "bathrooms": 5,
-      "area": "3800 sq ft",
-      "image": "https://www.sikka.in/assets/images/slide-4.jpg",
-      "features": ["Private Elevator", "Home Theater", "Servant Quarters"],
-      "amenities": {
-        "Exclusive": ["Wine Cellar", "Library Lounge"],
-        "Services": ["Butler Service", "Car Wash Bay"]
-      },
-      "rating": 4.9,
-      "developer": "Sikka",
-      "possession": "Dec 2026",
-      "approvals": ["RERA Approved", "DTCP Approved"],
-      "popularity": 97,
-      "dateAdded": "2024-03-05"
-    },
+    // {
+    //   "id": 18,
+    //   "title": "Sikka Premium Towers",
+    //   "location": "Noida Extention",
+    //   "price": "₹33.28 Lac - 1.00 Crs",
+    //   "type": "residential",
+    //   "bedrooms": 5,
+    //   "bathrooms": 5,
+    //   "area": "3800 sq ft",
+    //   "image": "https://www.sikka.in/assets/images/slide-4.jpg",
+    //   "features": ["Private Elevator", "Home Theater", "Servant Quarters"],
+    //   "amenities": {
+    //     "Exclusive": ["Wine Cellar", "Library Lounge"],
+    //     "Services": ["Butler Service", "Car Wash Bay"]
+    //   },
+    //   "rating": 4.9,
+    //   "developer": "Sikka",
+    //   "possession": "Dec 2026",
+    //   "approvals": ["RERA Approved", "DTCP Approved"],
+    //   "popularity": 97,
+    //   "dateAdded": "2024-03-05"
+    // },
 // {
 //   "id": 30,
 //   "title": "NX1 ARC Tower 5",
@@ -235,13 +262,13 @@ const Residential = () => {
 
     {
       "id": 20,
-      "title": "Godrej Air",
-      "location": "Delhi Golf Course Road",
-      "price": "₹2.29cr - 6.24cr",
+      "title": "Godrej",
+      "location": "Noida Extension",
+      "price": "₹1.22 - 7.51 Cr",
       "type": "residential",
-      "bedrooms": 5,
-      "bathrooms": 5,
-      "area": "4200 sq ft",
+      "bedrooms": 4,
+      "bathrooms": 3,
+      "area": "1085 - 2065 sq ft",
       "image": "https://res.cloudinary.com/jll-global-gdim/image/upload/IN/Horizon/Resi/Prod/JLL_Ggn_Godrej_Air_27_ELV_primary.jpg",
       "features": ["Panoramic City Views", "Smart Automation", "Private Terrace"],
       "amenities": {
@@ -255,50 +282,29 @@ const Residential = () => {
       "popularity": 99,
       "dateAdded": "2024-03-12"
     },
-    {
-      "id": 24,
-      "title": "Sobha Silicon Oasis",
-      "location": "Bangalore Electronic City",
-      "price": "₹2.07 - 4.03 Cr",
-      "type": "residential",
-      "bedrooms": 3,
-      "bathrooms": 2,
-      "area": "1650 sq ft",
-      "image": "https://im.proptiger.com/1/653263/6/silicon-oasis-images-for-elevation-of-sobha-silicon-oasis-923554.jpeg?width=1336&height=768",
-      "features": ["IT Corridor Location", "Modern Design", "Green Building"],
-      "amenities": {
-        "Convenience": ["Shopping Arcade", "Food Court"],
-        "Recreation": ["Swimming Pool", "Gymnasium"]
-      },
-      "rating": 4.6,
-      "developer": "Sobha",
-      "possession": "Aug 2025",
-      "approvals": ["RERA Approved", "Green Building Certified"],
-      "popularity": 91,
-      "dateAdded": "2024-02-10"
-    },
-    {
-      "id": 26,
-      "title": "La Residentia Urban",
-      "location": "Pune Kharadi",
-      "price": "₹ 61.6 L - 1.45 Cr",
-      "type": "residential",
-      "bedrooms": 2,
-      "bathrooms": 2,
-      "area": "1100 sq ft",
-      "image": "https://newprojects.99acres.com/projects/3c/La_Residentia/images/h12.jpg",
-      "features": ["Compact Luxury", "City Views", "Modern Interiors"],
-      "amenities": {
-        "Community": ["Rooftop Garden", "Community Hall"],
-        "Convenience": ["Retail Spaces", "Cafeteria"]
-      },
-      "rating": 4.5,
-      "developer": "La Residentia",
-      "possession": "Ready to Move",
-      "approvals": ["RERA Approved", "PMC Approved"],
-      "popularity": 89,
-      "dateAdded": "2024-01-20"
-    },
+    // {
+    //   "id": 24,
+    //   "title": "Sobha Silicon Oasis",
+    //   "location": "Bangalore Electronic City",
+    //   "price": "₹2.07 - 4.03 Cr",
+    //   "type": "residential",
+    //   "bedrooms": 3,
+    //   "bathrooms": 2,
+    //   "area": "1650 sq ft",
+    //   "image": "https://im.proptiger.com/1/653263/6/silicon-oasis-images-for-elevation-of-sobha-silicon-oasis-923554.jpeg?width=1336&height=768",
+    //   "features": ["IT Corridor Location", "Modern Design", "Green Building"],
+    //   "amenities": {
+    //     "Convenience": ["Shopping Arcade", "Food Court"],
+    //     "Recreation": ["Swimming Pool", "Gymnasium"]
+    //   },
+    //   "rating": 4.6,
+    //   "developer": "Sobha",
+    //   "possession": "Aug 2025",
+    //   "approvals": ["RERA Approved", "Green Building Certified"],
+    //   "popularity": 91,
+    //   "dateAdded": "2024-02-10"
+    // },
+    
     // {
     //   "id": 28,
     //   "title": "Nirala Estate Premium",

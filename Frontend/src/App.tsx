@@ -17,7 +17,7 @@ import OfficeSpaces from "./pages/OfficeSpaces";
 import Plots from "./pages/Plots";
 import Exclusive from "./pages/Exclusive";
 import Buy from "./pages/Buy"; // ✅ Buy Page
-import PropertyDetail from "./pages/PropertyDetail";
+import PropertyDetail from "./components/PropertyDetail";
 import EmployeeDashboard from "./pages/EmployeeDashboard";
 import NotFound from "./pages/NotFound";
 import Rent from "./pages/Rent"; // ✅ Buy Page
