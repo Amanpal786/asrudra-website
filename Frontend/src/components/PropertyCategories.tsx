@@ -243,14 +243,14 @@ const categoriesData: Category[] = [
     id: "rental",
     title: "Rental Properties",
     description: "Office Spaces, studios available for rent",
-    count: "189",
+    count: "5",
     path: "/rental",
     gradient: "from-orange-500 to-red-600",
     stats: {
-      total: 189,
+      total: 5,
       forSale: 0,
-      forRent: 189,
-      averagePrice: "₹2,0000/mo"
+      forRent: 5,
+      averagePrice: "₹25-30k/mo"
     },
     properties: [
       {
