@@ -1972,7 +1972,7 @@ The company believes in delivering utmost satisfaction to the customers by intro
     // Brochure information
     brochure: {
       available: true,
-      downloadLink: "/public/Team Photo/NX-ONE ARK BROCHURE.pdf",
+      downloadLink: "/Team Photo/NX-ONE ARK BROCHURE.pdf",
       description: "Official project brochure detailing features, USPs, and amenities for investors"
     },
 
@@ -2001,7 +2001,7 @@ The company believes in delivering utmost satisfaction to the customers by intro
       "/images/golden-grande-5.jpg"
     ],
     // video: "images/golden.mp4",
-    videoThumbnail: "/public/Team Photo/golden grande 5.jpg",
+    videoThumbnail: "/Team Photo/golden grande 5.jpg",
     bathrooms: "Common Toilet",
     parking: "Ample Parking",
     area: "12.63 acres",
@@ -2147,7 +2147,7 @@ The company believes in delivering utmost satisfaction to the customers by intro
     propertyAge: "New Project",
     brochure: {
       available: true,
-      downloadLink: "/public/Team Photo/ASHRAI-GOLDEN-GRANDE-BROCHURE.pdf",
+      downloadLink: "/Team Photo/ASHRAI-GOLDEN-GRANDE-BROCHURE.pdf",
       description: "Official project brochure detailing project specifications, investment highlights, construction details and future potential. This prospectus is crafted especially for investors to make them understand what the future holds for them at Ashrai Golden Grande."
     },
     locationAdvantages: [
@@ -2354,7 +2354,7 @@ The company believes in delivering utmost satisfaction to the customers by intro
     propertyAge: "New Project",
     brochure: {
       available: true,
-      downloadLink: "/public/Team Photo/APEX-PARK-SQUARE-BROCHURE.pdf",
+      downloadLink: "/Team Photo/APEX-PARK-SQUARE-BROCHURE.pdf",
       description: "Project brochure detailing unit sizes, pricing, and commercial facilities"
     },
     locationAdvantages: [
@@ -2551,7 +2551,7 @@ The company believes in delivering utmost satisfaction to the customers by intro
   "propertyAge": "New Project",
   "brochure": {
     "available": true,
-    "downloadLink": "/public/Team Photo/Kabana High - Ebrochure.pdf (1).pdf",
+    "downloadLink": "/Team Photo/Kabana High - Ebrochure.pdf (1).pdf",
     "description": "Project brochure detailing tech-enabled features, unit specifications, and commercial facilities"
   },
   
@@ -2651,8 +2651,8 @@ The company believes in delivering utmost satisfaction to the customers by intro
       "/public/Team Photo/ats-kabana-5.jpg",
       "/public/Team Photo/ats-kabana-6.jpg"
     ],
-    video: "/public/Team Photo/ats-kabana-video.mp4",
-    videoThumbnail: "/public/Team Photo/ats-kabana-thumbnail.jpg",
+    video: "/Team Photo/ats-kabana-video.mp4",
+    videoThumbnail: "/Team Photo/ats-kabana-thumbnail.jpg",
     bathrooms: "2-3 per unit",
     parking: "2 covered parking per 3/4 BHK",
     area: "2.5 acres",
@@ -2776,7 +2776,7 @@ The company believes in delivering utmost satisfaction to the customers by intro
     propertyAge: "Under Construction",
     brochure: {
       available: true,
-      downloadLink: "/public/Team Photo/ATS-KABANA-HIGH-BROCHURE.pdf",
+      downloadLink: "/Team Photo/ATS-KABANA-HIGH-BROCHURE.pdf",
       description: "Complete project brochure with floor plans, amenities, pricing, and location details"
     },
     locationAdvantages: [
@@ -3148,7 +3148,7 @@ The company's vision focuses on creating premium business destinations that comb
     // Brochure information
     brochure: {
       available: true,
-      downloadLink: "/public/Team Photo/GOLDEN-I-BROCHURE-NEW-13-Jan-2020.pdf",
+      downloadLink: "/Team Photo/GOLDEN-I-BROCHURE-NEW-13-Jan-2020.pdf",
       description: "Comprehensive project brochure detailing investment opportunities, features, and growth potential"
     },
 

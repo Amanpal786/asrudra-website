@@ -86,14 +86,14 @@ const categoriesData: Category[] = [
     id: "residential",
     title: "Residential Properties",
     description: "Beautiful homes, apartments, and villas for families and individuals",
-    count: "245",
+    count: "7",
     path: "/residential",
     gradient: "from-blue-500 to-purple-600",
     stats: {
-      total: 245,
-      forSale: 167,
-      forRent: 78,
-      averagePrice: "₹425,0000"
+      total: 7,
+      forSale: 7,
+      forRent: 0,
+      averagePrice: "₹70 lakhs"
     },
     properties: [
       {
@@ -181,17 +181,17 @@ const categoriesData: Category[] = [
     path: "/commercial", // Updated path
     gradient: "from-green-500 to-blue-600",
     stats: {
-      total: 128,
-      forSale: 45,
-      forRent: 83,
-      averagePrice: "12 lakhs"
+      total: 6,
+      forSale: 6,
+      forRent: 1,
+      averagePrice: "30 lakhs"
     },
     properties: [
       {
         id: 4,
         title: "NX ONE",
         price: "1 cr",
-        location: "Financial District, NY",
+        location: "Noida Extension",
         image: "/images/nx1.jpg",
         bedrooms: 0,
         bathrooms: " Common Washrooms",
