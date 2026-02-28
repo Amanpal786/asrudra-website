@@ -51,7 +51,8 @@ const App = () => {
           <Route path="/plots" element={<Plots />} />
           <Route path="/exclusive" element={<Exclusive />} />
           <Route path="/buy" element={<Buy />} />
-          <Route path="/rent" element={<Rent />} />
+          {/* <Route path="/rent" element={<Rent />} /> */}
+          <Route path="/rental" element={<Rent />} />
           <Route path="/property/:id" element={<PropertyDetail />} />
           <Route path="/employee-dashboard" element={<EmployeeDashboard />} />
           {/* <Route path="/new-launch" element={<NewLaunch />} /> */}
