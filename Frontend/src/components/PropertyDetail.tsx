@@ -3350,7 +3350,7 @@ const handleBrochureSubmit = (e: React.FormEvent) => {
 
       console.log('Sending enquiry to API:', apiPayload);
 
-      const response = await fetch('/https://asrudra-backend-1.onrender.com/enquiry', {
+      const response = await fetch('https://asrudra-backend-1.onrender.com/enquiry', {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json',
