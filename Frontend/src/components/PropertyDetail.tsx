@@ -4109,7 +4109,7 @@ const handleBrochureSubmit = (e: React.FormEvent) => {
                               value={formData.fullName}
                               onChange={(e) => setFormData({ ...formData, fullName: e.target.value })}
                               placeholder="Your name"
-                              className="pl-10 text-slate-800"
+                              className="pl-10 text-white placeholder:text-gray-400"
                               required
                             />
                           </div>
@@ -4126,7 +4126,7 @@ const handleBrochureSubmit = (e: React.FormEvent) => {
                                 value={formData.company}
                                 onChange={(e) => setFormData({ ...formData, company: e.target.value })}
                                 placeholder="Your company"
-                                className="pl-10 text-slate-800"
+                                className="pl-10 text-white placeholder:text-gray-400"
                               />
                             </div>
                           </div>
@@ -4143,7 +4143,7 @@ const handleBrochureSubmit = (e: React.FormEvent) => {
                               value={formData.email}
                               onChange={(e) => setFormData({ ...formData, email: e.target.value })}
                               placeholder={isCommercial ? "company@example.com" : "your.email@example.com"}
-                              className="pl-10 text-slate-800"
+                              className="pl-10 text-white placeholder:text-gray-400"
                               required
                             />
                           </div>
@@ -4159,7 +4159,7 @@ const handleBrochureSubmit = (e: React.FormEvent) => {
                               value={formData.phoneNumber}
                               onChange={(e) => setFormData({ ...formData, phoneNumber: e.target.value })}
                               placeholder="Your phone number"
-                              className="pl-10 text-slate-800"
+                              className="pl-10 text-white placeholder:text-gray-400"
                               required
                             />
                           </div>
@@ -4172,7 +4172,7 @@ const handleBrochureSubmit = (e: React.FormEvent) => {
                             value={formData.message}
                             onChange={(e) => setFormData({ ...formData, message: e.target.value })}
                             placeholder={isCommercial ? "Your business requirements..." : "Any specific requirements or questions..."}
-                            className="mt-1 text-slate-800"
+                            className="pl-10 text-white placeholder:text-gray-400"
                           />
                         </div>
 

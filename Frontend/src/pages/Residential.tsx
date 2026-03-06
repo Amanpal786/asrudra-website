@@ -446,7 +446,7 @@ const Residential = () => {
                 placeholder="Search by project name, location, or developer..."
                 value={searchQuery}
                 onChange={(e) => setSearchQuery(e.target.value)}
-                className="pl-12 pr-4 py-6 text-lg border-2 border-sky-200 rounded-2xl focus:border-sky-500 transition-all duration-300 bg-white/80 backdrop-blur-sm"
+                className="pl-12 pr-4 py-6 text-lg border-2 border-sky-200 rounded-2xl focus:border-sky-500 transition-all duration-300 bg-black/80 backdrop-blur-sm"
               />
             </div>
           </div>
