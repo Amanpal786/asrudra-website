@@ -1199,8 +1199,8 @@ Sikka Group projects are recognized for strong infrastructure planning, lifestyl
   images: [
     "/Team Photo/ghd6.jpg",
     "/Team Photo/ghd2.jpg",
-    "/Team Photo/g3.webp",
-    "/Team Photo/g4.webp",
+    "/Team Photo/gair.jpg",
+    "/Team Photo/gair2.jpg",
     "/Team Photo/ghd5.jpg"
   ],
 
