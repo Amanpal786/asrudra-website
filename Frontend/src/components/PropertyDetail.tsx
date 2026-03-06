@@ -66,7 +66,7 @@ export const propertyData: Record<string, any> = {
     images: [
       "https://images.unsplash.com/photo-1605146769289-440113cc3d00?w=800&h=600&fit=crop",
       "https://images.unsplash.com/photo-1600607687939-ce8a6c25118c?w=800&h=600&fit=crop",
-      "https://images.unsplash.com/photo-1600607687644-c7171b42498b?w=800&h=600&fit=crop",
+      // "https://images.unsplash.com/photo-1600607687644-c7171b42498b?w=800&h=600&fit=crop",
       "https://images.unsplash.com/photo-1600566753190-17f0baa2a6c3?w=800&h=600&fit=crop",
       "https://images.unsplash.com/photo-1600607687920-4e2a09cf159d?w=800&h=600&fit=crop",
       "https://images.unsplash.com/photo-1600566753151-384129cf4e3e?w=800&h=600&fit=crop"
