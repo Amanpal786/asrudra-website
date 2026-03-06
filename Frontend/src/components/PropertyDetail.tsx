@@ -1192,7 +1192,7 @@ Sikka Group projects are recognized for strong infrastructure planning, lifestyl
 
   brochure: {
     available: true,
-    downloadLink: "/brochures/godrej air.pdf",
+    downloadLink: "/brochures/gair.pdf",
     description: "Official Godrej Air brochure including floor plans, green features, amenities and pricing details."
   },
 
