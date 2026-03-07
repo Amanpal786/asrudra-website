@@ -110,7 +110,7 @@ const ResalePage = () => {
         images: [],
       });
       // Refresh my listings
-      const res = await axios.get(`http://https://asrudra-backend-1.onrender.com/api/properties/user/${user._id}`);
+      const res = await axios.get(`https://asrudra-backend-1.onrender.com/api/properties/user/${user._id}`);
       setMyProperties(res.data);
       setActiveTab("my-listings");
     } catch (err) {

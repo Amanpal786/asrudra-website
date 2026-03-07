@@ -7,7 +7,7 @@ const PropertyList = () => {
   useEffect(() => {
     const fetchProperties = async () => {
       try {
-        const res = await axios.get('http://https://asrudra-backend-1.onrender.com/Property');
+        const res = await axios.get('https://asrudra-backend-1.onrender.com/Property');
         setProperties(res.data);
       } catch (error) {
         console.error('Failed to fetch properties:', error);
