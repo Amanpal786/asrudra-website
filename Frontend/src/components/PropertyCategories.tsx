@@ -256,7 +256,7 @@ const categoriesData: Category[] = [
       {
         id: 6,
         title: "Modern Studio",
-        price: "₹25,000/month",
+        price: "₹20,000/month",
         location: "NX One Gaur Chowk Noida Extension",
         image: "/images/nx6.png",
         bedrooms: 1,
@@ -280,7 +280,7 @@ const categoriesData: Category[] = [
       {
         id: 7,
         title: "NX ONE  OFFICE",
-        price: "₹ 35,000/month (includes maintenance)",
+        price: "₹ 27,000/month",
         location: "Gaur Chowk Noida Extension",
         image: "/images/nx1.jpg",
         bedrooms: 0,

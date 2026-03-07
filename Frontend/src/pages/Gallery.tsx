@@ -57,7 +57,7 @@ const Gallery = () => {
     },
     {
       id: 2,
-      title: 'NX-ONE  Tower-5  Project Launchhhhhhhh',
+      title: 'NX-ONE  Tower-5  Project Launch',
       date: 'SEPTEMBER 8, 2025',
       description: 'NX One T-5 – Ultra-Luxury Commercial Spaces Experience world-class amenities: gym, swimming pool, auditorium, meeting halls & kids’ play zone — where luxury meets productivity.',
       images: [
