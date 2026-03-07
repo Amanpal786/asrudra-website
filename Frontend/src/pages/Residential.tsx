@@ -187,7 +187,7 @@ const Residential = () => {
       "title": "SOBHA",
       "location": "Noida Extension",
       "price": "₹ 00 L - 00 Cr",
-      "type": "residential",
+      "type": "PRELAUNCHING",
       "bedrooms": 3,
       "bathrooms": 3,
       "area": "1950 sq ft",
