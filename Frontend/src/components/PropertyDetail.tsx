@@ -13,6 +13,7 @@ import { Input } from "@/components/ui/input";
 import { Label } from "@/components/ui/label";
 import { Textarea } from "@/components/ui/textarea";
 import { Badge } from "@/components/ui/badge";
+import SEO from "./SEO";
 import {
   MapPin,
   Home,
@@ -3506,6 +3507,10 @@ const handleBrochureSubmit = (e: React.FormEvent) => {
         <meta name="twitter:title" content={property.title} />
         <meta name="twitter:description" content={property.description} />
         <meta name="twitter:image" content={property.images[0]} />
+
+        {/* seo data */}
+
+      
         
         {/* Structured Data */}
         <script type="application/ld+json">
@@ -3536,6 +3541,8 @@ const handleBrochureSubmit = (e: React.FormEvent) => {
             "numberOfRooms": property.bedrooms || 1,
             "yearBuilt": property.yearBuilt
           })}
+          
+
         </script>
       </head>
 

@@ -21,6 +21,8 @@ import PropertyDetail from "./components/PropertyDetail";
 import EmployeeDashboard from "./pages/EmployeeDashboard";
 import NotFound from "./pages/NotFound";
 import Rent from "./pages/Rent"; // ✅ Buy Page
+import Dashboard from "./pages/Dashboard";
+import Leads from "./pages/Leads";
 // import NewLaunch from "./pages/NewLaunch";// new launch page
 // import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 
@@ -56,6 +58,8 @@ const App = () => {
           <Route path="/property/:id" element={<PropertyDetail />} />
           <Route path="/employee-dashboard" element={<EmployeeDashboard />} />
           {/* <Route path="/new-launch" element={<NewLaunch />} /> */}
+          <Route path="/dashboard" element={<Dashboard />} />
+          <Route path="/dashboard/leads" element={<Leads />} />
 
 
           {/* Catch-all Route */}

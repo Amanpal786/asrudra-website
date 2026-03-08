@@ -1,7 +1,7 @@
 import { useState } from "react";
 import { Link, useLocation } from "react-router-dom";
 import { motion } from "framer-motion";
-// import { Rocket } from "lucide-react";
+import { LayoutDashboard } from "lucide-react";
 import {
   Menu,
   X,
@@ -24,8 +24,16 @@ const Header = () => {
     { name: "Gallery", path: "/gallery", icon: GalleryHorizontal },
     // { name: "Login", path: "/login", icon: LogIn },
     // { name: "Wishlist", path: "/wishlist", icon: Heart },
-    { name: "Comparison", path: "/comparison", icon: BarChart3 },
+    { name: "Dashboard", path: "/dashboard", icon: LayoutDashboard },
+    
+    
   ];
+  // <Link
+  //     to="/dashboard"
+  //     className="px-4 py-2 rounded-md bg-blue-600 text-white hover:bg-blue-700 transition"
+  //   >
+  //     Dashboard
+  //   </Link>
   const [isProjectOpen, setIsProjectOpen] = useState(false);
 
   const isActive = (path: string) => location.pathname === path;
@@ -81,6 +89,7 @@ const Header = () => {
               >
                 Projects
               </button>
+              
 
               {isProjectOpen && (
                 <div className="absolute top-10 left-0 bg-white shadow-lg rounded-md w-48 z-50">
@@ -101,9 +110,12 @@ const Header = () => {
 
                 </div>
               )}
+              
             </div>
+            
 
           </nav>
+          
 
           {/* Mobile Menu Toggle */}
           <button
