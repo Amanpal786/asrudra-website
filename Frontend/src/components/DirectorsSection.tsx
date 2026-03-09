@@ -233,7 +233,7 @@ const DirectorsSection = () => {
       position: 'Director',
       experience: 'Entrepreneur & Businessman',
       education: 'Post Graduate in Mathematics',
-      background: 'Former IT Head at an NGO. Founder of Vindhyachal Interiors with clients like Nykaa, Bluestone, Sugar, Kama Ayurveda. Also owns furniture manufacturing unit and apparel label.',
+      background: 'Former IT Head at an NGO. Founder of Vindhyachal Interiors with clients like Ggroveda, ziess vision contex, Kisna(jwellery & di),Indriya(aditya birla), Biglilpeople in delhi and Benglore . Also owns furniture manufacturing unit and apparel label.',
       achievements: [
         'Successful entrepreneur in multiple industries',
         'Brought ethical business practices to real estate',
