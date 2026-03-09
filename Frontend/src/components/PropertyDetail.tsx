@@ -13,7 +13,6 @@ import { Input } from "@/components/ui/input";
 import { Label } from "@/components/ui/label";
 import { Textarea } from "@/components/ui/textarea";
 import { Badge } from "@/components/ui/badge";
-import SEO from "./SEO";
 import {
   MapPin,
   Home,
@@ -98,7 +97,7 @@ export const propertyData: Record<string, any> = {
     status: "For Sale",
     type: "Villa",
     propertyType: "residential",
-    seoKeywords: ["2 bhk villa", "modern villa", "luxury residence", "gurgaon property", "premium housing", "villa for sale"],
+    // seoKeywords: ["2 bhk villa", "modern villa", "luxury residence", "gurgaon property", "premium housing", "villa for sale"],
     virtualTour: "https://example.com/virtual-tour-2",
     yearBuilt: 2023,
     propertyAge: "New Construction"
