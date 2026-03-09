@@ -1,4 +1,5 @@
 import { Link, useLocation } from "react-router-dom";
+import DashboardHeader from "./DashboardHeader";
 import {
   LayoutDashboard,
   Users,
@@ -24,9 +25,9 @@ const DashboardLayout = ({ children }: any) => {
     <div className="flex min-h-screen bg-gray-50">
 
       {/* Sidebar */}
-      <div className="w-64 bg-white border-r border-gray-200 p-6">
+      <div className="w-64 bg-white border-r border-gray-100 p-6">
 
-        <h2 className="text-xl font-bold text-blue-600 mb-10">
+        <h2 className="text-xl font-bold text-gray-800 mb-10">
           Asrudra CRM
         </h2>
 
@@ -55,8 +56,14 @@ const DashboardLayout = ({ children }: any) => {
       </div>
 
       {/* Main Content */}
-      <div className="flex-1 p-10">
-        {children}
+      <div className="flex flex-col flex-1">
+
+        <DashboardHeader />
+
+        <div className="p-10">
+          {children}
+        </div>
+
       </div>
 
     </div>

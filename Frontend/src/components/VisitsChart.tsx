@@ -16,11 +16,11 @@ const COLORS = ["#4F46E5", "#06B6D4", "#22C55E"];
 
 const VisitsChart = () => {
   return (
-    <div className="bg-white p-6 rounded-xl shadow">
+    <div className="bg-white p-6 rounded-xl border border-gray-100 shadow-sm">
 
-      <h2 className="text-lg font-semibold mb-4">
+    <h2 className="text-lg font-semibold text-gray-800 mb-4">
         Client Visits
-      </h2>
+    </h2>
 
       <ResponsiveContainer width="100%" height={250}>
         <PieChart>

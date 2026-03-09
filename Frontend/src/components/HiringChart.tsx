@@ -15,11 +15,11 @@ const data = [
 
 const HiringChart = () => {
   return (
-    <div className="bg-white p-6 rounded-xl shadow">
+    <div className="bg-white p-6 rounded-xl border border-gray-100 shadow-sm">
 
-      <h2 className="text-lg font-semibold mb-4">
+    <h2 className="text-lg font-semibold text-black mb-4">
         Hiring Status
-      </h2>
+    </h2>
 
       <ResponsiveContainer width="100%" height={250}>
         <BarChart data={data}>
