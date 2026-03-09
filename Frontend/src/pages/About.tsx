@@ -231,15 +231,15 @@ const teamMembers = [
     personalInterests: ["BOXING", "History Books", "Cycling"]
   },
   {
-    name: "Mr. Vijay Kumar",
+    name: "Mr. Samaksh Tyagi",
     role: "DBDM",
-    image: "/Team Photo/vijay kumar.jpg",
+    image: "/Team Photo/samaksh tyagi.jpg",
     experience: "3+",
     qualification: {
       degree: "BSc",
       year: 2022
     },
-    professionalBackground: "Vijay specializes in real estate and regulatory compliance. He has successfully navigated complex legal processes for over 15 major property developments, ensuring smooth and secure transactions.",
+    professionalBackground: "Samaksh specializes in real estate and regulatory compliance. He has successfully navigated complex legal processes for over 15 major property developments, ensuring smooth and secure transactions.",
     keyAchievements: ["Successfully managed end-to-end legal and regulatory compliance for 15+ high-value real estate projects, ensuring timely approvals and full statutory adherence Achieved a 100% litigation-free record across all supervised developments through proactive risk assessment and legal due diligence Developed and implemented a structured compliance framework and checklist, optimizing internal processes and accelerating regulatory clearances"],
     personalInterests: ["Dancing", "gaming", "adventure"]
   },
