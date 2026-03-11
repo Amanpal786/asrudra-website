@@ -26,7 +26,7 @@ const fetchLead = async()=>{
 
 try{
 
-const res = await axios.get(`http://127.0.0.1:4001/api/leads`);
+const res = await axios.get(`https://asrudra-backend.onrender.com/api/leads`);
 
 const lead = res.data.find((l:any)=>l._id === id);
 
@@ -48,7 +48,7 @@ const handleSubmit = async(e:any)=>{
 
 e.preventDefault();
 
-await axios.put(`http://127.0.0.1:4001/api/leads/${id}`,form);
+await axios.put(`https://asrudra-backend.onrender.com/api/leads/${id}`,form);
 
 navigate("/dashboard/leads");
 

@@ -12,7 +12,7 @@ const Leads = () => {
 
   const fetchLeads = async () => {
 
-    const res = await axios.get("http://127.0.0.1:4001/api/leads");
+    const res = await axios.get("https://asrudra-backend.onrender.com/api/leads");
 
     setLeads(res.data);
 
