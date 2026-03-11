@@ -57,7 +57,7 @@ name="name"
 placeholder="Enter client name"
 onChange={handleChange}
 required
-className="w-full mt-1 border border-gray-300 rounded-lg px-3 py-2 focus:ring-2 focus:ring-blue-500 focus:outline-none"
+className="w-full mt-1 border border-gray-300 rounded-lg px-3 py-2 focus:ring-2 focus:ring-blue-500 focus:outline-none text-gray-900"
 />
 
 </div>
@@ -74,7 +74,7 @@ name="phone"
 placeholder="Enter phone number"
 onChange={handleChange}
 required
-className="w-full mt-1 border border-gray-300 rounded-lg px-3 py-2 focus:ring-2 focus:ring-blue-500 focus:outline-none"
+className="w-full mt-1 border border-gray-300 rounded-lg px-3 py-2 focus:ring-2 focus:ring-blue-500 focus:outline-none text-gray-900"
 />
 
 </div>
@@ -91,7 +91,7 @@ name="property"
 placeholder="Example: 2BHK Noida"
 onChange={handleChange}
 required
-className="w-full mt-1 border border-gray-300 rounded-lg px-3 py-2 focus:ring-2 focus:ring-blue-500 focus:outline-none"
+className="w-full mt-1 border border-gray-300 rounded-lg px-3 py-2 focus:ring-2 focus:ring-blue-500 focus:outline-none text-gray-900"
 />
 
 </div>
@@ -131,7 +131,7 @@ name="assigned"
 placeholder="Manager / Sales Executive"
 onChange={handleChange}
 required
-className="w-full mt-1 border border-gray-300 rounded-lg px-3 py-2 focus:ring-2 focus:ring-blue-500 focus:outline-none"
+className="w-full mt-1 border border-gray-300 rounded-lg px-3 py-2 focus:ring-2 focus:ring-blue-500 focus:outline-none text-gray-900"
 />
 
 </div>

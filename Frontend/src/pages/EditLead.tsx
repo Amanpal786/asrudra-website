@@ -93,7 +93,7 @@ name="name"
 value={form.name}
 onChange={handleChange}
 required
-className="w-full mt-1 border border-gray-300 rounded-lg px-3 py-2"
+className="w-full mt-1 border border-gray-300 rounded-lg px-3 py-2 text-gray-900"
 />
 </div>
 
@@ -110,7 +110,7 @@ name="phone"
 value={form.phone}
 onChange={handleChange}
 required
-className="w-full mt-1 border border-gray-300 rounded-lg px-3 py-2"
+className="w-full mt-1 border border-gray-300 rounded-lg px-3 py-2 text-gray-900"
 />
 </div>
 
@@ -127,7 +127,7 @@ name="property"
 value={form.property}
 onChange={handleChange}
 required
-className="w-full mt-1 border border-gray-300 rounded-lg px-3 py-2"
+className="w-full mt-1 border border-gray-300 rounded-lg px-3 py-2 text-gray-900"
 />
 </div>
 
@@ -143,7 +143,7 @@ Lead Status
 name="status"
 value={form.status}
 onChange={handleChange}
-className="w-full mt-1 border border-gray-300 rounded-lg px-3 py-2"
+className="w-full mt-1 border border-gray-300 rounded-lg px-3 py-2 text-gray-900"
 >
 
 <option value="New Lead">New Lead</option>
@@ -168,7 +168,7 @@ name="assigned"
 value={form.assigned}
 onChange={handleChange}
 required
-className="w-full mt-1 border border-gray-300 rounded-lg px-3 py-2"
+className="w-full mt-1 border border-gray-300 rounded-lg px-3 py-2 text-gray-900"
 />
 </div>
 
