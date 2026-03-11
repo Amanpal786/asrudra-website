@@ -22,7 +22,7 @@ setForm({...form,[e.target.name]:e.target.value});
 const handleSubmit = async(e:any)=>{
 e.preventDefault();
 
-await axios.post("https://asrudra-backend.onrender.com/api/leads",form);
+await axios.post(`${import.meta.env.VITE_API_URL}/api/leads`, form);
 
 navigate("/dashboard/leads");
 };
