@@ -4,6 +4,12 @@ import { Toaster as Sonner } from "@/components/ui/sonner";
 import { TooltipProvider } from "@/components/ui/tooltip";
 import { QueryClient, QueryClientProvider } from "@tanstack/react-query";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
+import Employees from "./pages/Employees";
+import Hiring from "./pages/Hiring";
+import ClientVisits from "./pages/ClientVisits";
+import Prospectus from "./pages/Prospectus";
+import AddLead from "./pages/AddLead";
+import EditLead from "./pages/EditLead";
 
 // Pages
 import Index from "./pages/Index";
@@ -60,6 +66,13 @@ const App = () => {
           {/* <Route path="/new-launch" element={<NewLaunch />} /> */}
           <Route path="/dashboard" element={<Dashboard />} />
           <Route path="/dashboard/leads" element={<Leads />} />
+          <Route path="/dashboard/employees" element={<Employees />} />
+          <Route path="/dashboard/hiring" element={<Hiring />} />
+          <Route path="/dashboard/visits" element={<ClientVisits />} />
+          <Route path="/dashboard/prospectus" element={<Prospectus />} />
+          <Route path="/dashboard/add-lead" element={<AddLead />} />
+          <Route path="/dashboard/edit-lead/:id" element={<EditLead />} />
+          
 
 
           {/* Catch-all Route */}

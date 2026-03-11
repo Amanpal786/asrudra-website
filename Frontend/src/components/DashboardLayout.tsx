@@ -18,6 +18,7 @@ const menu = [
   { name: "Prospectus", path: "/dashboard/prospectus", icon: FileText }
 ];
 
+
 const DashboardLayout = ({ children }: any) => {
   const location = useLocation();
 

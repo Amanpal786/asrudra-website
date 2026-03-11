@@ -1,18 +1,52 @@
 import DashboardLayout from "../components/DashboardLayout";
 import LeadsTable from "../components/LeadsTable";
+import axios from "axios";
+import { useEffect, useState } from "react";
+import { useNavigate } from "react-router-dom";
 
 const Leads = () => {
+
+  const [leads, setLeads] = useState([]);
+
+  const navigate = useNavigate();   // 👈 YE ADD KARNA THA
+
+  const fetchLeads = async () => {
+
+    const res = await axios.get("http://127.0.0.1:4001/api/leads");
+
+    setLeads(res.data);
+
+  };
+
+  useEffect(()=>{
+    fetchLeads();
+  },[]);
+
   return (
+
     <DashboardLayout>
 
-      <h1 className="text-3xl font-bold text-blue-600 mb-8">
-        Leads Management
-      </h1>
+      <div className="flex justify-between items-center mb-8">
 
-      <LeadsTable />
+        <h1 className="text-3xl font-bold text-blue-600">
+          Leads Management
+        </h1>
+
+        <button
+        onClick={()=>navigate("/dashboard/add-lead")}  // 👈 YAHAN CHANGE
+        className="bg-blue-600 text-white px-4 py-2 rounded-lg"
+        >
+        + Add Lead
+        </button>
+
+      </div>
+
+      <LeadsTable leads={leads} fetchLeads={fetchLeads}/>
 
     </DashboardLayout>
+
   );
+
 };
 
 export default Leads;

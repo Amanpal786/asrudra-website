@@ -143,7 +143,7 @@ const Chatbot = () => {
   const conversationSteps = {
     initial: [
       {
-        question: "Namaste! 👋 I'm Anushka, your property expert at EstateOasis.",
+        question: "Namaste! 👋 I'm Anushka, your property expert at AS Rudra Solutions.",
         key: "welcome"
       },
       {
@@ -506,6 +506,7 @@ const Chatbot = () => {
               alt={property.title}
               className="w-full h-full object-cover"
             />
+
           </div>
           <div className="p-3 flex-1 min-w-0">
             <h4 className="font-semibold text-sm text-gray-800 mb-1 truncate">{property.title}</h4>
@@ -542,8 +543,8 @@ const Chatbot = () => {
                 <div className="relative">
                   <div className="w-8 h-8 rounded-full bg-blue-500 flex items-center justify-center overflow-hidden border-2 border-white">
                     <img 
-                      src="/api/placeholder/32/32" 
-                      alt="Anushka" 
+                      src="/logo.png" 
+                      alt="AS Rudra Solutions" 
                       className="w-full h-full object-cover"
                     />
                   </div>
@@ -551,7 +552,7 @@ const Chatbot = () => {
                 </div>
                 <div className={isMinimized ? 'hidden' : 'block'}>
                   <h2 className="font-bold text-sm">Anushka - Property Expert</h2>
-                  <p className="text-xs opacity-90">EstateOasis • Online</p>
+                  <p className="text-xs opacity-90">AS Rudra Solutions • Online</p>
                 </div>
               </div>
               <div className="flex items-center space-x-1">
@@ -590,8 +591,8 @@ const Chatbot = () => {
                         <div className="mr-2 mt-1 flex-shrink-0">
                           <div className="w-6 h-6 rounded-full bg-blue-100 flex items-center justify-center overflow-hidden border border-blue-200">
                             <img 
-                              src="/api/placeholder/24/24" 
-                              alt="Anushka" 
+                              src="/logo.png" 
+                              alt="AS Rudra Solutions" 
                               className="w-full h-full object-cover"
                             />
                           </div>
