@@ -13,7 +13,7 @@ e.preventDefault();
 
 if(username === "aman" && password === "12345"){
 localStorage.setItem("admin","true");
-navigate("/dashboard");
+window.location.href = "/dashboard";
 }else{
 alert("Invalid ID or Password");
 }
