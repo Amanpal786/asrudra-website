@@ -20,38 +20,49 @@ const handleChange = (e:any)=>{
 setForm({...form,[e.target.name]:e.target.value});
 };
 
-useEffect(()=>{
-
-const fetchLead = async()=>{
+// 🔹 Fetch existing lead
+const fetchLead = async () => {
 
 try{
 
-const res = await axios.get(`https://asrudra-backend.onrender.com/api/leads`);
+const res = await axios.get(
+`${import.meta.env.VITE_API_URL}/api/leads`
+);
 
-const lead = res.data.find((l:any)=>l._id === id);
+// specific lead find
+const lead = res.data.find((l:any)=> l._id === id);
 
 if(lead){
-setForm(lead);
+setForm({
+name:lead.name,
+phone:lead.phone,
+property:lead.property,
+status:lead.status,
+assigned:lead.assigned
+});
 }
 
 }catch(err){
-console.log(err);
+console.error(err);
 }
 
 };
 
+useEffect(()=>{
 fetchLead();
+},[]);
 
-},[id]);
 
+// 🔹 Update lead
 const handleSubmit = async(e:any)=>{
-
 e.preventDefault();
 
-await axios.put(`https://asrudra-backend.onrender.com/api/leads/${id}`,form);
+await axios.put(
+`${import.meta.env.VITE_API_URL}/api/leads/${id}`,
+form
+);
 
 navigate("/dashboard/leads");
-
 };
 
 return(
@@ -73,7 +84,6 @@ Update Lead Information
 {/* Client Name */}
 
 <div>
-
 <label className="text-sm font-medium text-gray-700">
 Client Name
 </label>
@@ -82,16 +92,15 @@ Client Name
 name="name"
 value={form.name}
 onChange={handleChange}
-placeholder="Client Name"
-className="w-full mt-1 border border-gray-300 rounded-lg px-3 py-2 bg-white text-gray-900 focus:ring-2 focus:ring-blue-500 focus:outline-none"
+required
+className="w-full mt-1 border border-gray-300 rounded-lg px-3 py-2"
 />
-
 </div>
+
 
 {/* Phone */}
 
 <div>
-
 <label className="text-sm font-medium text-gray-700">
 Phone Number
 </label>
@@ -100,16 +109,15 @@ Phone Number
 name="phone"
 value={form.phone}
 onChange={handleChange}
-placeholder="Phone Number"
-className="w-full mt-1 border border-gray-300 rounded-lg px-3 py-2 bg-white text-gray-900 focus:ring-2 focus:ring-blue-500 focus:outline-none"
+required
+className="w-full mt-1 border border-gray-300 rounded-lg px-3 py-2"
 />
-
 </div>
+
 
 {/* Property */}
 
 <div>
-
 <label className="text-sm font-medium text-gray-700">
 Property
 </label>
@@ -118,16 +126,15 @@ Property
 name="property"
 value={form.property}
 onChange={handleChange}
-placeholder="Example: 2BHK Noida"
-className="w-full mt-1 border border-gray-300 rounded-lg px-3 py-2 bg-white text-gray-900 focus:ring-2 focus:ring-blue-500 focus:outline-none"
+required
+className="w-full mt-1 border border-gray-300 rounded-lg px-3 py-2"
 />
-
 </div>
+
 
 {/* Status */}
 
 <div>
-
 <label className="text-sm font-medium text-gray-700">
 Lead Status
 </label>
@@ -136,7 +143,7 @@ Lead Status
 name="status"
 value={form.status}
 onChange={handleChange}
-className="w-full mt-1 border border-gray-300 rounded-lg px-3 py-2 bg-white text-gray-900 focus:ring-2 focus:ring-blue-500 focus:outline-none"
+className="w-full mt-1 border border-gray-300 rounded-lg px-3 py-2"
 >
 
 <option value="New Lead">New Lead</option>
@@ -148,10 +155,10 @@ className="w-full mt-1 border border-gray-300 rounded-lg px-3 py-2 bg-white text
 
 </div>
 
+
 {/* Assigned */}
 
 <div>
-
 <label className="text-sm font-medium text-gray-700">
 Assigned To
 </label>
@@ -160,19 +167,17 @@ Assigned To
 name="assigned"
 value={form.assigned}
 onChange={handleChange}
-placeholder="Manager / Sales Executive"
-className="w-full mt-1 border border-gray-300 rounded-lg px-3 py-2 bg-white text-gray-900 focus:ring-2 focus:ring-blue-500 focus:outline-none"
+required
+className="w-full mt-1 border border-gray-300 rounded-lg px-3 py-2"
 />
-
 </div>
 
-{/* Buttons */}
 
 <div className="flex gap-3 pt-4">
 
 <button
 type="submit"
-className="bg-blue-600 hover:bg-blue-700 text-white px-6 py-2 rounded-lg font-semibold transition"
+className="bg-blue-600 text-white px-6 py-2 rounded-lg"
 >
 Update Lead
 </button>
@@ -180,7 +185,7 @@ Update Lead
 <button
 type="button"
 onClick={()=>navigate("/dashboard/leads")}
-className="bg-gray-200 hover:bg-gray-300 text-gray-700 px-6 py-2 rounded-lg font-semibold transition"
+className="bg-gray-200 px-6 py-2 rounded-lg"
 >
 Cancel
 </button>
