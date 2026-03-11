@@ -12,12 +12,11 @@ const Leads = () => {
 
   const fetchLeads = async () => {
 
-    const res = await axios.get("https://asrudra-backend.onrender.com/api/leads");
+    const response = await axios.get(
+  `${import.meta.env.VITE_API_URL}/api/leads`
+);
 
-    setLeads(res.data);
-
-  };
-
+setLeads(response.data);
   useEffect(()=>{
     fetchLeads();
   },[]);
