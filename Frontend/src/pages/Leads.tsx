@@ -10,17 +10,23 @@ const Leads = () => {
   const navigate = useNavigate();
 
   const fetchLeads = async () => {
+
     try {
 
-      const response = await axios.get(
+      const res = await axios.get(
         `${import.meta.env.VITE_API_URL}/api/leads`
       );
 
-      setLeads(response.data);
+      console.log("API DATA:", res.data);   // DEBUG
+
+      setLeads(res.data);
 
     } catch (error) {
-      console.error("Error fetching leads:", error);
+
+      console.error(error);
+
     }
+
   };
 
   useEffect(() => {
@@ -46,7 +52,7 @@ const Leads = () => {
 
       </div>
 
-      <LeadsTable leads={leads} fetchLeads={fetchLeads}/>
+      <LeadsTable leads={leads} fetchLeads={fetchLeads} />
 
     </DashboardLayout>
 

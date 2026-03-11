@@ -11,7 +11,7 @@ const confirmDelete = window.confirm("Are you sure you want to delete this lead?
 
 if(!confirmDelete) return;
 
-await axios.delete(`https://asrudra-backend.onrender.com/api/leads/${id}`);
+await axios.delete(`${import.meta.env.VITE_API_URL}/api/leads/${id}`);
 
 fetchLeads();
 
