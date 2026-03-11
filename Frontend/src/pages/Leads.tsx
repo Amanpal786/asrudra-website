@@ -7,19 +7,25 @@ import { useNavigate } from "react-router-dom";
 const Leads = () => {
 
   const [leads, setLeads] = useState([]);
-
-  const navigate = useNavigate();   // 👈 YE ADD KARNA THA
+  const navigate = useNavigate();
 
   const fetchLeads = async () => {
+    try {
 
-    const response = await axios.get(
-  `${import.meta.env.VITE_API_URL}/api/leads`
-);
+      const response = await axios.get(
+        `${import.meta.env.VITE_API_URL}/api/leads`
+      );
 
-setLeads(response.data);
-  useEffect(()=>{
+      setLeads(response.data);
+
+    } catch (error) {
+      console.error("Error fetching leads:", error);
+    }
+  };
+
+  useEffect(() => {
     fetchLeads();
-  },[]);
+  }, []);
 
   return (
 
@@ -32,10 +38,10 @@ setLeads(response.data);
         </h1>
 
         <button
-        onClick={()=>navigate("/dashboard/add-lead")}  // 👈 YAHAN CHANGE
-        className="bg-blue-600 text-white px-4 py-2 rounded-lg"
+          onClick={() => navigate("/dashboard/add-lead")}
+          className="bg-blue-600 text-white px-4 py-2 rounded-lg"
         >
-        + Add Lead
+          + Add Lead
         </button>
 
       </div>
