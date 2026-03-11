@@ -114,7 +114,7 @@ const teamMembers = [
   {
     name: "Mr. Sagar Handa",
     role: "SBDM",
-    image: "/Team Photo/sagartl.jpg",
+    image: "/Team Photo/sagarsir.png",
     experience: 7,
     qualification: {
       degree: "BBA + (Property Law)",
@@ -233,7 +233,7 @@ const teamMembers = [
   {
     name: "Mr. Samaksh Tyagi",
     role: "BDM",
-    image: "/Team Photo/samaksh-bhaiya.jpg",
+    image: "/Team Photo/ss.jpg",
     experience: "3+",
     qualification: { 
       degree: "MBA(International Bussness",
