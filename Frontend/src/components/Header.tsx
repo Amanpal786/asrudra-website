@@ -24,7 +24,8 @@ const Header = () => {
     { name: "Gallery", path: "/gallery", icon: GalleryHorizontal },
     // { name: "Login", path: "/login", icon: LogIn },
     // { name: "Wishlist", path: "/wishlist", icon: Heart },
-    { name: "Dashboard", path: "/dashboard", icon: LayoutDashboard },
+    // { name: "Dashboard", path: "/dashboard", icon: LayoutDashboard },
+    { name: "Dashboard", path: "/admin-login", icon: LayoutDashboard },
     
     
   ];

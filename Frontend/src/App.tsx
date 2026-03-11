@@ -10,6 +10,7 @@ import ClientVisits from "./pages/ClientVisits";
 import Prospectus from "./pages/Prospectus";
 import AddLead from "./pages/AddLead";
 import EditLead from "./pages/EditLead";
+import AdminLogin from "./pages/AdminLogin";
 
 // Pages
 import Index from "./pages/Index";
@@ -64,7 +65,10 @@ const App = () => {
           <Route path="/property/:id" element={<PropertyDetail />} />
           <Route path="/employee-dashboard" element={<EmployeeDashboard />} />
           {/* <Route path="/new-launch" element={<NewLaunch />} /> */}
-          <Route path="/dashboard" element={<Dashboard />} />
+          <Route
+          path="/dashboard"
+          element={localStorage.getItem("admin") ? <Dashboard /> : <AdminLogin />}
+          />
           <Route path="/dashboard/leads" element={<Leads />} />
           <Route path="/dashboard/employees" element={<Employees />} />
           <Route path="/dashboard/hiring" element={<Hiring />} />
@@ -72,6 +76,7 @@ const App = () => {
           <Route path="/dashboard/prospectus" element={<Prospectus />} />
           <Route path="/dashboard/add-lead" element={<AddLead />} />
           <Route path="/dashboard/edit-lead/:id" element={<EditLead />} />
+          <Route path="/admin-login" element={<AdminLogin />} />
           
 
 
