@@ -97,16 +97,16 @@ className="bg-blue-600 text-white px-5 py-2 rounded-lg"
 
 <button
 onClick={()=>navigate(`/dashboard/edit-hiring/${item._id}`)}
-className="bg-yellow-400 px-3 py-1 rounded"
+className="flex items-center gap-1 bg-yellow-400 hover:bg-yellow-500 text-white px-3 py-1.5 rounded-md text-xs font-semibold transition"
 >
-Edit
+✏ Edit
 </button>
 
 <button
 onClick={()=>deleteHiring(item._id)}
-className="bg-red-500 text-white px-3 py-1 rounded"
+className="flex items-center gap-1 bg-red-500 hover:bg-red-600 text-white px-3 py-1.5 rounded-md text-xs font-semibold transition"
 >
-Delete
+🗑 Delete
 </button>
 
 </td>

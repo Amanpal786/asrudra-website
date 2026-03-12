@@ -32,32 +32,32 @@ return(
 
 <div className="p-8">
 
-<h1 className="text-2xl font-bold mb-6">
+<h1 className="text-2xl font-bold mb-6 text-blue-600">
 Add Candidate
 </h1>
 
 <form onSubmit={handleSubmit} className="space-y-4">
 
 <input
-className="border p-2 w-full"
+className="border p-2 w-full text-gray-900"
 placeholder="Name"
 onChange={(e)=>setForm({...form,name:e.target.value})}
 />
 
 <input
-className="border p-2 w-full"
+className="border p-2 w-full text-gray-900"
 placeholder="Position"
 onChange={(e)=>setForm({...form,position:e.target.value})}
 />
 
 <input
-className="border p-2 w-full"
+className="border p-2 w-full text-gray-900"
 placeholder="Phone"
 onChange={(e)=>setForm({...form,phone:e.target.value})}
 />
 
 <button
-className="bg-blue-600 text-white px-4 py-2 rounded"
+className="bg-blue-600 text-white px-4 py-2 rounded text-sm font-medium hover:bg-blue-700 transition"
 >
 Save
 </button>
