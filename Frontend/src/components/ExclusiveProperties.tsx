@@ -106,7 +106,7 @@ const ExclusiveProperties = () => {
       bedrooms: 3,
       bathrooms: 2,
       parking: 2,
-      area: '3307 sqft',
+      area: '2690-3307 sqft',
       image: "/Team Photo/fhd1.jpg",
       badge: 'Commercial',
       rating: 4.9,
