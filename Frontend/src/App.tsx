@@ -11,6 +11,8 @@ import Prospectus from "./pages/Prospectus";
 import AddLead from "./pages/AddLead";
 import EditLead from "./pages/EditLead";
 import AdminLogin from "./pages/AdminLogin";
+import AddEmployee from "./pages/AddEmployee";
+import EditEmployee from "./pages/EditEmployee";
 
 // Pages
 import Index from "./pages/Index";
@@ -77,6 +79,14 @@ const App = () => {
           <Route path="/dashboard/add-lead" element={<AddLead />} />
           <Route path="/dashboard/edit-lead/:id" element={<EditLead />} />
           <Route path="/admin-login" element={<AdminLogin />} />
+          <Route path="/dashboard/add-employee" element={<AddEmployee />} />
+          <Route path="/dashboard/edit-employee/:id" element={<EditEmployee />} />  
+          
+
+          <Route
+          path="/dashboard/edit-employee/:id"
+          element={<EditEmployee />}
+          />
           
 
 
