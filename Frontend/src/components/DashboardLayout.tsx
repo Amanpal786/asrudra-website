@@ -8,6 +8,7 @@ import {
   MapPin,
   FileText
 } from "lucide-react";
+const role = localStorage.getItem("role");
 
 const menu = [
   { name: "Dashboard", path: "/dashboard", icon: LayoutDashboard },
@@ -41,13 +42,24 @@ const DashboardLayout = ({ children }: any) => {
               <Link
                 key={i}
                 to={item.path}
+                onClick={(e) => {
+
+                  if(role === "admin") return;
+
+                  if(role === "tl" && !["Leads","Employees","Client Visits"].includes(item.name)){
+                    e.preventDefault();
+                    alert("Only Admin can access this tab");
+                  }
+
+                  if(role === "associate" && item.name !== "Employees"){
+                    e.preventDefault();
+                    alert("Access restricted");
+                  }
+
+                }}
                 className={`flex items-center gap-3 p-3 rounded-lg transition-all
-                ${
-                  active
-                    ? "bg-blue-600 text-white shadow"
-                    : "text-gray-600 hover:bg-blue-50"
-                }`}
-              >
+                ${active ? "bg-blue-600 text-white shadow" : "text-gray-600 hover:bg-blue-50"}`}
+                >
                 <Icon size={18} />
                 {item.name}
               </Link>

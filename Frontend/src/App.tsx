@@ -67,7 +67,7 @@ const App = () => {
           {/* <Route path="/new-launch" element={<NewLaunch />} /> */}
           <Route
           path="/dashboard"
-          element={localStorage.getItem("admin") ? <Dashboard /> : <AdminLogin />}
+          element={localStorage.getItem("role") ? <Dashboard /> : <AdminLogin />}
           />
           <Route path="/dashboard/leads" element={<Leads />} />
           <Route path="/dashboard/employees" element={<Employees />} />

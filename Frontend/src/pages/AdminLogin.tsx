@@ -11,11 +11,25 @@ const [password,setPassword] = useState("");
 const handleLogin = (e:any) => {
 e.preventDefault();
 
-if(username === "aman" && password === "12345"){
-localStorage.setItem("admin","true");
-window.location.href = "/dashboard";
-}else{
-alert("Invalid ID or Password");
+console.log("Login clicked"); // debug
+
+if(username === "admin" && password === "123456"){
+localStorage.setItem("role","admin");
+navigate("/dashboard", { replace: true });
+}
+
+else if(username === "tl" && password === "123456"){
+localStorage.setItem("role","tl");
+navigate("/dashboard", { replace: true });
+}
+
+else if(username === "associate" && password === "123456"){
+localStorage.setItem("role","associate");
+navigate("/dashboard", { replace: true });
+}
+
+else{
+alert("Invalid Login");
 }
 
 };
@@ -37,7 +51,7 @@ type="text"
 placeholder="Admin ID"
 value={username}
 onChange={(e)=>setUsername(e.target.value)}
-className="w-full border border-gray-300 p-3 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500 text-gray-900"
+className="w-full border border-gray-300 p-3 rounded-lg text-gray-900"
 />
 
 <input
@@ -45,7 +59,7 @@ type="password"
 placeholder="Password"
 value={password}
 onChange={(e)=>setPassword(e.target.value)}
-className="w-full border border-gray-300 p-3 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500 text-gray-900"
+className="w-full border border-gray-300 p-3 rounded-lg text-gray-900"
 />
 
 <button

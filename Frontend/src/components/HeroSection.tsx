@@ -49,7 +49,7 @@ const HeroSection = () => {
       </div>
 
       {/* Main Content */}
-      <div className="relative z-10 container mx-auto px-4">
+      <div className="relative z-10 container mx-auto px-4 pb-20">
         <div className="max-w-4xl mx-auto text-center animate-fade-in-up">
           <h2 className="text-3xl sm:text-4xl md:text-5xl font-extrabold leading-tight mb-3 text-[#001f3f]">
             Find Your Dream <br />

@@ -52,7 +52,8 @@ const Gallery = () => {
         '/images/legends team.png',
         '/images/1riya.jpg',
         '/images/raj2.png',
-        '/images/backend.png'
+        '/images/backend.png',
+        '/images/event.jpeg',
       ]
     },
     {
@@ -78,7 +79,8 @@ const Gallery = () => {
         '/images/anu1.jpg',
         '/images/EMPLOYEE OF THE YEAR 2.png',
         '/images/EMPLOYEE OF THE YEAR 3.png ',
-        '/images/EMPLOYEE OF THE YEAR.png '      ]
+        '/images/EMPLOYEE OF THE YEAR.png ',
+        '/images/event.jpeg ' ,      ]
     }
   ];
 

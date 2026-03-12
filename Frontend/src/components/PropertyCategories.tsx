@@ -86,13 +86,13 @@ const categoriesData: Category[] = [
     id: "residential",
     title: "Residential Properties",
     description: "Beautiful homes, apartments, and villas for families and individuals",
-    count: "7",
+    count: "50+",
     path: "/residential",
     gradient: "from-blue-500 to-purple-600",
     stats: {
-      total: 7,
-      forSale: 7,
-      forRent: 0,
+      total: 50,
+      forSale: 50,
+      forRent: 50,
       averagePrice: "₹70 lakhs"
     },
     properties: [
@@ -181,9 +181,9 @@ const categoriesData: Category[] = [
     path: "/commercial", // Updated path
     gradient: "from-green-500 to-blue-600",
     stats: {
-      total: 6,
-      forSale: 6,
-      forRent: 1,
+      total: 100,
+      forSale: 100,
+      forRent: 97,
       averagePrice: "30 lakhs"
     },
     properties: [
@@ -247,9 +247,9 @@ const categoriesData: Category[] = [
     path: "/rental",
     gradient: "from-orange-500 to-red-600",
     stats: {
-      total: 5,
-      forSale: 0,
-      forRent: 5,
+      total: 47,
+      forSale: 45,
+      forRent: 47,
       averagePrice: "₹25-30k/mo"
     },
     properties: [
