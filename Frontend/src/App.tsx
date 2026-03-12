@@ -13,6 +13,8 @@ import EditLead from "./pages/EditLead";
 import AdminLogin from "./pages/AdminLogin";
 import AddEmployee from "./pages/AddEmployee";
 import EditEmployee from "./pages/EditEmployee";
+import AddHiring from "./pages/AddHiring";
+import EditHiring from "./pages/EditHiring";
 
 // Pages
 import Index from "./pages/Index";
@@ -80,8 +82,10 @@ const App = () => {
           <Route path="/dashboard/edit-lead/:id" element={<EditLead />} />
           <Route path="/admin-login" element={<AdminLogin />} />
           <Route path="/dashboard/add-employee" element={<AddEmployee />} />
-          <Route path="/dashboard/edit-employee/:id" element={<EditEmployee />} />  
-          
+          <Route path="/dashboard/edit-employee/:id" element={<EditEmployee />} /> 
+          <Route path="/dashboard/add-hiring" element={<AddHiring />} />
+          <Route path="/dashboard/edit-hiring/:id" element={<EditHiring />} /> 
+                    
 
           <Route
           path="/dashboard/edit-employee/:id"
