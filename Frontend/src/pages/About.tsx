@@ -266,7 +266,7 @@ const backendTeam = [
   {
     name: "Shivam Tiwari",
     role: "FULL STACK DEVELOPER ",
-    image: "/Team Photo/shivamsir.jpg",
+    image: "/Team Photo/shiv.png",
     experience: 2.5,
     qualification: {
       degree: "BCA + MCA in Computer Science",

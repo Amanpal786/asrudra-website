@@ -1,7 +1,7 @@
 import { Bell, Moon } from "lucide-react";
 import { LogOut } from "lucide-react";
 import { useNavigate } from "react-router-dom";
-
+import logo from "../logo.jpg";
 
 
 const DashboardHeader = () => {
@@ -34,11 +34,12 @@ const DashboardHeader = () => {
 
         <div className="flex items-center gap-2">
           <img
-            src="https://i.pravatar.cc/40"
-            className="w-8 h-8 rounded-full"
+          src={logo}
+          alt="logo"
+          className="w-10 h-10 rounded-full object-cover border"
           />
           <span className="text-sm font-medium text-gray-700">
-            Aman
+            AS Rudra Solutions
           </span>
         </div>
 

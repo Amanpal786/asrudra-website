@@ -1,73 +1,127 @@
-import React from "react";
-
-const visits = [
-  {
-    id: 1,
-    client: "Rahul Sharma",
-    property: "3BHK Noida",
-    date: "12 Mar 2026",
-    status: "Visited"
-  },
-  {
-    id: 2,
-    client: "Amit Singh",
-    property: "Villa Greater Noida",
-    date: "13 Mar 2026",
-    status: "Scheduled"
-  },
-  {
-    id: 3,
-    client: "Rohit Verma",
-    property: "2BHK Noida",
-    date: "14 Mar 2026",
-    status: "Pending"
-  }
-];
+import { useEffect,useState } from "react";
+import axios from "axios";
+import DashboardLayout from "../components/DashboardLayout";
+import { useNavigate } from "react-router-dom";
 
 const ClientVisits = () => {
-  return (
-    <div className="p-10">
 
-      <h1 className="text-3xl font-bold text-blue-600 mb-6">
-        Client Visits
-      </h1>
+const [visits,setVisits] = useState([]);
+const navigate = useNavigate();
 
-      <div className="bg-white rounded-xl shadow p-6 text-gray-700">
+useEffect(()=>{
+fetchVisits();
+},[]);
 
-        <table className="w-full">
+const fetchVisits = async () => {
 
-          <thead>
-            <tr className="text-left border-b text-black-500">
-              <th>Client</th>
-              <th>Property</th>
-              <th>Date</th>
-              <th>Status</th>
-            </tr>
-          </thead>
+const res = await axios.get(
+"https://asrudra-backend-1.onrender.com/api/visits"
+);
 
-          <tbody>
+setVisits(res.data);
 
-            {visits.map((v) => (
-              <tr key={v.id} className="border-b">
-                <td className="py-3">{v.client}</td>
-                <td>{v.property}</td>
-                <td>{v.date}</td>
-                <td>
-                  <span className="bg-green-100 text-green-700 px-2 py-1 rounded text-sm">
-                    {v.status}
-                  </span>
-                </td>
-              </tr>
-            ))}
-
-          </tbody>
-
-        </table>
-
-      </div>
-
-    </div>
-  );
 };
+
+const deleteVisit = async(id:any)=>{
+
+if(!confirm("Delete this visit?")) return;
+
+await axios.delete(
+`https://asrudra-backend-1.onrender.com/api/visits/${id}`
+);
+
+fetchVisits();
+
+};
+
+return(
+
+<DashboardLayout>
+
+<div className="p-8">
+
+<div className="flex justify-between mb-6">
+
+<h1 className="text-3xl font-bold text-blue-600">
+Client Visits
+</h1>
+
+<button
+onClick={()=>navigate("/dashboard/add-visit")}
+className="bg-blue-600 text-white px-5 py-2 rounded-lg"
+>
++ Add Visit
+</button>
+</div>
+
+<div className="bg-white rounded-xl shadow text-gray-700">
+
+<table className="w-full ">
+
+<thead className="bg-black-100 text-gray-600 font-medium">
+
+<tr>
+
+<th className="p-4 text-left">Client</th>
+<th className="p-4 text-left">Property</th>
+<th className="p-4 text-left">Date</th>
+<th className="p-4 text-left">Status</th>
+<th className="p-4 text-left">Action</th>
+
+</tr>
+
+</thead>
+
+<tbody>
+
+{visits.map((v:any)=>(
+
+<tr key={v._id} className="border-t">
+
+<td className="p-4">{v.client}</td>
+<td className="p-4">{v.property}</td>
+<td className="p-4">{v.date}</td>
+
+<td className="p-4">
+<span className="bg-green-100 text-green-700 px-2 py-1 rounded">
+{v.status}
+</span>
+</td>
+
+<td className="p-4 flex gap-3">
+
+<button
+onClick={()=>navigate(`/dashboard/edit-visit/${v._id}`)}
+className="flex items-center gap-1 bg-yellow-400 hover:bg-yellow-500 text-white px-3 py-1.5 rounded-md text-xs font-semibold transition"
+>
+✏ Edit
+</button>
+
+<button
+onClick={()=>deleteVisit(v._id)}
+className="flex items-center gap-1 bg-red-500 hover:bg-red-600 text-white px-3 py-1.5 rounded-md text-xs font-semibold transition"
+>
+🗑 Delete
+</button>
+
+</td>
+
+</tr>
+
+))}
+
+</tbody>
+
+</table>
+
+</div>
+
+</div>
+
+</DashboardLayout>
+
+)
+
+}
 
 export default ClientVisits;

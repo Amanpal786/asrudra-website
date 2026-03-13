@@ -6,8 +6,6 @@ import { QueryClient, QueryClientProvider } from "@tanstack/react-query";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 import Employees from "./pages/Employees";
 import Hiring from "./pages/Hiring";
-import ClientVisits from "./pages/ClientVisits";
-import Prospectus from "./pages/Prospectus";
 import AddLead from "./pages/AddLead";
 import EditLead from "./pages/EditLead";
 import AdminLogin from "./pages/AdminLogin";
@@ -15,6 +13,12 @@ import AddEmployee from "./pages/AddEmployee";
 import EditEmployee from "./pages/EditEmployee";
 import AddHiring from "./pages/AddHiring";
 import EditHiring from "./pages/EditHiring";
+import ClientVisits from "./pages/ClientVisits";
+import AddVisit from "./pages/AddVisit";
+import EditVisit from "./pages/EditVisit";
+import Prospectus from "./pages/Prospectus";
+import AddProspect from "./pages/AddProspect";
+import EditProspect from "./pages/EditProspect";
 
 // Pages
 import Index from "./pages/Index";
@@ -85,6 +89,12 @@ const App = () => {
           <Route path="/dashboard/edit-employee/:id" element={<EditEmployee />} /> 
           <Route path="/dashboard/add-hiring" element={<AddHiring />} />
           <Route path="/dashboard/edit-hiring/:id" element={<EditHiring />} /> 
+          <Route path="/dashboard/visits" element={<ClientVisits />} />
+          <Route path="/dashboard/add-visit" element={<AddVisit />} />
+          <Route path="/dashboard/edit-visit/:id" element={<EditVisit />} />
+          <Route path="/dashboard/prospectus" element={<Prospectus/>}/>
+          <Route path="/dashboard/add-prospect" element={<AddProspect/>}/>
+          <Route path="/dashboard/edit-prospect/:id" element={<EditProspect/>}/>
                     
 
           <Route
