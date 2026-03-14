@@ -2,15 +2,22 @@ import { useEffect,useState } from "react";
 import axios from "axios";
 import DashboardLayout from "../components/DashboardLayout";
 import { useNavigate } from "react-router-dom";
+import TableSearch from "../components/ui/TableSearch";
 
 const Prospectus = ()=>{
+    const [search, setSearch] = useState("");
 
-const [prospects,setProspects] = useState([]);
-const navigate = useNavigate();
+    const [prospects,setProspects] = useState([]);
+    const navigate = useNavigate();
 
 useEffect(()=>{
 fetchProspects();
 },[]);
+const filteredProspects = prospects.filter((item:any) =>
+  item.name?.toLowerCase().includes(search.toLowerCase()) ||
+  item.phone?.includes(search) ||
+  item.interest?.toLowerCase().includes(search.toLowerCase())
+);
 
 const fetchProspects = async()=>{
 
@@ -46,6 +53,12 @@ return(
 Prospectus
 </h1>
 
+<TableSearch
+ value={search}
+ onChange={setSearch}
+ placeholder="Search prospect..."
+/>
+
 <button
 onClick={()=>navigate("/dashboard/add-prospect")}
 className="bg-blue-600 text-white px-5 py-2 rounded-lg"
@@ -75,18 +88,18 @@ className="bg-blue-600 text-white px-5 py-2 rounded-lg"
 
 <tbody>
 
-{prospects.map((p:any)=>(
+{filteredProspects.map((item:any)=>(
 
-<tr key={p._id} className="border-t">
+<tr key={item._id} className="border-t">
 
-<td className="p-4">{p.name}</td>
-<td className="p-4">{p.phone}</td>
-<td className="p-4">{p.interest}</td>
+<td className="p-4">{item.name}</td>
+<td className="p-4">{item.phone}</td>
+<td className="p-4">{item.interest}</td>
 
 <td className="p-4">
 
 <span className="bg-blue-100 text-blue-700 px-2 py-1 rounded">
-{p.status}
+{item.status}
 </span>
 
 </td>
@@ -94,14 +107,14 @@ className="bg-blue-600 text-white px-5 py-2 rounded-lg"
 <td className="p-4 flex gap-3">
 
 <button
-onClick={()=>navigate(`/dashboard/edit-prospect/${p._id}`)}
+onClick={()=>navigate(`/dashboard/edit-prospect/${item._id}`)}
 className="flex items-center gap-1 bg-yellow-400 hover:bg-yellow-500 text-white px-3 py-1.5 rounded-md text-xs font-semibold transition"
 >
 ✏ Edit
 </button>
 
 <button
-onClick={()=>deleteProspect(p._id)}
+onClick={()=>deleteProspect(item._id)}
 className="flex items-center gap-1 bg-red-500 hover:bg-red-600 text-white px-3 py-1.5 rounded-md text-xs font-semibold transition"
 >
 🗑 Delete

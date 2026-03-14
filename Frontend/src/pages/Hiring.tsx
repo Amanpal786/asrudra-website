@@ -2,8 +2,10 @@ import { useEffect,useState } from "react";
 import axios from "axios";
 import DashboardLayout from "../components/DashboardLayout";
 import { useNavigate } from "react-router-dom";
+import TableSearch from "../components/ui/TableSearch";
 
 const Hiring = ()=>{
+    const [search, setSearch] = useState("");
 
 const [data,setData] = useState([]);
 const navigate = useNavigate();
@@ -11,6 +13,12 @@ const navigate = useNavigate();
 useEffect(()=>{
 fetchHiring();
 },[]);
+
+const filteredHiring = data.filter((item:any) =>
+  item.name?.toLowerCase().includes(search.toLowerCase()) ||
+  item.position?.toLowerCase().includes(search.toLowerCase()) ||
+  item.phone?.includes(search)
+);
 
 const fetchHiring = async ()=>{
 
@@ -48,6 +56,12 @@ return(
 Hiring Management
 </h1>
 
+<TableSearch
+ value={search}
+ onChange={setSearch}
+ placeholder="Search candidate..."
+/>
+
 <button
 onClick={()=>navigate("/dashboard/add-hiring")}
 className="bg-blue-600 text-white px-5 py-2 rounded-lg"
@@ -77,9 +91,9 @@ className="bg-blue-600 text-white px-5 py-2 rounded-lg"
 
 <tbody>
 
-{data.map((item:any)=>(
+{filteredHiring.map((item:any)=>(
 
-<tr key={item._id} className="border-t">
+<tr key={item._id} className="border-t text-sm hover:bg-gray-50 transition">
 
 <td className="p-4">{item.name}</td>
 <td className="p-4">{item.position}</td>

@@ -2,15 +2,24 @@ import { useEffect, useState } from "react";
 import axios from "axios";
 import DashboardLayout from "../components/DashboardLayout";
 import { useNavigate } from "react-router-dom";
+import TableSearch from "../components/ui/TableSearch"
 
 const Employees = () => {
 
-const [employees,setEmployees] = useState([]);
-const navigate = useNavigate();
+    const [search, setSearch] = useState("")
+
+    const [employees,setEmployees] = useState([]);
+    const navigate = useNavigate();
 
 useEffect(()=>{
 fetchEmployees();
 },[]);
+
+const filteredEmployees = employees.filter((emp) =>
+  emp.name?.toLowerCase().includes(search.toLowerCase()) ||
+  emp.phone?.includes(search) ||
+  emp.email?.toLowerCase().includes(search.toLowerCase())
+);
 
 const fetchEmployees = async () => {
 
@@ -68,6 +77,11 @@ return (
 <h1 className="text-3xl font-bold text-blue-600">
 Employees Management
 </h1>
+<TableSearch
+ value={search}
+ onChange={setSearch}
+ placeholder="Search employee..."
+/>
 
 <a
 href="/dashboard/add-employee"
@@ -99,7 +113,7 @@ className="bg-blue-600 text-white px-5 py-2 rounded-lg"
 
 <tbody>
 
-{employees.map((emp:any)=>(
+{filteredEmployees.map((emp:any)=>(
 
 <tr key={emp._id} className="border-t">
 
@@ -109,11 +123,9 @@ className="bg-blue-600 text-white px-5 py-2 rounded-lg"
 <td className="p-4">{emp.email}</td>
 
 <td className="p-4">
-
 <span className="bg-green-100 text-green-700 px-2 py-1 rounded">
 {emp.status}
 </span>
-
 </td>
 
 <td className="p-4 flex items-center gap-3">

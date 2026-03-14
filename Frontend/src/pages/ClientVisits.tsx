@@ -2,8 +2,10 @@ import { useEffect,useState } from "react";
 import axios from "axios";
 import DashboardLayout from "../components/DashboardLayout";
 import { useNavigate } from "react-router-dom";
+import TableSearch from "../components/ui/TableSearch";
 
 const ClientVisits = () => {
+    const [search, setSearch] = useState("");
 
 const [visits,setVisits] = useState([]);
 const navigate = useNavigate();
@@ -11,6 +13,11 @@ const navigate = useNavigate();
 useEffect(()=>{
 fetchVisits();
 },[]);
+const filteredVisits = visits.filter((visit:any) =>
+  visit.client?.toLowerCase().includes(search.toLowerCase()) ||
+  visit.property?.toLowerCase().includes(search.toLowerCase()) ||
+  visit.phone?.includes(search)
+);
 
 const fetchVisits = async () => {
 
@@ -45,6 +52,11 @@ return(
 <h1 className="text-3xl font-bold text-blue-600">
 Client Visits
 </h1>
+<TableSearch
+ value={search}
+ onChange={setSearch}
+ placeholder="Search visit..."
+/>
 
 <button
 onClick={()=>navigate("/dashboard/add-visit")}
@@ -74,31 +86,31 @@ className="bg-blue-600 text-white px-5 py-2 rounded-lg"
 
 <tbody>
 
-{visits.map((v:any)=>(
+{filteredVisits.map((visit:any)=>(
 
-<tr key={v._id} className="border-t">
+<tr key={visit._id} className="border-t">
 
-<td className="p-4">{v.client}</td>
-<td className="p-4">{v.property}</td>
-<td className="p-4">{v.date}</td>
+<td className="p-4">{visit.client}</td>
+<td className="p-4">{visit.property}</td>
+<td className="p-4">{visit.date}</td>
 
 <td className="p-4">
 <span className="bg-green-100 text-green-700 px-2 py-1 rounded">
-{v.status}
+{visit.status}
 </span>
 </td>
 
 <td className="p-4 flex gap-3">
 
 <button
-onClick={()=>navigate(`/dashboard/edit-visit/${v._id}`)}
+onClick={()=>navigate(`/dashboard/edit-visit/${visit._id}`)}
 className="flex items-center gap-1 bg-yellow-400 hover:bg-yellow-500 text-white px-3 py-1.5 rounded-md text-xs font-semibold transition"
 >
 ✏ Edit
 </button>
 
 <button
-onClick={()=>deleteVisit(v._id)}
+onClick={()=>deleteVisit(visit._id)}
 className="flex items-center gap-1 bg-red-500 hover:bg-red-600 text-white px-3 py-1.5 rounded-md text-xs font-semibold transition"
 >
 🗑 Delete
