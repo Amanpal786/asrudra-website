@@ -16,17 +16,23 @@ e.preventDefault();
 
 if(username === "admin" && password === "123456"){
 localStorage.setItem("role","admin");
+
 navigate("/dashboard",{replace:true});
+window.location.reload();   // important fix
 }
 
 else if(username === "tl" && password === "123456"){
 localStorage.setItem("role","tl");
+
 navigate("/dashboard",{replace:true});
+window.location.reload();
 }
 
 else if(username === "associate" && password === "123456"){
 localStorage.setItem("role","associate");
+
 navigate("/dashboard",{replace:true});
+window.location.reload();
 }
 
 else{
@@ -45,12 +51,10 @@ backgroundImage:
 }}
 >
 
-{/* dark overlay */}
 <div className="absolute inset-0 bg-black/40"></div>
 
 <div className="relative bg-white shadow-2xl border border-gray-200 rounded-3xl p-10 w-[420px]">
 
-{/* Modern Back Button */}
 <button
 onClick={()=>navigate("/")}
 className="absolute top-5 left-5 flex items-center gap-2 text-gray-600 hover:text-black transition"
@@ -58,7 +62,6 @@ className="absolute top-5 left-5 flex items-center gap-2 text-gray-600 hover:tex
 <ArrowLeft size={20} />
 </button>
 
-{/* Logo */}
 <div className="flex justify-center mb-6">
 <img
 src={logo}
