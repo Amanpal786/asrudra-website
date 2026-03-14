@@ -58,7 +58,8 @@ const values = [
 
 // Team data with all required fields
 const teamMembers = [
-  {
+
+   {
     name: "Mr. Shubham Gupta",
     role: "Associate Director ",
     image: "/Team Photo/shubham gupta.jpg",
@@ -76,6 +77,35 @@ const teamMembers = [
     ],
     personalInterests: ["Cricket", "Architectural Digests", "Traveling"],
   },
+
+  {
+    name: "Mr. Suraj Bisht",
+    role: "Associate Director",
+    image: "/Team Photo/suraj.jpeg",
+    experience: "24+",
+    qualification: { 
+      degree: "B Com and Hotel Management",
+      year: 2002
+    },
+    // food and beverages experience and 2002-20044 nirulas as a manager  2004-2010 starbucks abrod (kubet,dubai,qutar,behrain) as a Gm 2010-2015 civitech builder experience  as a project head 2015-2019 apex builder post=director sales 2019-2025 on bussness rral estate 2025-2026 apex as a vp sales
+    professionalBackground: `A seasoned professional with extensive experience across the Food & Beverage and Real Estate industries, bringing over two decades of leadership and management expertise.
+
+2002 – 2004: Worked with Nirula’s as a Manager, gaining strong experience in operations, team leadership, and customer service management within the food and beverage sector.
+
+2004 – 2010: Served as General Manager (GM) with Starbucks Abroad, managing operations across Kuwait, Dubai, Qatar, and Bahrain. Successfully handled multi-location management, operational strategy, and team development in an international environment.
+
+2010 – 2015: Joined Civitech Builders as a Project Head, overseeing project planning, execution, and coordination for large-scale real estate developments.
+
+2015 – 2019: Worked with Apex Builders as Director – Sales, leading sales operations, building strategic partnerships, and driving business growth.
+
+2019 – 2025: Successfully managed and operated an independent Real Estate business, focusing on property consulting, sales strategy, and client relationship management.
+
+2025 – 2026: Rejoined Apex Builders as Vice President – Sales, responsible for overseeing sales strategy, revenue growth, and business expansion.`,
+    keyAchievements: ["Successfully managed end-to-end legal and regulatory compliance for 15+ high-value real estate projects, ensuring timely approvals and full statutory adherence Achieved a 100% litigation-free record across all supervised developments through proactive risk assessment and legal due diligence Developed and implemented a structured compliance framework and checklist, optimizing internal processes and accelerating regulatory clearances"],
+    personalInterests: ["cricket", "gaming", "adventure"]
+  },
+
+ 
   {
     name: "Ms. Riya Kumari",
     role: "SBDM",
@@ -243,6 +273,36 @@ const teamMembers = [
     keyAchievements: ["Successfully managed end-to-end legal and regulatory compliance for 15+ high-value real estate projects, ensuring timely approvals and full statutory adherence Achieved a 100% litigation-free record across all supervised developments through proactive risk assessment and legal due diligence Developed and implemented a structured compliance framework and checklist, optimizing internal processes and accelerating regulatory clearances"],
     personalInterests: ["athletics", "gaming", "adventure"]
   },
+
+   
+
+  //  {
+  //   name: "Mr. Sachin Rampal",
+  //   role: "BDM",
+  //   // image: "/Team Photo/ss.jpg",
+  //   experience: "3+",
+  //   qualification: { 
+  //     degree: "MBA(International Bussness",
+  //     year: 2024
+  //   },
+  //   professionalBackground: "Samaksh specializes in real estate and regulatory compliance. He has successfully navigated complex legal processes for over 15 major property developments, ensuring smooth and secure transactions.",
+  //   keyAchievements: ["Successfully managed end-to-end legal and regulatory compliance for 15+ high-value real estate projects, ensuring timely approvals and full statutory adherence Achieved a 100% litigation-free record across all supervised developments through proactive risk assessment and legal due diligence Developed and implemented a structured compliance framework and checklist, optimizing internal processes and accelerating regulatory clearances"],
+  //   personalInterests: ["athletics", "gaming", "adventure"]
+  // },
+
+  //  {
+  //   name: "Mr. Raj Kaushik",
+  //   role: "BDM",
+  //   // image: "/Team Photo/ss.jpg",
+  //   experience: "3+",
+  //   qualification: { 
+  //     degree: "MBA(International Bussness",
+  //     year: 2024
+  //   },
+  //   professionalBackground: "Samaksh specializes in real estate and regulatory compliance. He has successfully navigated complex legal processes for over 15 major property developments, ensuring smooth and secure transactions.",
+  //   keyAchievements: ["Successfully managed end-to-end legal and regulatory compliance for 15+ high-value real estate projects, ensuring timely approvals and full statutory adherence Achieved a 100% litigation-free record across all supervised developments through proactive risk assessment and legal due diligence Developed and implemented a structured compliance framework and checklist, optimizing internal processes and accelerating regulatory clearances"],
+  //   personalInterests: ["athletics", "gaming", "adventure"]
+  // },
   // {
   //   name: "Mr. Rahul Sharma",
   //   role: "BDM",
