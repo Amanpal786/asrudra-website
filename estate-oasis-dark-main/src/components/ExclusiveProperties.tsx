@@ -2,13 +2,15 @@
 import { useState } from 'react';
 import { Link } from 'react-router-dom';
 import { Star, MapPin, BedDouble, Car, Maximize, ArrowRight, Mail, User, Phone } from 'lucide-react';
+import axios from "axios";
 
 const ExclusiveProperties = () => {
   const [formData, setFormData] = useState({
-    name: '',
-    email: '',
-    phone: ''
-  });
+ name: "",
+ email: "",
+ phone: "",
+ message: ""
+});
 
   const exclusiveProperties = [
     {
@@ -52,13 +54,33 @@ const ExclusiveProperties = () => {
     }
   ];
 
-  const handleFormSubmit = (e: React.FormEvent) => {
-    e.preventDefault();
-    console.log('Lead captured:', formData);
-    // Here you would typically save to Excel/database
-    alert('Thank you! We will contact you soon.');
-    setFormData({ name: '', email: '', phone: '' });
-  };
+ const handleFormSubmit = async (e: React.FormEvent) => {
+  e.preventDefault();
+
+  try {
+     const res = await axios.post(
+"https://asrudra-backend-1.onrender.com/api/enquiry",
+{
+ fullName: formData.name,
+ email: formData.email,
+ phoneNumber: formData.phone,
+ message: formData.message
+}
+);
+
+    alert("Enquiry Submitted Successfully");
+
+    setFormData({
+      name: "",
+      email: "",
+      phone: ""
+    });
+
+  } catch (error) {
+    console.log(error);
+    alert("Something went wrong");
+  }
+};
 
   const handleInputChange = (e: React.ChangeEvent<HTMLInputElement>) => {
     setFormData(prev => ({
