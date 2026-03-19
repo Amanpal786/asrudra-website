@@ -1,7 +1,39 @@
 import axios from "axios";
 import { useNavigate } from "react-router-dom";
+import jsPDF from "jspdf";
+import autoTable from "jspdf-autotable";
+import { Download } from "lucide-react";
 
 const LeadsTable = ({ leads, fetchLeads }) => {
+
+  const downloadPDF = () => {
+  const doc = new jsPDF();
+
+  doc.text("Leads Report", 14, 10);
+
+  const tableColumn = ["Name", "Phone", "Email", "Message", "Status"];
+
+  const tableRows = [];
+
+  leads.forEach((lead) => {
+    const leadData = [
+      lead.fullName,
+      lead.phoneNumber,
+      lead.email,
+      lead.message,
+      "New"
+    ];
+    tableRows.push(leadData);
+  });
+
+  autoTable(doc, {
+    head: [tableColumn],
+    body: tableRows,
+    startY: 20,
+  });
+
+  doc.save("leads.pdf");
+};
   const navigate = useNavigate();
 
   // ❌ delete अभी leads API use कर रहा था
@@ -32,10 +64,34 @@ const LeadsTable = ({ leads, fetchLeads }) => {
         <h2 className="text-lg font-semibold text-gray-800">
           Recent Leads
         </h2>
+        <div className="flex items-center gap-3">
 
-        <span className="text-sm text-gray-500">
-          {leads?.length || 0} Leads
-        </span>
+          <span className="text-sm text-gray-500">
+            {leads?.length || 0} Leads
+          </span>
+
+          {/* 🔥 DOWNLOAD BUTTON */}
+          
+
+        </div>
+
+        
+        <button
+              onClick={downloadPDF}
+              title="Download PDF"
+              className="group relative flex items-center justify-center w-10 h-10 rounded-xl 
+              bg-white border border-gray-200 shadow-sm 
+              hover:bg-green-50 hover:border-green-300 
+              transition-all duration-200"
+            >
+              <Download size={18} className="text-gray-600 group-hover:text-green-600" />
+
+              {/* 🔥 Tooltip */}
+              <span className="absolute -bottom-10 opacity-0 group-hover:opacity-100 
+              bg-black text-white text-xs px-2 py-1 rounded-md transition">
+                Download PDF
+              </span>
+          </button>
       </div>
 
       <div className="overflow-x-auto">

@@ -3,6 +3,7 @@ import LeadsTable from "../components/LeadsTable";
 import axios from "axios";
 import { useEffect, useState } from "react";
 import { useNavigate } from "react-router-dom";
+import { Download } from "lucide-react";
 
 const Leads = () => {
 
@@ -51,6 +52,7 @@ const Leads = () => {
         <h1 className="text-3xl font-bold text-blue-600">
           Leads Management
         </h1>
+        
 
         <input
           type="text"
