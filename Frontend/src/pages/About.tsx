@@ -179,9 +179,9 @@ const teamMembers = [
     name: "Mr. Sumit Negi",
     role: "BDM",
     image: "/Team Photo/sumit negi.jpg",
-    experience: 4,
+    experience: 13,
     qualification: {
-      degree: "LLB, Corporate Law",
+      degree: "MBA",
       year: 2015
     },
     professionalBackground: "Sumit specializes in real estate law and regulatory compliance. He has successfully navigated complex legal processes for over 15 major property developments, ensuring smooth and secure transactions.",
@@ -196,7 +196,7 @@ const teamMembers = [
     name: "Ms. Aishwarya Sharma",
     role: "BDM",
     image: "/Team Photo/aishwarya sharma.jpg",
-    experience: 3,
+    experience: 9,
     qualification: {
       degree: "BBA",
       year: 2015
