@@ -508,7 +508,7 @@ const ContactForm = ({ onClose }: { onClose: () => void }) => {
 
       console.log('Sending enquiry to API:', apiPayload);
 
-      const response = await fetch('https://asrudra-backend-1.onrender.com/enquiry', {
+      const response = await fetch('https://asrudra-backend-1.onrender.com/api/enquiries', {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json',
