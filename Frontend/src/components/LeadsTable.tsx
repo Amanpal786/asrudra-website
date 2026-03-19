@@ -36,27 +36,27 @@ const LeadsTable = ({ leads, fetchLeads }) => {
 
   // ✅ CSV DOWNLOAD (EXCEL)
   const downloadCSV = () => {
-    const headers = ["Name", "Phone", "Email", "Message", "Status"];
+  const headers = ["Name", "Phone", "Email", "Message", "Status"];
 
-    const rows = leads.map((lead) => [
-      lead.fullName,
-      lead.phoneNumber,
-      lead.email,
-      lead.message,
-      "New",
-    ]);
+  const rows = leads.map((lead) => [
+    lead.fullName,
+   `="${lead.phoneNumber}"`, // 👈 FIXED
+    lead.email,
+    lead.message,
+    "New",
+  ]);
 
-    const csvContent =
-      "\uFEFF" +
-      [headers, ...rows].map((e) => e.join(",")).join("\n");
+  const csvContent =
+    "\uFEFF" +
+    [headers, ...rows].map((e) => e.join(",")).join("\n");
 
-    const blob = new Blob([csvContent], { type: "text/csv;charset=utf-8;" });
+  const blob = new Blob([csvContent], { type: "text/csv;charset=utf-8;" });
 
-    const link = document.createElement("a");
-    link.href = URL.createObjectURL(blob);
-    link.download = "leads.csv";
-    link.click();
-  };
+  const link = document.createElement("a");
+  link.href = URL.createObjectURL(blob);
+  link.download = "leads.csv";
+  link.click();
+};
 
   // ✅ DELETE
   const deleteLead = async (id) => {
