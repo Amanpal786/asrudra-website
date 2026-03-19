@@ -164,7 +164,7 @@ const ExclusiveProperties = () => {
         timestamp: new Date().toISOString()
       };
 
-      const response = await axios.post('https://asrudra-backend-1.onrender.com/api/enquiry', enquiryData);
+      const response = await axios.post('https://asrudra-backend-1.onrender.com/api/enquiries', enquiryData);
       
       setIsSuccess(true);
       setFormData({
