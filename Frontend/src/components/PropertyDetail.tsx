@@ -3170,6 +3170,675 @@ The company's vision focuses on creating premium business destinations that comb
     customerTrust: "1800+ Satisfied Customers",
     developmentStage: "Fastest-growing commercial destination"
   },
+
+  "17": {
+    id: 17,
+    title: "Lotus Farms",
+    price: "₹70 Lakhs",
+    location: "opp gautam buddha university, behind AMR Adventure mall motipur, Greater Noida",
+    images: [
+      "/images/lotus.jpg",
+      "/images/lotus1.jpg",
+      "/images/lotus2.jpg",
+      "/images/lotus3.jpg",
+      "/images/lotus4.jpg",
+      "/images/lotus5.jpg"
+    ],
+    // video: "/public/Team Photo/Golden i.mp4",
+    // videoThumbnail: "/public/Team Photo/golden i 5.jpg",
+    bathrooms: "Common & Private Toilets",
+    parking: 1,
+    area: "1008 sq.yards",
+    rating: 4.7,
+    reviews: 89,
+    description: `Lotus Farms stands as a magnificent commercial marvel developed by Lotus Farms Pvt Ltd, strategically positioned in the thriving Retail and Technology hub of Greater Noida West. Spanning across 25 acres of prime real estate, this project is enveloped by 1,000 acres of residential development that will accommodate over 1 million residents within the next three to five years.
+
+Situated in the heart of Techzone IV, Golden-I offers unparalleled investment opportunities in one of Delhi NCR's fastest-growing commercial corridors. With the trust of 1800+ satisfied customers, Lotus Farms has established itself as the most rapidly expanding commercial real estate firm in the region, creating sought-after business destinations that promise exceptional value and returns`,
+
+    // About Lotus Farms
+    developerInfo: {
+      name: "lotus farms Pvt Ltd",
+      description: `lotus farms Pvt Ltd has emerged as the fastest-growing commercial real estate firm in Delhi NCR, building trust through exceptional project delivery and customer satisfaction. With a portfolio of 1800+ satisfied customers, the company has established itself as a reliable name in commercial real estate development.
+
+The company's vision focuses on creating premium business destinations that combine strategic location, modern architecture, and sustainable development practices. Lotus Farms      is committed to delivering projects that not only meet but exceed investor expectations while contributing to the economic growth of the regions they operate in.`,
+      keyStrengths: [
+        "Fastest-growing commercial real estate firm in Delhi NCR",
+        "Trusted by 1800+ customers",
+        "Strategic location selection",
+        "Modern architectural designs",
+        "Timely project delivery",
+        "Customer-centric approach",
+        "Proven track record"
+      ],
+      commitment: [
+        "Quality Construction Standards",
+        "Timely Project Completion",
+        "Customer Satisfaction",
+        "Strategic Location Development",
+        "Sustainable Growth",
+        "Transparent Business Practices"
+      ]
+    },
+
+    // Investment highlights
+    investmentHighlights: [
+      "25 Acre Mega Commercial Development",
+      "Surrounded by 1000+ Acres Residential Zone",
+      "1 Million+ Potential Customer Base",
+      "1800+ Trusted Customer Base",
+      "Prime Retail & Technology Hub Location",
+      "Multiple Unit Configurations Available",
+      "Future Growth Potential",
+      "Backed by Reputed Developer"
+    ],
+
+    financialDetails: {
+      paymentPlan: "Flexible Payment Options",
+      banks: ["HDFC", "ICICI", "State Bank of India", "Axis Bank"],
+      possession: "Under Construction",
+      totalUnits: "Multiple configurations",
+      towers: "Integrated Commercial Complex",
+      priceRange: "₹85 Lakhs - ₹2.5 Crores"
+    },
+
+    features: [
+      "Premium Retail Spaces", 
+      "Modern Office Complex", 
+      "Technology Hub Facilities", 
+      "Food Court & Cafeteria", 
+      "Ample Parking Space", 
+      "Conference Facilities",
+      "Bank Approved Project",
+      "Multiple Configuration Options",
+      "High Footfall Location",
+      "Modern Architecture"
+    ],
+
+    amenities: {
+      'Financial Advantages': [
+        "Approved by Major Banks",
+        "Flexible Payment Plans Available",
+        "Attractive Investment Opportunity",
+        "Proven Developer Track Record",
+        "High Appreciation Potential"
+      ],
+      'Project Specifications': [
+        "25 Acre Integrated Development",
+        "Multiple Commercial Unit Options",
+        "Modern Architectural Design",
+        "Sustainable Development Approach",
+        "Future Expansion Capabilities"
+      ],
+      'Business Facilities': [
+        "Conference Centers", 
+        "Business Lounges", 
+        "Meeting Rooms", 
+        "Retail Showrooms",
+        "Food Court & Dining Areas",
+        "Modern Work Spaces"
+      ],
+      'Infrastructure': [
+        "24/7 Power Backup", 
+        "Advanced Security Systems", 
+        "Central Air Conditioning", 
+        "Ample Vehicle Parking",
+        "High Visibility Location",
+        "Green Building Elements"
+      ],
+      'Technology': [
+        "High-Speed Internet", 
+        "IT Infrastructure", 
+        "Digital Security", 
+        "Smart Building Management",
+        "Energy Efficient Systems",
+        "Advanced Connectivity"
+      ],
+      'Services': [
+        "Professional Management", 
+        "Housekeeping Services", 
+        "Security Personnel", 
+        "Maintenance Team",
+        "Retail Support Services",
+        "Business Center Operations"
+      ]
+    },
+
+    developer: "lotus Farms Pvt Ltd",
+    possession: "Ready to move",
+    totalFloors: "G+5",
+    totalUnits: "Multiple configurations available",
+    carpetArea: "1008 sq.yards",
+    facing: "Multiple orientations available",
+    badge: "Value Investment",
+    status: "For Sale",
+    type: "Commercial Hub",
+    propertyType: "commercial",
+    floor: "Multiple Floors Available",
+    leaseAvailable: true,
+    maintenance: "₹1/sq ft",
+    
+    // SEO optimization
+    seoKeywords: [
+      "Golden-I Greater Noida",
+      "Ocean Infrastructures commercial project",
+      "Techzone IV Greater Noida West",
+      "Commercial property Greater Noida",
+      "Retail and Technology hub",
+      "Commercial project Greater Noida",
+      "Office space Techzone IV",
+      "Property investment Greater Noida",
+      "Golden-I commercial space",
+      "Greater Noida business property",
+      "Ocean Infrastructures projects",
+      "25 acre commercial development"
+    ],
+
+//     "30": {
+//   id: 30,
+//   title: "NX1 Techzone 4 Tower 5 (ARC)",
+//   price: "₹70 - 80 Lakhs",
+//   location: "Techzone 4, Greater Noida West (Noida Extension)",
+
+//   images: [
+//     "/Team Photo/nx one 1.jpg",
+//     "/Team Photo/nx one 5.png",
+//     "/Team Photo/NX ONE 7.png",
+//     "/Team Photo/nx one work.jpg"
+//   ],
+
+//   video: null,
+//   videoThumbnail: null,
+
+//   bathrooms: "Common Washrooms",
+//   parking: 1,
+//   area: "856 sq ft",
+//   rating: 4.8,
+//   reviews: 92,
+
+//   description: `NX1 Tower 5 (ARC) located in Techzone 4, Greater Noida West is a premium commercial project offering fully luxurious office spaces designed for modern businesses, startups, and corporate professionals.
+
+// Strategically positioned in the heart of Noida Extension, this commercial hub provides high footfall, excellent connectivity, and world-class infrastructure. The project is ideal for investment as well as self-use with strong rental returns and appreciation potential.`,
+
+//   // Developer Information
+//   developerInfo: {
+//     name: "DAH Greentech Group",
+//     description: `DAH Greentech Group is a reputed real estate developer in Delhi NCR known for delivering premium commercial and residential projects with sustainable construction and modern infrastructure.`,
+//     keyStrengths: [
+//       "Timely Project Delivery",
+//       "Premium Commercial Developments",
+//       "Strategic NCR Locations",
+//       "Strong Investment Returns"
+//     ],
+//     commitment: [
+//       "Quality Construction",
+//       "Modern Infrastructure",
+//       "Investor Friendly Plans",
+//       "Long-Term Value Creation"
+//     ]
+//   },
+
+//   // Investment Highlights
+//   investmentHighlights: [
+//     "Prime location in Techzone 4",
+//     "Luxury Office Spaces",
+//     "High Rental Yield Potential",
+//     "Ready to Move Commercial Units",
+//     "Strong Footfall & Visibility",
+//     "Excellent Metro & Highway Connectivity"
+//   ],
+
+//   financialDetails: {
+//     paymentPlan: "Flexible Payment Plan Available",
+//     banks: ["HDFC", "ICICI", "PNB"],
+//     possession: "Ready to Move",
+//     totalUnits: 500,
+//     towers: 3,
+//     priceRange: "₹70 - 80 Lakhs",
+//     expectedRent: "₹40,000 / Month"
+//   },
+
+//   features: [
+//     "Fully Furnished Office Options",
+//     "Luxury Reception Lobby",
+//     "Conference Rooms",
+//     "High-Speed Elevators",
+//     "Power Backup",
+//     "Modern Glass Facade"
+//   ],
+
+//   amenities: {
+//     Security: [
+//       "24/7 Security",
+//       "CCTV Surveillance",
+//       "Access Control Entry"
+//     ],
+//     Business: [
+//       "Conference Hall",
+//       "Meeting Rooms",
+//       "Business Lounge"
+//     ],
+//     Infrastructure: [
+//       "100% Power Backup",
+//       "Ample Parking",
+//       "Central Air Conditioning"
+//     ],
+//     Technology: [
+//       "Fiber Internet",
+//       "Smart Building System"
+//     ],
+//     Services: [
+//       "Maintenance Staff",
+//       "Housekeeping",
+//       "Property Management"
+//     ]
+//   },
+
+//   developer: "DAH Greentech Group",
+//   possession: "Ready to Move",
+//   totalFloors: 15,
+//   totalUnits: 500,
+//   carpetArea: "750 sq ft",
+//   facing: "Main Road Facing",
+//   badge: "New Launch",
+//   status: "For Sale & Rent",
+//   type: "Commercial Office Space",
+//   propertyType: "commercial",
+
+//   rent: "₹40,000 / Month",
+
+//   seoKeywords: [
+//     "NX1 Tower 5 ARC",
+//     "Techzone 4 commercial office",
+//     "Noida Extension office space",
+//     "Luxury office space Greater Noida West",
+//     "Office for sale in Noida Extension",
+//     "Commercial property Techzone 4"
+//   ],
+
+//   virtualTour: null,
+//   yearBuilt: 2024,
+//   propertyAge: "New Launch",
+
+//   brochure: {
+//     available: true,
+//     downloadLink: "/brochures/NX1-Tower5-ARC.pdf",
+//     description: "Official project brochure with investment details and floor plans"
+//   },
+
+//   locationAdvantages: [
+//     "Located in Techzone 4, Greater Noida West",
+//     "Close to upcoming Metro Station",
+//     "Easy connectivity to Noida & Delhi",
+//     "Surrounded by residential societies",
+//     "High Business Growth Zone"
+//   ]
+// },
+
+
+    virtualTour: "https://example.com/virtual-tour-golden-i",
+    yearBuilt: 2024,
+    propertyAge: "New Launch",
+    
+    // Brochure information
+    brochure: {
+      available: true,
+      downloadLink: "/Team Photo/lotus.pdf",
+      description: "Comprehensive project brochure detailing investment opportunities, features, and growth potential"
+    },
+
+    // Location advantages
+    locationAdvantages: [
+      "Prime location in Techzone IV Greater Noida West",
+      "Surrounded by 1000+ acres residential development",
+      "Potential customer base of 1 million+ residents",
+      "Excellent connectivity to Delhi NCR regions",
+      "Rapidly developing retail and technology corridor",
+      "Strategic position in growing commercial hub",
+      "Easy access to major transportation networks"
+    ],
+
+    // Additional unique features for Golden-I
+    projectScale: "25 Acre Mega Development",
+    surroundingDevelopment: "1000+ Acres Residential Zone",
+    potentialCustomerBase: "1 Million+ Residents",
+    customerTrust: "1800+ Satisfied Customers",
+    developmentStage: "Fastest-growing commercial destination"
+  },
+
+   "19": {
+    id: 19,
+    title: "Suryawanshi Farms",
+    price: "₹84-94 Lakhs",
+    location: "Suryawanshi Farms, Tigri Dham,near NH-9, Gajraula Amroha",
+    images: [
+      "/images/surya1.jpg",
+      "/images/surya2.jpg",
+      "/images/surya3.jpg",
+      "/images/surya4.png",
+      "/images/surya5.png",
+      // "/images/surya6.jpg"
+    ],
+    // video: "/public/Team Photo/Golden i.mp4",
+    // videoThumbnail: "/public/Team Photo/golden i 5.jpg",
+    bathrooms: "Common & Private Toilets",
+    parking: 2,
+    area: "800 sq.yards",
+    rating: 4.7,
+    reviews: 89,
+    description: `Golden-I stands as a magnificent commercial marvel developed by Ocean Infrastructures Pvt Ltd, strategically positioned in the thriving Retail and Technology hub of Greater Noida West. Spanning across 25 acres of prime real estate, this project is enveloped by 1,000 acres of residential development that will accommodate over 1 million residents within the next three to five years.
+
+Situated in the heart of Techzone IV, Golden-I offers unparalleled investment opportunities in one of Delhi NCR's fastest-growing commercial corridors. With the trust of 1800+ satisfied customers, Ocean Infrastructures has established itself as the most rapidly expanding commercial real estate firm in the region, creating sought-after business destinations that promise exceptional value and returns`,
+
+    // About Ocean Infrastructures
+    developerInfo: {
+      name: "Ocean Infrastructures Pvt Ltd",
+      description: `Ocean Infrastructures Pvt Ltd has emerged as the fastest-growing commercial real estate firm in Delhi NCR, building trust through exceptional project delivery and customer satisfaction. With a portfolio of 1800+ satisfied customers, the company has established itself as a reliable name in commercial real estate development.
+
+The company's vision focuses on creating premium business destinations that combine strategic location, modern architecture, and sustainable development practices. Ocean Infrastructures is committed to delivering projects that not only meet but exceed investor expectations while contributing to the economic growth of the regions they operate in.`,
+      keyStrengths: [
+        "Fastest-growing commercial real estate firm in Delhi NCR",
+        "Trusted by 1800+ customers",
+        "Strategic location selection",
+        "Modern architectural designs",
+        "Timely project delivery",
+        "Customer-centric approach",
+        "Proven track record"
+      ],
+      commitment: [
+        "Quality Construction Standards",
+        "Timely Project Completion",
+        "Customer Satisfaction",
+        "Strategic Location Development",
+        "Sustainable Growth",
+        "Transparent Business Practices"
+      ]
+    },
+
+    // Investment highlights
+    investmentHighlights: [
+      "25 Acre Mega Commercial Development",
+      "Surrounded by 1000+ Acres Residential Zone",
+      "1 Million+ Potential Customer Base",
+      "1800+ Trusted Customer Base",
+      "Prime Retail & Technology Hub Location",
+      "Multiple Unit Configurations Available",
+      "Future Growth Potential",
+      "Backed by Reputed Developer"
+    ],
+
+    financialDetails: {
+      paymentPlan: "Flexible Payment Options",
+      banks: ["HDFC", "ICICI", "State Bank of India", "Axis Bank"],
+      possession: "Under Construction",
+      totalUnits: "Multiple configurations",
+      towers: "Integrated Commercial Complex",
+      priceRange: "₹85 Lakhs - ₹2.5 Crores"
+    },
+
+    features: [
+      "Premium Retail Spaces", 
+      "Modern Office Complex", 
+      "Technology Hub Facilities", 
+      "Food Court & Cafeteria", 
+      "Ample Parking Space", 
+      "Conference Facilities",
+      "Bank Approved Project",
+      "Multiple Configuration Options",
+      "High Footfall Location",
+      "Modern Architecture"
+    ],
+
+    amenities: {
+      'Financial Advantages': [
+        "Approved by Major Banks",
+        "Flexible Payment Plans Available",
+        "Attractive Investment Opportunity",
+        "Proven Developer Track Record",
+        "High Appreciation Potential"
+      ],
+      'Project Specifications': [
+        "25 Acre Integrated Development",
+        "Multiple Commercial Unit Options",
+        "Modern Architectural Design",
+        "Sustainable Development Approach",
+        "Future Expansion Capabilities"
+      ],
+      'Business Facilities': [
+        "Conference Centers", 
+        "Business Lounges", 
+        "Meeting Rooms", 
+        "Retail Showrooms",
+        "Food Court & Dining Areas",
+        "Modern Work Spaces"
+      ],
+      'Infrastructure': [
+        "24/7 Power Backup", 
+        "Advanced Security Systems", 
+        "Central Air Conditioning", 
+        "Ample Vehicle Parking",
+        "High Visibility Location",
+        "Green Building Elements"
+      ],
+      'Technology': [
+        "High-Speed Internet", 
+        "IT Infrastructure", 
+        "Digital Security", 
+        "Smart Building Management",
+        "Energy Efficient Systems",
+        "Advanced Connectivity"
+      ],
+      'Services': [
+        "Professional Management", 
+        "Housekeeping Services", 
+        "Security Personnel", 
+        "Maintenance Team",
+        "Retail Support Services",
+        "Business Center Operations"
+      ]
+    },
+
+    developer: "suryawanshi farms Pvt Ltd",
+    possession: " land ready",
+    totalFloors: "G+5",
+    totalUnits: "Multiple configurations available",
+    carpetArea: "800 sq.yards",
+    facing: "Multiple orientations available",
+    badge: "Value Investment",
+    status: "For Sale",
+    type: "Commercial Hub",
+    propertyType: "commercial",
+    floor: "Multiple Floors Available",
+    leaseAvailable: true,
+    maintenance: "₹/sq ft",
+    
+    // SEO optimization
+    seoKeywords: [
+      "Golden-I Greater Noida",
+      "Ocean Infrastructures commercial project",
+      "Techzone IV Greater Noida West",
+      "Commercial property Greater Noida",
+      "Retail and Technology hub",
+      "Commercial project Greater Noida",
+      "Office space Techzone IV",
+      "Property investment Greater Noida",
+      "Golden-I commercial space",
+      "Greater Noida business property",
+      "Ocean Infrastructures projects",
+      "25 acre commercial development"
+    ],
+
+//     "30": {
+//   id: 30,
+//   title: "NX1 Techzone 4 Tower 5 (ARC)",
+//   price: "₹70 - 80 Lakhs",
+//   location: "Techzone 4, Greater Noida West (Noida Extension)",
+
+//   images: [
+//     "/Team Photo/nx one 1.jpg",
+//     "/Team Photo/nx one 5.png",
+//     "/Team Photo/NX ONE 7.png",
+//     "/Team Photo/nx one work.jpg"
+//   ],
+
+//   video: null,
+//   videoThumbnail: null,
+
+//   bathrooms: "Common Washrooms",
+//   parking: 1,
+//   area: "856 sq ft",
+//   rating: 4.8,
+//   reviews: 92,
+
+//   description: `NX1 Tower 5 (ARC) located in Techzone 4, Greater Noida West is a premium commercial project offering fully luxurious office spaces designed for modern businesses, startups, and corporate professionals.
+
+// Strategically positioned in the heart of Noida Extension, this commercial hub provides high footfall, excellent connectivity, and world-class infrastructure. The project is ideal for investment as well as self-use with strong rental returns and appreciation potential.`,
+
+//   // Developer Information
+//   developerInfo: {
+//     name: "DAH Greentech Group",
+//     description: `DAH Greentech Group is a reputed real estate developer in Delhi NCR known for delivering premium commercial and residential projects with sustainable construction and modern infrastructure.`,
+//     keyStrengths: [
+//       "Timely Project Delivery",
+//       "Premium Commercial Developments",
+//       "Strategic NCR Locations",
+//       "Strong Investment Returns"
+//     ],
+//     commitment: [
+//       "Quality Construction",
+//       "Modern Infrastructure",
+//       "Investor Friendly Plans",
+//       "Long-Term Value Creation"
+//     ]
+//   },
+
+//   // Investment Highlights
+//   investmentHighlights: [
+//     "Prime location in Techzone 4",
+//     "Luxury Office Spaces",
+//     "High Rental Yield Potential",
+//     "Ready to Move Commercial Units",
+//     "Strong Footfall & Visibility",
+//     "Excellent Metro & Highway Connectivity"
+//   ],
+
+//   financialDetails: {
+//     paymentPlan: "Flexible Payment Plan Available",
+//     banks: ["HDFC", "ICICI", "PNB"],
+//     possession: "Ready to Move",
+//     totalUnits: 500,
+//     towers: 3,
+//     priceRange: "₹70 - 80 Lakhs",
+//     expectedRent: "₹40,000 / Month"
+//   },
+
+//   features: [
+//     "Fully Furnished Office Options",
+//     "Luxury Reception Lobby",
+//     "Conference Rooms",
+//     "High-Speed Elevators",
+//     "Power Backup",
+//     "Modern Glass Facade"
+//   ],
+
+//   amenities: {
+//     Security: [
+//       "24/7 Security",
+//       "CCTV Surveillance",
+//       "Access Control Entry"
+//     ],
+//     Business: [
+//       "Conference Hall",
+//       "Meeting Rooms",
+//       "Business Lounge"
+//     ],
+//     Infrastructure: [
+//       "100% Power Backup",
+//       "Ample Parking",
+//       "Central Air Conditioning"
+//     ],
+//     Technology: [
+//       "Fiber Internet",
+//       "Smart Building System"
+//     ],
+//     Services: [
+//       "Maintenance Staff",
+//       "Housekeeping",
+//       "Property Management"
+//     ]
+//   },
+
+//   developer: "DAH Greentech Group",
+//   possession: "Ready to Move",
+//   totalFloors: 15,
+//   totalUnits: 500,
+//   carpetArea: "750 sq ft",
+//   facing: "Main Road Facing",
+//   badge: "New Launch",
+//   status: "For Sale & Rent",
+//   type: "Commercial Office Space",
+//   propertyType: "commercial",
+
+//   rent: "₹40,000 / Month",
+
+//   seoKeywords: [
+//     "NX1 Tower 5 ARC",
+//     "Techzone 4 commercial office",
+//     "Noida Extension office space",
+//     "Luxury office space Greater Noida West",
+//     "Office for sale in Noida Extension",
+//     "Commercial property Techzone 4"
+//   ],
+
+//   virtualTour: null,
+//   yearBuilt: 2024,
+//   propertyAge: "New Launch",
+
+//   brochure: {
+//     available: true,
+//     downloadLink: "/brochures/NX1-Tower5-ARC.pdf",
+//     description: "Official project brochure with investment details and floor plans"
+//   },
+
+//   locationAdvantages: [
+//     "Located in Techzone 4, Greater Noida West",
+//     "Close to upcoming Metro Station",
+//     "Easy connectivity to Noida & Delhi",
+//     "Surrounded by residential societies",
+//     "High Business Growth Zone"
+//   ]
+// },
+
+
+    virtualTour: "https://example.com/virtual-tour-golden-i",
+    yearBuilt: 2024,
+    propertyAge: "New Launch",
+    
+    // Brochure information
+    brochure: {
+      available: true,
+      downloadLink: "/Team Photo/surya.pdf",
+      description: "Comprehensive project brochure detailing investment opportunities, features, and growth potential"
+    },
+
+    // Location advantages
+    locationAdvantages: [
+      "Prime location in Techzone IV Greater Noida West",
+      "Surrounded by 1000+ acres residential development",
+      "Potential customer base of 1 million+ residents",
+      "Excellent connectivity to Delhi NCR regions",
+      "Rapidly developing retail and technology corridor",
+      "Strategic position in growing commercial hub",
+      "Easy access to major transportation networks"
+    ],
+
+    // Additional unique features for Golden-I
+    projectScale: "25 Acre Mega Development",
+    surroundingDevelopment: "1000+ Acres Residential Zone",
+    potentialCustomerBase: "1 Million+ Residents",
+    customerTrust: "1800+ Satisfied Customers",
+    developmentStage: "Fastest-growing commercial destination"
+  },
+
 };
 
 // Type for media items

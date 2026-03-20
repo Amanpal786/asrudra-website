@@ -157,6 +157,59 @@ const Commercial = () => {
       "popularity": 97,
       "dateAdded": "2019-01-20"
     },
+
+     {
+      "id": 17,
+      "title": "Lotus Farms",
+      "location": "opp gautam buddha university, behind AMR Adventure mall motipur, Greater Noida",
+      "price": "₹70 Lakhs",
+      "type": "Farm land & House",
+      "bedrooms": 0,
+      "bathrooms": "comman toilet",
+      "area": "1008 sq.yards",
+      "image": "/images/lotus.jpg",
+      "features": [
+      "Luxury Farmhouse Living",
+      "Private Swimming Pool & Garden",
+      "Serene Nature & Open Spaces",
+      "Modern Amenities with Rustic Charm"
+    ],
+      "amenities": {
+        "Innovation": ["Incubation Center", "R&D Facilities"],
+        "Recreation": ["Sports Complex", "Entertainment Zone"]
+      },
+      "rating": 4.8,
+      "developer": "Lotus Group",
+      "possession": "2027",
+      "approvals": ["RERA Approved", "STPI Approved"],
+      "popularity": 97,
+      "dateAdded": "2019-01-20"
+    },
+
+    {
+      "id": 19,
+      "title": "Suryawanshi Farms ",
+      "location": "Suryawanshi Farms, Tigri Dham,near NH-9, Gajraula Amroha",
+      "price": "₹84-94 Lakhs",
+      "type": "Farm land & House",
+      "bedrooms": 0,
+      "bathrooms": "comman toilet",
+      "area": "800 sq.yards",
+      "image": "/images/surya1.jpg",
+      "features": ["Tech-Enabled Campus", "Collaborative Workspaces", "Innovation Labs", "Dedicated IT Infrastructure"],
+      "amenities": {
+        "Innovation": ["Incubation Center", "R&D Facilities"],
+        "Recreation": ["Sports Complex", "Entertainment Zone"]
+      },
+      "rating": 4.8,
+      "developer": "Suryawanshi Farms GROUP",
+      "possession": "2025",
+      "approvals": ["RERA Approved", "STPI Approved"],
+      "popularity": 97,
+      "dateAdded": "2019-01-20"
+    },
+
+
     // More odd ID properties can be added here
     // {
     //   "id": 13,
