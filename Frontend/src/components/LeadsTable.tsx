@@ -174,16 +174,19 @@ const LeadsTable = ({ leads, fetchLeads }) => {
 
                 <td className="px-6 py-4">
                   <div className="flex justify-center gap-3">
-                    <button className="bg-yellow-400 text-white px-3 py-1.5 rounded-md text-xs font-semibold">
-                      ✏ Edit
+                    <button
+                      onClick={() => navigate(`/dashboard/edit-lead/${lead._id}`)}
+                      className="bg-yellow-400 text-white px-3 py-1.5 rounded-md text-xs font-semibold"
+                    >
+                      Edit
                     </button>
 
-                    <button
+                    {/* <button
                       onClick={() => deleteLead(lead._id)}
                       className="bg-red-500 hover:bg-red-600 text-white px-3 py-1.5 rounded-md text-xs font-semibold"
                     >
                       🗑 Delete
-                    </button>
+                    </button> */}
                   </div>
                 </td>
               </tr>

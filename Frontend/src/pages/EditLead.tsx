@@ -4,202 +4,172 @@ import axios from "axios";
 import { useNavigate, useParams } from "react-router-dom";
 
 const EditLead = () => {
+  const navigate = useNavigate();
+  const { id } = useParams();
 
-const navigate = useNavigate();
-const { id } = useParams();
+  // ✅ correct form (match with enquiries DB)
+  const [form, setForm] = useState({
+    name: "",
+    phone: "",
+    email: "",
+    message: ""
+  });
 
-const [form,setForm] = useState({
-name:"",
-phone:"",
-property:"",
-status:"New Lead",
-assigned:""
-});
+  const [loading, setLoading] = useState(true);
 
-const handleChange = (e:any)=>{
-setForm({...form,[e.target.name]:e.target.value});
-};
+  // 🔹 Handle input change
+  const handleChange = (e: any) => {
+    setForm({ ...form, [e.target.name]: e.target.value });
+  };
 
-// 🔹 Fetch existing lead
-const fetchLead = async () => {
+  // 🔹 Fetch single lead
+  const fetchLead = async () => {
+    try {
+      const res = await axios.get(
+        `http://localhost:4001/api/leads/${id}`
+      );
 
-try{
+      const lead = res.data;
 
-const res = await axios.get(
-`${import.meta.env.VITE_API_URL}/api/leads`
-);
+      // ✅ mapping correct
+      setForm({
+        name: lead.fullName || "",
+        phone: lead.phoneNumber || "",
+        email: lead.email || "",
+        message: lead.message || ""
+      });
 
-// specific lead find
-const lead = res.data.find((l:any)=> l._id === id);
+      setLoading(false);
+    } catch (err) {
+      console.error(err);
+    }
+  };
 
-if(lead){
-setForm({
-name:lead.name,
-phone:lead.phone,
-property:lead.property,
-status:lead.status,
-assigned:lead.assigned
-});
-}
+  useEffect(() => {
+    if (id) fetchLead();
+  }, [id]);
 
-}catch(err){
-console.error(err);
-}
+  // 🔹 Update lead
+  const handleSubmit = async (e: any) => {
+    e.preventDefault();
 
-};
+    try {
+      await axios.put(
+        `http://localhost:4001/api/leads/${id}`,
+        {
+          fullName: form.name,
+          phoneNumber: form.phone,
+          email: form.email,
+          message: form.message
+        }
+      );
 
-useEffect(()=>{
-fetchLead();
-},[]);
+    //   alert("Lead Updated Successfully 🔥");
+      navigate("/dashboard/leads");
+    } catch (err) {
+      console.error(err);
+    }
+  };
 
+  if (loading) {
+    return (
+      <DashboardLayout>
+        <p className="p-6 text-gray-600">Loading...</p>
+      </DashboardLayout>
+    );
+  }
 
-// 🔹 Update lead
-const handleSubmit = async(e:any)=>{
-e.preventDefault();
+  return (
+    <DashboardLayout>
+      <h1 className="text-3xl font-bold text-blue-600 mb-8">
+        Edit Lead
+      </h1>
 
-await axios.put(
-`${import.meta.env.VITE_API_URL}/api/leads/${id}`,
-form
-);
+      <div className="bg-white rounded-2xl shadow-lg border w-[650px]">
+        <div className="px-6 py-4 border-b font-semibold text-gray-700">
+          Update Lead Information
+        </div>
 
-navigate("/dashboard/leads");
-};
+        <form onSubmit={handleSubmit} className="p-6 space-y-5">
 
-return(
+          {/* Name */}
+          <div>
+            <label className="text-sm font-medium text-gray-700">
+              Client Name
+            </label>
+            <input
+              name="name"
+              value={form.name}
+              onChange={handleChange}
+              required
+              className="w-full mt-1 border border-gray-300 rounded-lg px-3 py-2 text-gray-900"
+            />
+          </div>
 
-<DashboardLayout>
+          {/* Phone */}
+          <div>
+            <label className="text-sm font-medium text-gray-700">
+              Phone Number
+            </label>
+            <input
+              name="phone"
+              value={form.phone}
+              onChange={handleChange}
+              required
+              className="w-full mt-1 border border-gray-300 rounded-lg px-3 py-2 text-gray-900"
+            />
+          </div>
 
-<h1 className="text-3xl font-bold text-blue-600 mb-8">
-Edit Lead
-</h1>
+          {/* Email */}
+          <div>
+            <label className="text-sm font-medium text-gray-700">
+              Email
+            </label>
+            <input
+              name="email"
+              value={form.email}
+              onChange={handleChange}
+              required
+              className="w-full mt-1 border border-gray-300 rounded-lg px-3 py-2 text-gray-900"
+            />
+          </div>
 
-<div className="bg-white rounded-2xl shadow-lg border w-[650px]">
+          {/* Message */}
+          <div>
+            <label className="text-sm font-medium text-gray-700">
+              Message
+            </label>
+            <input
+              name="message"
+              value={form.message}
+              onChange={handleChange}
+              required
+              className="w-full mt-1 border border-gray-300 rounded-lg px-3 py-2 text-gray-900"
+            />
+          </div>
 
-<div className="px-6 py-4 border-b font-semibold text-gray-700">
-Update Lead Information
-</div>
+          {/* Buttons */}
+          <div className="flex gap-3 pt-4">
+            <button
+              type="submit"
+              className="bg-blue-600 text-white px-6 py-2 rounded-lg"
+            >
+              Update Lead
+            </button>
 
-<form onSubmit={handleSubmit} className="p-6 space-y-5">
+            <button
+              type="button"
+              onClick={() => navigate("/dashboard/leads")}
+              className="bg-gray-200 px-6 py-2 rounded-lg bg-darkred-300 text-gray-700"
+            >
+              Cancel
+            </button>
+          </div>
 
-{/* Client Name */}
-
-<div>
-<label className="text-sm font-medium text-gray-700">
-Client Name
-</label>
-
-<input
-name="name"
-value={form.name}
-onChange={handleChange}
-required
-className="w-full mt-1 border border-gray-300 rounded-lg px-3 py-2 text-gray-900"
-/>
-</div>
-
-
-{/* Phone */}
-
-<div>
-<label className="text-sm font-medium text-gray-700">
-Phone Number
-</label>
-
-<input
-name="phone"
-value={form.phone}
-onChange={handleChange}
-required
-className="w-full mt-1 border border-gray-300 rounded-lg px-3 py-2 text-gray-900"
-/>
-</div>
-
-
-{/* Property */}
-
-<div>
-<label className="text-sm font-medium text-gray-700">
-Property
-</label>
-
-<input
-name="property"
-value={form.property}
-onChange={handleChange}
-required
-className="w-full mt-1 border border-gray-300 rounded-lg px-3 py-2 text-gray-900"
-/>
-</div>
-
-
-{/* Status */}
-
-<div>
-<label className="text-sm font-medium text-gray-700">
-Lead Status
-</label>
-
-<select
-name="status"
-value={form.status}
-onChange={handleChange}
-className="w-full mt-1 border border-gray-300 rounded-lg px-3 py-2 text-gray-900"
->
-
-<option value="New Lead">New Lead</option>
-<option value="Site Visit">Site Visit</option>
-<option value="Negotiation">Negotiation</option>
-<option value="Closed">Closed</option>
-
-</select>
-
-</div>
-
-
-{/* Assigned */}
-
-<div>
-<label className="text-sm font-medium text-gray-700">
-Assigned To
-</label>
-
-<input
-name="assigned"
-value={form.assigned}
-onChange={handleChange}
-required
-className="w-full mt-1 border border-gray-300 rounded-lg px-3 py-2 text-gray-900"
-/>
-</div>
-
-
-<div className="flex gap-3 pt-4">
-
-<button
-type="submit"
-className="bg-blue-600 text-white px-6 py-2 rounded-lg"
->
-Update Lead
-</button>
-
-<button
-type="button"
-onClick={()=>navigate("/dashboard/leads")}
-className="bg-gray-200 px-6 py-2 rounded-lg"
->
-Cancel
-</button>
-
-</div>
-
-</form>
-
-</div>
-
-</DashboardLayout>
-
-);
-
+        </form>
+      </div>
+    </DashboardLayout>
+  );
 };
 
 export default EditLead;
