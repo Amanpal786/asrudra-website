@@ -165,7 +165,7 @@ const Commercial = () => {
       "price": "₹70 Lakhs",
       "type": "Farm land & House",
       "bedrooms": 0,
-      "bathrooms": "comman toilet",
+      "bathrooms": "0",
       "area": "1008 sq.yards",
       "image": "/images/lotus.jpg",
       "features": [
@@ -193,7 +193,7 @@ const Commercial = () => {
       "price": "₹84-94 Lakhs",
       "type": "Farm land & House",
       "bedrooms": 0,
-      "bathrooms": "comman toilet",
+      "bathrooms": "0",
       "area": "800 sq.yards",
       "image": "/images/surya1.jpg",
       "features": ["Tech-Enabled Campus", "Collaborative Workspaces", "Innovation Labs", "Dedicated IT Infrastructure"],

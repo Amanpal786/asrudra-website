@@ -3186,7 +3186,7 @@ The company's vision focuses on creating premium business destinations that comb
     ],
     // video: "/public/Team Photo/Golden i.mp4",
     // videoThumbnail: "/public/Team Photo/golden i 5.jpg",
-    bathrooms: "Common & Private Toilets",
+    bathrooms: "0",
     parking: 1,
     area: "1008 sq.yards",
     rating: 4.7,
@@ -3311,7 +3311,7 @@ The company's vision focuses on creating premium business destinations that comb
     facing: "Multiple orientations available",
     badge: "Value Investment",
     status: "For Sale",
-    type: "Commercial Hub",
+    type: "Farmhouse",
     propertyType: "commercial",
     floor: "Multiple Floors Available",
     leaseAvailable: true,
@@ -3520,19 +3520,19 @@ The company's vision focuses on creating premium business destinations that comb
     ],
     // video: "/public/Team Photo/Golden i.mp4",
     // videoThumbnail: "/public/Team Photo/golden i 5.jpg",
-    bathrooms: "Common & Private Toilets",
+    bathrooms: "0",
     parking: 2,
     area: "800 sq.yards",
     rating: 4.7,
     reviews: 89,
-    description: `Golden-I stands as a magnificent commercial marvel developed by Ocean Infrastructures Pvt Ltd, strategically positioned in the thriving Retail and Technology hub of Greater Noida West. Spanning across 25 acres of prime real estate, this project is enveloped by 1,000 acres of residential development that will accommodate over 1 million residents within the next three to five years.
+    description: `suryawanshi farms stands as a magnificent commercial marvel developed by Ocean Infrastructures Pvt Ltd, strategically positioned in the thriving Retail and Technology hub of Greater Noida West. Spanning across 25 acres of prime real estate, this project is enveloped by 1,000 acres of residential development that will accommodate over 1 million residents within the next three to five years.
 
 Situated in the heart of Techzone IV, Golden-I offers unparalleled investment opportunities in one of Delhi NCR's fastest-growing commercial corridors. With the trust of 1800+ satisfied customers, Ocean Infrastructures has established itself as the most rapidly expanding commercial real estate firm in the region, creating sought-after business destinations that promise exceptional value and returns`,
 
     // About Ocean Infrastructures
     developerInfo: {
-      name: "Ocean Infrastructures Pvt Ltd",
-      description: `Ocean Infrastructures Pvt Ltd has emerged as the fastest-growing commercial real estate firm in Delhi NCR, building trust through exceptional project delivery and customer satisfaction. With a portfolio of 1800+ satisfied customers, the company has established itself as a reliable name in commercial real estate development.
+      name: "Suryawanshi Farms Pvt Ltd",
+      description: `Suryawanshi Farms Pvt Ltd has emerged as the fastest-growing commercial real estate firm in Delhi NCR, building trust through exceptional project delivery and customer satisfaction. With a portfolio of 1800+ satisfied customers, the company has established itself as a reliable name in commercial real estate development.
 
 The company's vision focuses on creating premium business destinations that combine strategic location, modern architecture, and sustainable development practices. Ocean Infrastructures is committed to delivering projects that not only meet but exceed investor expectations while contributing to the economic growth of the regions they operate in.`,
       keyStrengths: [
@@ -3645,7 +3645,7 @@ The company's vision focuses on creating premium business destinations that comb
     facing: "Multiple orientations available",
     badge: "Value Investment",
     status: "For Sale",
-    type: "Commercial Hub",
+    type: "Farmhouse",
     propertyType: "commercial",
     floor: "Multiple Floors Available",
     leaseAvailable: true,
@@ -3653,8 +3653,8 @@ The company's vision focuses on creating premium business destinations that comb
     
     // SEO optimization
     seoKeywords: [
-      "Golden-I Greater Noida",
-      "Ocean Infrastructures commercial project",
+      "Suryawanshi Farms Greater Noida",
+      "Suryawanshi Farms commercial project",
       "Techzone IV Greater Noida West",
       "Commercial property Greater Noida",
       "Retail and Technology hub",
