@@ -119,7 +119,7 @@ const teamMembers = [
     personalInterests: ["cycling", "gaming", "adventure"]
   },
 
- 
+  
   {
     name: "Ms. Riya Kumari",
     role: "SBDM",
