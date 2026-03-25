@@ -6,17 +6,36 @@ import logo from "../logo.jpg";
 
 const DashboardHeader = ({ toggleTheme, darkMode }: any) => {
   const navigate = useNavigate();
-  const [count, setCount] = useState(0);
 
-  // 🔥 fetch leads from backend
+  const [count, setCount] = useState(0);
+  const [totalLeads, setTotalLeads] = useState(0);
+  const [loading, setLoading] = useState(true);
+
+  // 🔥 fetch leads
   const fetchLeads = async () => {
     try {
       const res = await axios.get(`${import.meta.env.VITE_API_URL}/api/leads`);
 
-      // sirf new leads count karo
-      const newLeads = res.data.filter((lead: any) => lead.status === "New Lead");
+      const total = res.data.length;
+      setTotalLeads(total);
 
-      setCount(newLeads.length);
+      let seen = localStorage.getItem("seenLeadsCount");
+
+      // 👉 first time open
+      if (seen === null) {
+        localStorage.setItem("seenLeadsCount", total.toString());
+        setCount(0);
+      } else {
+        const seenCount = parseInt(seen);
+
+        if (total > seenCount) {
+          setCount(total - seenCount);
+        } else {
+          setCount(0);
+        }
+      }
+
+      setLoading(false);
 
     } catch (err) {
       console.log(err);
@@ -26,8 +45,8 @@ const DashboardHeader = ({ toggleTheme, darkMode }: any) => {
   useEffect(() => {
     fetchLeads();
 
-    // auto refresh every 5 sec (optional 🔥)
-    const interval = setInterval(fetchLeads, 5000);
+    // 🔥 polling
+    const interval = setInterval(fetchLeads, 3000);
 
     return () => clearInterval(interval);
   }, []);
@@ -35,6 +54,13 @@ const DashboardHeader = ({ toggleTheme, darkMode }: any) => {
   const handleLogout = () => {
     localStorage.removeItem("role");
     navigate("/");
+  };
+
+  // 🔥 bell click → mark all seen
+  const handleBellClick = () => {
+    localStorage.setItem("seenLeadsCount", totalLeads.toString());
+    setCount(0);
+    navigate("/dashboard/leads");
   };
 
   return (
@@ -51,7 +77,6 @@ const DashboardHeader = ({ toggleTheme, darkMode }: any) => {
         <button
           onClick={toggleTheme}
           className="p-2 rounded-full hover:bg-gray-100 dark:hover:bg-gray-700 transition"
-          title="Toggle Theme"
         >
           {darkMode ? (
             <Sun className="w-5 h-5 text-yellow-400" />
@@ -60,14 +85,11 @@ const DashboardHeader = ({ toggleTheme, darkMode }: any) => {
           )}
         </button>
 
-        {/* 🔥 BELL */}
-        <div
-          className="relative cursor-pointer"
-          onClick={() => navigate("/dashboard/leads")}
-        >
+        {/* 🔥 FIXED BELL */}
+        <div className="relative cursor-pointer" onClick={handleBellClick}>
           <Bell className="w-5 h-5 text-gray-600 dark:text-gray-300" />
 
-          {count > 0 && (
+          {!loading && count > 0 && (
             <span className="absolute -top-2 -right-2 bg-red-500 text-white text-xs px-1.5 rounded-full">
               {count}
             </span>
