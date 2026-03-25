@@ -1,5 +1,6 @@
 import { Link, useLocation } from "react-router-dom";
 import DashboardHeader from "./DashboardHeader";
+import { useState, useEffect } from "react";
 import {
   LayoutDashboard,
   Users,
@@ -8,6 +9,7 @@ import {
   MapPin,
   FileText
 } from "lucide-react";
+
 const role = localStorage.getItem("role");
 
 const menu = [
@@ -19,17 +21,28 @@ const menu = [
   { name: "Prospectus", path: "/dashboard/prospectus", icon: FileText }
 ];
 
-
 const DashboardLayout = ({ children }: any) => {
+  const [darkMode, setDarkMode] = useState(false);
   const location = useLocation();
 
+  useEffect(() => {
+    const saved = localStorage.getItem("dashboard-theme");
+    if (saved === "dark") setDarkMode(true);
+  }, []);
+
+  const toggleTheme = () => {
+    const newMode = !darkMode;
+    setDarkMode(newMode);
+    localStorage.setItem("dashboard-theme", newMode ? "dark" : "light");
+  };
+
   return (
-    <div className="flex min-h-screen bg-gray-50">
-
+    <div className={`${darkMode ? "dark" : ""} flex min-h-screen bg-gray-50 dark:bg-gray-900`}>
+      
       {/* Sidebar */}
-      <div className="w-64 bg-white border-r border-gray-100 p-6">
-
-        <h2 className="text-xl font-bold text-gray-800 mb-10">
+      <div className="w-64 bg-white dark:bg-gray-900 border-r border-gray-100 dark:border-gray-700 p-6">
+        
+        <h2 className="text-xl font-bold text-gray-800 dark:text-white mb-10">
           Asrudra CRM
         </h2>
 
@@ -43,23 +56,23 @@ const DashboardLayout = ({ children }: any) => {
                 key={i}
                 to={item.path}
                 onClick={(e) => {
+                  if (role === "admin") return;
 
-                  if(role === "admin") return;
-
-                  if(role === "tl" && !["Leads","Employees","Client Visits"].includes(item.name)){
+                  if (role === "tl" && !["Leads","Employees","Client Visits"].includes(item.name)) {
                     e.preventDefault();
                     alert("Only Admin can access this tab");
                   }
 
-                  if(role === "associate" && item.name !== "Employees"){
+                  if (role === "associate" && item.name !== "Employees") {
                     e.preventDefault();
                     alert("Access restricted");
                   }
-
                 }}
                 className={`flex items-center gap-3 p-3 rounded-lg transition-all
-                ${active ? "bg-blue-600 text-white shadow" : "text-gray-600 hover:bg-blue-50"}`}
-                >
+                ${active 
+                  ? "bg-blue-600 text-white shadow" 
+                  : "text-gray-600 dark:text-gray-300 hover:bg-blue-50 dark:hover:bg-gray-800"}`}
+              >
                 <Icon size={18} />
                 {item.name}
               </Link>
@@ -71,14 +84,15 @@ const DashboardLayout = ({ children }: any) => {
       {/* Main Content */}
       <div className="flex flex-col flex-1">
 
-        <DashboardHeader />
+        {/* 🔥 Header ko toggle pass karo */}
+        <DashboardHeader toggleTheme={toggleTheme} darkMode={darkMode} />
 
-        <div className="p-10">
+        {/* Content */}
+        <div className="flex-1 p-10 min-h-screen bg-gray-50 dark:bg-gray-900 text-black dark:text-white">
           {children}
         </div>
 
       </div>
-
     </div>
   );
 };
