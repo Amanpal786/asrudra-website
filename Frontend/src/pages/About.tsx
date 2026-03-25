@@ -276,19 +276,19 @@ const teamMembers = [
 
    
 
-  //  {
-  //   name: "Mr. Sachin Rampal",
-  //   role: "BDM",
-  //   // image: "/Team Photo/ss.jpg",
-  //   experience: "3+",
-  //   qualification: { 
-  //     degree: "MBA(International Bussness",
-  //     year: 2024
-  //   },
-  //   professionalBackground: "Samaksh specializes in real estate and regulatory compliance. He has successfully navigated complex legal processes for over 15 major property developments, ensuring smooth and secure transactions.",
-  //   keyAchievements: ["Successfully managed end-to-end legal and regulatory compliance for 15+ high-value real estate projects, ensuring timely approvals and full statutory adherence Achieved a 100% litigation-free record across all supervised developments through proactive risk assessment and legal due diligence Developed and implemented a structured compliance framework and checklist, optimizing internal processes and accelerating regulatory clearances"],
-  //   personalInterests: ["athletics", "gaming", "adventure"]
-  // },
+   {
+    name: "Mr. Sachin Rampal",
+    role: "ADM",
+    image: "/Team Photo/sachinsir.jpeg",
+    experience: "3+",
+    qualification: { 
+      degree: "MBA(International Bussness",
+      year: 2002
+    },
+    professionalBackground: "Sachin specializes in real estate and regulatory compliance. He has successfully navigated complex legal processes for over 15 major property developments, ensuring smooth and secure transactions.",
+    keyAchievements: ["Successfully managed end-to-end legal and regulatory compliance for 15+ high-value real estate projects, ensuring timely approvals and full statutory adherence Achieved a 100% litigation-free record across all supervised developments through proactive risk assessment and legal due diligence Developed and implemented a structured compliance framework and checklist, optimizing internal processes and accelerating regulatory clearances"],
+    personalInterests: ["cycling", "gaming", "adventure"]
+  },
 
   //  {
   //   name: "Mr. Raj Kaushik",
