@@ -69,16 +69,20 @@ const DirectorCard = ({ director, delay }: { director: Director; delay: number }
       whileInView={{ opacity: 1, y: 0 }}
       transition={{ duration: 0.5, delay }}
       viewport={{ once: true, margin: "-50px" }}
-      className="bg-white/95 backdrop-blur-md border border-slate-100 rounded-xl overflow-hidden shadow-lg transition-all duration-300 hover:shadow-xl hover:-translate-y-1"
+      className="group bg-white/95 backdrop-blur-md border border-slate-100 rounded-xl overflow-hidden 
+      shadow-lg transition-all duration-500 
+      hover:shadow-[0_30px_80px_rgba(0,0,0,0.6)] 
+      hover:-translate-y-3 hover:scale-[1.02]"
     >
       <div className="relative h-64 overflow-hidden">
         <img
           src={director.image || `https://images.unsplash.com/photo-1534528741775-53994a69daeb?w=400&h=400&fit=crop`}
           alt={director.name}
-          className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105"
+          className="w-full h-full object-cover transition duration-500 group-hover:scale-110"
           loading="lazy"
         />
-        <div className="absolute inset-0 bg-gradient-to-t from-slate-900/30 via-transparent to-transparent" />
+        <div className="absolute inset-0 bg-gradient-to-t from-black/70 via-black/20 to-transparent" />
+        <div className="absolute inset-0 opacity-0 group-hover:opacity-100 transition bg-black/10"></div>
 
         <div className="absolute bottom-4 left-4 bg-orange-500 text-white px-3 py-1 rounded-full text-sm font-semibold shadow-md">
           {director.experience}

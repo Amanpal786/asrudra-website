@@ -78,3 +78,84 @@ const HeroSection = () => {
 };
 
 export default HeroSection;
+
+// import { useState, useEffect } from "react";
+// import SearchBox from "./SearchBox";
+// import EmiCalculator from "../components/calculator";
+
+// const images = [
+//   "/images/luxury1.jpg",
+//   "/images/luxury2.webp",
+//   "/images/luxury3.webp",
+//   "/images/luxury4.webp",
+//   "/images/luxury5.webp",
+// ];
+
+// const HeroSection = () => {
+//   const [current, setCurrent] = useState(0);
+
+//   // 🔄 Auto rotate images
+//   useEffect(() => {
+//     const interval = setInterval(() => {
+//       setCurrent((prev) => (prev + 1) % images.length);
+//     }, 4000);
+//     return () => clearInterval(interval);
+//   }, []);
+
+//   return (
+//     <section className="relative w-full min-h-screen flex items-center justify-center overflow-hidden">
+
+//       {/* 🔥 BACKGROUND IMAGE SLIDER */}
+//       <div className="absolute inset-0 w-full h-full">
+//         {images.map((img, index) => (
+//           <img
+//             key={index}
+//             src={img}
+//             className={`absolute w-full h-full object-cover transition-opacity duration-1000 
+//             ${index === current ? "opacity-100" : "opacity-0"}`}
+//           />
+//         ))}
+
+//         {/* 🔥 DARK + GOLD OVERLAY */}
+//         <div className="absolute inset-0 bg-gradient-to-br "></div>
+//       </div>
+
+//       {/* ✨ FLOATING DOTS */}
+//       <div className="absolute inset-0 pointer-events-none">
+//         <div className="absolute top-20 left-10 w-3 h-3 bg-yellow-400 rounded-full animate-ping opacity-70" />
+//         <div className="absolute bottom-20 right-20 w-4 h-4 bg-yellow-300 rounded-full animate-pulse opacity-50" />
+//       </div>
+
+//       {/* 🔥 MAIN CONTENT */}
+//       <div className="relative z-10 text-center px-4 max-w-4xl">
+
+//         {/* HEADING */}
+//         <h1 className="text-4xl sm:text-5xl md:text-6xl font-extrabold text-white mb-4 leading-tight">
+//           Discover Your Dream <br />
+//           <span className="bg-gradient-to-r from-yellow-400 to-orange-500 bg-clip-text text-transparent">
+//             Luxury Property
+//           </span>
+//         </h1>
+
+//         <p className="text-gray-300 text-lg mb-10 max-w-2xl mx-auto">
+//           Explore premium real estate with modern design, comfort, and elegance.
+//         </p>
+
+//         {/* 🔥 GLASS SEARCH */}
+//         <div className="backdrop-blur-md bg-white/10 border border-white/20 
+//         shadow-2xl rounded-2xl p-4 mb-6">
+//           <SearchBox />
+//         </div>
+
+//         {/* 🔥 EMI GLASS */}
+//         <div className="backdrop-blur-md bg-white/10 border border-white/20 
+//         rounded-2xl p-4">
+//           <EmiCalculator />
+//         </div>
+
+//       </div>
+//     </section>
+//   );
+// };
+
+// export default HeroSection;

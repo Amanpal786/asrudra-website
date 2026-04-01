@@ -392,7 +392,10 @@ const ExclusiveProperties = () => {
               >
                 <motion.div
                   variants={cardHoverVariants}
-                  className="bg-white rounded-3xl overflow-hidden hover:shadow-2xl transition-all duration-500 border border-sky-200/60 relative"
+                  className="bg-white rounded-3xl overflow-hidden 
+                  transition-all duration-500 border border-sky-200/60 relative
+                  hover:shadow-[0_25px_60px_rgba(0,0,0,0.6)] 
+                  hover:-translate-y-3 hover:scale-[1.02]"
                 >
                   {/* Property Image */}
                   <div className="relative h-64 overflow-hidden">
@@ -401,7 +404,7 @@ const ExclusiveProperties = () => {
                       transition={{ duration: 0.6 }}
                       src={property.image}
                       alt={property.title}
-                      className="w-full h-full object-cover"
+                      className="w-full h-full object-cover transition duration-500 group-hover:scale-110"
                       loading="lazy"
                     />
                     

@@ -82,7 +82,7 @@ const teamMembers = [
     name: "Mr. Suraj Bisht",
     role: "Associate Director",
     image: "/Team Photo/suraj.jpeg",
-    experience: "24+",
+    experience: "24",
     qualification: { 
       degree: "B Com and Hotel Management",
       year: 2002
@@ -244,7 +244,7 @@ const teamMembers = [
     name: "Mr. Narendra Singh",
     role: "BDM",
     image: "/Team Photo/narendre sir.jpg",
-    experience: "5+",
+    experience: "5",
     qualification: {
       degree: "BA",
       year: 2018
@@ -261,7 +261,7 @@ const teamMembers = [
     name: "Mr. Sandeep Bansal",
     role: "BDM",
     image: "/Team Photo/sandeep sir.jpg",
-    experience: "5+",
+    experience: "5",
     qualification: {
       degree: "BA",
       year: 2018
@@ -278,7 +278,7 @@ const teamMembers = [
     name: "Mr. Samaksh Tyagi",
     role: "BDM",
     image: "/Team Photo/ss.jpg",
-    experience: "3+",
+    experience: "3",
     qualification: { 
       degree: "MBA(International Bussness",
       year: 2024
@@ -513,21 +513,25 @@ const TeamMemberCard = ({ member, onClick }: { member: any, onClick: () => void 
       whileInView={{ opacity: 1, scale: 1 }}
       transition={{ duration: 0.5 }}
       viewport={{ once: true }}
-      className="bg-white rounded-xl shadow-lg overflow-hidden transition-all duration-300 hover:shadow-xl cursor-pointer w-72 flex-shrink-0"
+      className="group bg-white rounded-xl overflow-hidden 
+      transition-all duration-500 
+      hover:shadow-[0_25px_60px_rgba(59,130,246,0.5)] 
+      hover:-translate-y-3 hover:scale-[1.02] 
+      shadow-lg cursor-pointer w-72 flex-shrink-0"
       onClick={onClick}
       style={{
         scrollSnapAlign: "start",
-        boxShadow: "0 10px 25px -5px rgba(14, 165, 233, 0.1), 0 8px 10px -6px rgba(14, 165, 233, 0.1)",
+        boxShadow: "0 10px 30px rgba(0,0,0,0.3)",
       }}
     >
       <div className="relative h-60 overflow-hidden group">
         <img
           src={member.image}
           alt={member.name}
-          className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105"
+          className="w-full h-full object-cover transition duration-500 group-hover:scale-110"
           loading="lazy"
         />
-        <div className="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent"></div>
+        <div className="absolute inset-0 opacity-0 group-hover:opacity-100 transition bg-blue-500/10"></div>
         
         {/* Experience badge */}
         <div className="absolute top-4 right-4 bg-orange-500 text-white py-1 px-3 rounded-full text-sm font-bold">
