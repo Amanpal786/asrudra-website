@@ -58,6 +58,22 @@ const Gallery = () => {
     },
     {
       id: 2,
+      title: 'APEX Park Square',
+      date: 'APRIL 1, 2026',
+      description: 'Apex Park Square – Ultra-Luxury Commercial Spaces Experience world-class amenities: gym, swimming pool, auditorium, meeting halls & kids’ play zone — where luxury meets productivity.',
+      images: [
+        '/images/apex.jpg',
+        '/images/tyuio.mp4',
+        // '/images/nx one 4.png',
+        // '/images/nx one 7.png',
+        // '/images/nx one .jpeg',
+        //  '/images/nx one 3.jpg'
+      ]
+    },
+
+
+    {
+      id: 3,
       title: 'NX-ONE  Tower-5  Project Launch',
       date: 'SEPTEMBER 8, 2025',
       description: 'NX One T-5 – Ultra-Luxury Commercial Spaces Experience world-class amenities: gym, swimming pool, auditorium, meeting halls & kids’ play zone — where luxury meets productivity.',
@@ -347,11 +363,23 @@ const Gallery = () => {
               >
                 <div className="md:flex">
                   <div className="md:w-2/5">
+                    {event.images[0].endsWith('.mp4') ? (
+                    <video
+                      controls
+                      autoPlay
+                      muted
+                      playsInline
+                      className="w-full h-64 md:h-full object-cover"
+                    >
+                      <source src={event.images[0]} type="video/mp4" />
+                    </video>
+                  ) : (
                     <img
                       src={event.images[0]}
                       alt={event.title}
                       className="w-full h-64 md:h-full object-cover"
                     />
+                  )}
                   </div>
                   <div className="p-6 md:w-3/5">
                     <div className="flex items-center mb-4">
@@ -390,11 +418,20 @@ const Gallery = () => {
                                 className="relative group overflow-hidden rounded-lg cursor-pointer"
                                 onClick={() => openImageModal(image)}
                               >
-                                <img
-                                  src={image}
-                                  alt={`${event.title} ${index + 1}`}
-                                  className="w-full h-24 object-cover transition-transform duration-300 group-hover:scale-110"
-                                />
+                                {image.endsWith('.mp4') ? (
+                                  <video
+                                    className="w-full h-24 object-cover transition-transform duration-300 group-hover:scale-110"
+                                    controls
+                                  >
+                                    <source src={image} type="video/mp4" />
+                                  </video>
+                                ) : (
+                                  <img
+                                    src={image}
+                                    alt={`${event.title} ${index + 1}`}
+                                    className="w-full h-24 object-cover transition-transform duration-300 group-hover:scale-110"
+                                  />
+                                )}
                                 <div className="absolute inset-0 bg-black/30 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-center justify-center">
                                   <Camera className="w-6 h-6 text-white" />
                                 </div>
