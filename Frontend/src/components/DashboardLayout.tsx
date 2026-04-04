@@ -23,6 +23,7 @@ const menu = [
 
 const DashboardLayout = ({ children }: any) => {
   const [darkMode, setDarkMode] = useState(false);
+  const [sidebarOpen, setSidebarOpen] = useState(false);
   const location = useLocation();
 
   useEffect(() => {
@@ -37,58 +38,85 @@ const DashboardLayout = ({ children }: any) => {
   };
 
   return (
-    <div className={`${darkMode ? "dark" : ""} flex min-h-screen bg-gray-50 dark:bg-gray-900`}>
-      
-      {/* Sidebar */}
-      <div className="w-64 bg-white dark:bg-gray-900 border-r border-gray-100 dark:border-gray-700 p-6">
-        
-        <h2 className="text-xl font-bold text-gray-800 dark:text-white mb-10">
-          Asrudra CRM
-        </h2>
+    <div className={`${darkMode ? "dark" : ""} flex h-screen overflow-hidden`}>
 
-        <div className="space-y-2">
-          {menu.map((item, i) => {
-            const Icon = item.icon;
-            const active = location.pathname === item.path;
+      {/* 🔥 MOBILE BUTTON */}
+      <button
+        onClick={() => setSidebarOpen(true)}
+        className="lg:hidden fixed top-4 left-4 z-50 bg-white p-2 rounded shadow"
+      >
+        ☰
+      </button>
 
-            return (
-              <Link
-                key={i}
-                to={item.path}
-                onClick={(e) => {
-                  if (role === "admin") return;
+      {/* 🔥 OVERLAY */}
+      {sidebarOpen && (
+        <div
+          className="fixed inset-0 bg-black/40 z-40 lg:hidden"
+          onClick={() => setSidebarOpen(false)}
+        />
+      )}
 
-                  if (role === "tl" && !["Leads","Employees","Client Visits"].includes(item.name)) {
-                    e.preventDefault();
-                    alert("Only Admin can access this tab");
-                  }
+      {/* 🔥 SIDEBAR */}
+      <div
+        className={`
+        fixed lg:relative top-0 left-0 z-50
+        h-screen w-64
+        bg-white dark:bg-gray-900 border-r border-gray-100 dark:border-gray-700
+        transform transition-transform duration-300
+        ${sidebarOpen ? "translate-x-0" : "-translate-x-full lg:translate-x-0"}
+      `}
+      >
+        <div className="h-full flex flex-col p-6">
 
-                  if (role === "associate" && item.name !== "Employees") {
-                    e.preventDefault();
-                    alert("Access restricted");
-                  }
-                }}
-                className={`flex items-center gap-3 p-3 rounded-lg transition-all
-                ${active 
-                  ? "bg-blue-600 text-white shadow" 
-                  : "text-gray-600 dark:text-gray-300 hover:bg-blue-50 dark:hover:bg-gray-800"}`}
-              >
-                <Icon size={18} />
-                {item.name}
-              </Link>
-            );
-          })}
+          <h2 className="text-xl font-bold text-gray-800 dark:text-white mb-10">
+            Asrudra CRM
+          </h2>
+
+          <div className="space-y-2">
+            {menu.map((item, i) => {
+              const Icon = item.icon;
+              const active = location.pathname === item.path;
+
+              return (
+                <Link
+                  key={i}
+                  to={item.path}
+                  onClick={(e) => {
+                    setSidebarOpen(false);
+
+                    if (role === "admin") return;
+
+                    if (role === "tl" && !["Leads","Employees","Client Visits"].includes(item.name)) {
+                      e.preventDefault();
+                      alert("Only Admin can access this tab");
+                    }
+
+                    if (role === "associate" && item.name !== "Employees") {
+                      e.preventDefault();
+                      alert("Access restricted");
+                    }
+                  }}
+                  className={`flex items-center gap-3 p-3 rounded-lg transition-all
+                  ${active 
+                    ? "bg-blue-600 text-white shadow" 
+                    : "text-gray-600 dark:text-gray-300 hover:bg-blue-50 dark:hover:bg-gray-800"}`}
+                >
+                  <Icon size={18} />
+                  {item.name}
+                </Link>
+              );
+            })}
+          </div>
+
         </div>
       </div>
 
-      {/* Main Content */}
-      <div className="flex flex-col flex-1">
+      {/* 🔥 MAIN CONTENT */}
+      <div className="flex flex-col flex-1 h-screen overflow-y-auto">
 
-        {/* 🔥 Header ko toggle pass karo */}
         <DashboardHeader toggleTheme={toggleTheme} darkMode={darkMode} />
 
-        {/* Content */}
-        <div className="flex-1 p-10 min-h-screen bg-gray-50 dark:bg-gray-900 text-black dark:text-white">
+        <div className="flex-1 p-4 sm:p-6 lg:p-8 bg-gray-50 dark:bg-gray-900 text-black dark:text-white">
           {children}
         </div>
 

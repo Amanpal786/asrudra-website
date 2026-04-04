@@ -21,7 +21,7 @@ const Dashboard = () => {
 
   const [search, setSearch] = useState("");
 
-  // 🔹 Fetch Leads (LIVE BACKEND)
+  // 🔹 Fetch Leads
   const fetchLeads = async () => {
     try {
       const res = await axios.get(
@@ -30,7 +30,6 @@ const Dashboard = () => {
 
       setLeads(res.data);
 
-      // ✅ TOTAL LEADS FIX
       setStats((prev) => ({
         ...prev,
         totalLeads: res.data.length
@@ -41,7 +40,7 @@ const Dashboard = () => {
     }
   };
 
-  // 🔹 Fetch Dashboard Stats (optional)
+  // 🔹 Fetch Stats
   const fetchStats = async () => {
     try {
       const res = await axios.get(
@@ -51,7 +50,7 @@ const Dashboard = () => {
       setStats((prev) => ({
         ...prev,
         ...res.data,
-        totalLeads: leads.length // 🔥 ensure सही count
+        totalLeads: leads.length
       }));
 
     } catch (err) {
@@ -64,7 +63,7 @@ const Dashboard = () => {
     fetchStats();
   }, []);
 
-  // 🔥 FILTER FIX (enquiry fields)
+  // 🔥 Filter
   const filteredLeads = leads.filter((lead: any) =>
     lead.fullName?.toLowerCase().includes(search.toLowerCase()) ||
     lead.phoneNumber?.includes(search) ||
@@ -75,10 +74,10 @@ const Dashboard = () => {
     <DashboardLayout>
 
       {/* Header */}
-      <div className="flex justify-between items-center mb-10">
+      <div className="flex flex-col sm:flex-row justify-between items-start sm:items-center gap-4 mb-6">
 
         <div>
-          <h1 className="text-3xl font-bold text-gray-800">
+          <h1 className="text-xl sm:text-2xl lg:text-3xl font-bold text-gray-800">
             Dashboard
           </h1>
 
@@ -87,13 +86,13 @@ const Dashboard = () => {
           </p>
         </div>
 
-        <div className="flex items-center gap-4">
+        <div className="flex flex-col sm:flex-row items-start sm:items-center gap-3 sm:gap-4 w-full sm:w-auto">
 
           <input
             placeholder="Search leads..."
             value={search}
             onChange={(e)=>setSearch(e.target.value)}
-            className="border border-gray-200 rounded-lg px-4 py-2 text-sm text-gray-800 placeholder-gray-400 focus:outline-none focus:ring-2 focus:ring-blue-500"
+            className="w-full sm:w-64 border border-gray-200 rounded-lg px-4 py-2 text-sm text-gray-800 placeholder-gray-400 focus:outline-none focus:ring-2 focus:ring-blue-500"
           />
 
           <img
@@ -107,44 +106,44 @@ const Dashboard = () => {
       </div>
 
       {/* Stats Cards */}
-      <div className="grid grid-cols-4 gap-6 mb-10">
+      <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4 mb-6">
 
-        <div className="bg-white p-6 rounded-xl border border-gray-100 shadow-sm hover:shadow-md transition">
+        <div className="bg-white p-4 sm:p-6 rounded-xl border border-gray-100 shadow-sm hover:shadow-md transition">
           <div className="flex items-center justify-between">
             <p className="text-gray-500 text-sm">Total Leads</p>
             <Users size={18} className="text-blue-500" />
           </div>
-          <h2 className="text-3xl font-bold text-gray-800 mt-3">
+          <h2 className="text-2xl sm:text-3xl font-bold text-gray-800 mt-3">
             {stats.totalLeads}
           </h2>
         </div>
 
-        <div className="bg-white p-6 rounded-xl border border-gray-100 shadow-sm hover:shadow-md transition">
+        <div className="bg-white p-4 sm:p-6 rounded-xl border border-gray-100 shadow-sm hover:shadow-md transition">
           <div className="flex items-center justify-between">
             <p className="text-gray-500 text-sm">Client Visits</p>
             <MapPin size={18} className="text-cyan-500" />
           </div>
-          <h2 className="text-3xl font-bold text-gray-800 mt-3">
+          <h2 className="text-2xl sm:text-3xl font-bold text-gray-800 mt-3">
             {stats.clientVisits}
           </h2>
         </div>
 
-        <div className="bg-white p-6 rounded-xl border border-gray-100 shadow-sm hover:shadow-md transition">
+        <div className="bg-white p-4 sm:p-6 rounded-xl border border-gray-100 shadow-sm hover:shadow-md transition">
           <div className="flex items-center justify-between">
             <p className="text-gray-500 text-sm">Closed Deals</p>
             <CheckCircle size={18} className="text-green-500" />
           </div>
-          <h2 className="text-3xl font-bold text-gray-800 mt-3">
+          <h2 className="text-2xl sm:text-3xl font-bold text-gray-800 mt-3">
             {stats.closedDeals}
           </h2>
         </div>
 
-        <div className="bg-white p-6 rounded-xl border border-gray-100 shadow-sm hover:shadow-md transition">
+        <div className="bg-white p-4 sm:p-6 rounded-xl border border-gray-100 shadow-sm hover:shadow-md transition">
           <div className="flex items-center justify-between">
             <p className="text-gray-500 text-sm">Employees</p>
             <Briefcase size={18} className="text-purple-500" />
           </div>
-          <h2 className="text-3xl font-bold text-gray-800 mt-3">
+          <h2 className="text-2xl sm:text-3xl font-bold text-gray-800 mt-3">
             {stats.employees}
           </h2>
         </div>
@@ -152,15 +151,19 @@ const Dashboard = () => {
       </div>
 
       {/* Charts */}
-      <div className="grid grid-cols-2 gap-6 mb-10">
-        <VisitsChart />
-        <HiringChart />
+      <div className="grid grid-cols-1 lg:grid-cols-2 gap-4 mb-6">
+        <div className="w-full overflow-x-auto">
+          <VisitsChart />
+        </div>
+        <div className="w-full overflow-x-auto">
+          <HiringChart />
+        </div>
       </div>
 
-      {/* Recent Leads Table */}
-      <div className="bg-white rounded-xl shadow border border-gray-100">
+      {/* Table */}
+      <div className="bg-white rounded-xl shadow border border-gray-100 overflow-x-auto">
 
-        <div className="flex justify-between items-center p-6 border-b">
+        <div className="flex justify-between items-center p-4 sm:p-6 border-b">
           <h2 className="text-lg font-semibold text-gray-800">
             Recent Leads
           </h2>
