@@ -63,7 +63,7 @@ const Gallery = () => {
       description: 'Apex Park Square – Ultra-Luxury Commercial Spaces Experience world-class amenities: gym, swimming pool, auditorium, meeting halls & kids’ play zone — where luxury meets productivity.',
       images: [
         '/images/apex.jpg',
-        '/images/tyuio.mp4',
+        '/images/apex2.mp4',
         // '/images/nx one 4.png',
         // '/images/nx one 7.png',
         // '/images/nx one .jpeg',
