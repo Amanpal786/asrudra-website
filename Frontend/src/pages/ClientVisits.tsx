@@ -5,135 +5,130 @@ import { useNavigate } from "react-router-dom";
 import TableSearch from "../components/ui/TableSearch";
 
 const ClientVisits = () => {
-    const [search, setSearch] = useState("");
 
-const [visits,setVisits] = useState([]);
-const navigate = useNavigate();
+  const [search, setSearch] = useState("");
+  const [visits,setVisits] = useState<any[]>([]);
+  const navigate = useNavigate();
 
-useEffect(()=>{
-fetchVisits();
-},[]);
-const filteredVisits = visits.filter((visit:any) =>
-  visit.client?.toLowerCase().includes(search.toLowerCase()) ||
-  visit.property?.toLowerCase().includes(search.toLowerCase()) ||
-  visit.phone?.includes(search)
-);
+  const fetchVisits = async () => {
+    try{
+      const res = await axios.get(
+        "https://asrudra-backend-1.onrender.com/api/visits"
+      );
+      setVisits(res.data || []);
+    }catch(err){
+      console.log(err);
+    }
+  };
 
-const fetchVisits = async () => {
+  useEffect(()=>{ fetchVisits(); },[]);
 
-const res = await axios.get(
-"https://asrudra-backend-1.onrender.com/api/visits"
-);
+  const filteredVisits = visits.filter((visit:any) =>
+    visit.client?.toLowerCase().includes(search.toLowerCase()) ||
+    visit.property?.toLowerCase().includes(search.toLowerCase()) ||
+    visit.phone?.includes(search)
+  );
 
-setVisits(res.data);
+  const deleteVisit = async(id:any)=>{
+    if(!confirm("Delete this visit?")) return;
 
-};
+    await axios.delete(
+      `https://asrudra-backend-1.onrender.com/api/visits/${id}`
+    );
 
-const deleteVisit = async(id:any)=>{
+    fetchVisits();
+  };
 
-if(!confirm("Delete this visit?")) return;
+  return(
+    <DashboardLayout>
 
-await axios.delete(
-`https://asrudra-backend-1.onrender.com/api/visits/${id}`
-);
+      <div className="p-4 sm:p-6 lg:p-8">
 
-fetchVisits();
+        {/* HEADER */}
+        <div className="flex flex-col lg:flex-row justify-between items-start lg:items-center gap-4 mb-6">
 
-};
+          <h1 className="text-xl sm:text-2xl lg:text-3xl font-bold text-blue-600">
+            Client Visits
+          </h1>
 
-return(
+          <div className="flex flex-col sm:flex-row gap-3 w-full lg:w-auto">
 
-<DashboardLayout>
+            <TableSearch
+              value={search}
+              onChange={setSearch}
+              placeholder="Search visit..."
+            />
 
-<div className="p-8">
+            <button
+              onClick={()=>navigate("/dashboard/add-visit")}
+              className="w-full sm:w-auto bg-blue-600 text-white px-4 py-2 rounded-lg"
+            >
+              + Add Visit
+            </button>
 
-<div className="flex justify-between mb-6">
+          </div>
+        </div>
 
-<h1 className="text-3xl font-bold text-blue-600">
-Client Visits
-</h1>
-<TableSearch
- value={search}
- onChange={setSearch}
- placeholder="Search visit..."
-/>
+        {/* TABLE */}
+        <div className="bg-white rounded-xl shadow text-gray-700 overflow-x-auto">
 
-<button
-onClick={()=>navigate("/dashboard/add-visit")}
-className="bg-blue-600 text-white px-5 py-2 rounded-lg"
->
-+ Add Visit
-</button>
-</div>
+          <table className="min-w-[700px] w-full">
 
-<div className="bg-white rounded-xl shadow text-gray-700">
+            <thead className="bg-gray-100 text-gray-600">
+              <tr>
+                <th className="p-4 text-left">Client</th>
+                <th className="p-4 text-left">Property</th>
+                <th className="p-4 text-left">Date</th>
+                <th className="p-4 text-left">Status</th>
+                <th className="p-4 text-left">Action</th>
+              </tr>
+            </thead>
 
-<table className="w-full ">
+            <tbody>
+              {filteredVisits.map((visit:any)=>(
+                <tr key={visit._id} className="border-t">
 
-<thead className="bg-black-100 text-gray-600 font-medium">
+                  <td className="p-4 whitespace-nowrap">{visit.client}</td>
+                  <td className="p-4">{visit.property}</td>
+                  <td className="p-4 whitespace-nowrap">{visit.date}</td>
 
-<tr>
+                  <td className="p-4">
+                    <span className="bg-green-100 text-green-700 px-2 py-1 rounded text-xs">
+                      {visit.status}
+                    </span>
+                  </td>
 
-<th className="p-4 text-left">Client</th>
-<th className="p-4 text-left">Property</th>
-<th className="p-4 text-left">Date</th>
-<th className="p-4 text-left">Status</th>
-<th className="p-4 text-left">Action</th>
+                  <td className="p-4">
+                    <div className="flex gap-2">
 
-</tr>
+                      <button
+                        onClick={()=>navigate(`/dashboard/edit-visit/${visit._id}`)}
+                        className="bg-yellow-400 text-white px-3 py-1 rounded text-xs"
+                      >
+                        Edit
+                      </button>
 
-</thead>
+                      <button
+                        onClick={()=>deleteVisit(visit._id)}
+                        className="bg-red-500 text-white px-3 py-1 rounded text-xs"
+                      >
+                        Delete
+                      </button>
 
-<tbody>
+                    </div>
+                  </td>
 
-{filteredVisits.map((visit:any)=>(
+                </tr>
+              ))}
+            </tbody>
 
-<tr key={visit._id} className="border-t">
+          </table>
+        </div>
 
-<td className="p-4">{visit.client}</td>
-<td className="p-4">{visit.property}</td>
-<td className="p-4">{visit.date}</td>
+      </div>
 
-<td className="p-4">
-<span className="bg-green-100 text-green-700 px-2 py-1 rounded">
-{visit.status}
-</span>
-</td>
-
-<td className="p-4 flex gap-3">
-
-<button
-onClick={()=>navigate(`/dashboard/edit-visit/${visit._id}`)}
-className="flex items-center gap-1 bg-yellow-400 hover:bg-yellow-500 text-white px-3 py-1.5 rounded-md text-xs font-semibold transition"
->
-✏ Edit
-</button>
-
-<button
-onClick={()=>deleteVisit(visit._id)}
-className="flex items-center gap-1 bg-red-500 hover:bg-red-600 text-white px-3 py-1.5 rounded-md text-xs font-semibold transition"
->
-🗑 Delete
-</button>
-
-</td>
-
-</tr>
-
-))}
-
-</tbody>
-
-</table>
-
-</div>
-
-</div>
-
-</DashboardLayout>
-
-)
-
+    </DashboardLayout>
+  )
 }
 
 export default ClientVisits;

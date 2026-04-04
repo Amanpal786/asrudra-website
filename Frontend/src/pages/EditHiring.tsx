@@ -5,85 +5,74 @@ import DashboardLayout from "../components/DashboardLayout";
 
 const EditHiring = ()=>{
 
-const {id} = useParams();
-const navigate = useNavigate();
+  const {id} = useParams();
+  const navigate = useNavigate();
 
-const [form,setForm] = useState({
-name:"",
-position:"",
-phone:"",
-status:"Pending"
-});
+  const [form,setForm] = useState({
+    name:"",
+    position:"",
+    phone:"",
+    status:"Pending"
+  });
 
-useEffect(()=>{
-fetchData();
-},[]);
+  useEffect(()=>{
+    fetchData();
+  },[]);
 
-const fetchData = async ()=>{
+  const fetchData = async ()=>{
+    const res = await axios.get(
+      `https://asrudra-backend-1.onrender.com/api/hiring/${id}`
+    );
+    setForm(res.data);
+  };
 
-const res = await axios.get(
-`https://asrudra-backend-1.onrender.com/api/hiring/${id}`
-);
+  const handleSubmit = async(e:any)=>{
+    e.preventDefault();
 
-setForm(res.data);
+    await axios.put(
+      `https://asrudra-backend-1.onrender.com/api/hiring/${id}`,
+      form
+    );
 
-};
+    navigate("/dashboard/hiring");
+  };
 
-const handleSubmit = async(e:any)=>{
+  return(
+    <DashboardLayout>
 
-e.preventDefault();
+      <h1 className="text-xl sm:text-2xl font-bold mb-6 text-blue-600">
+        Edit Candidate
+      </h1>
 
-await axios.put(
-`https://asrudra-backend-1.onrender.com/api/hiring/${id}`,
-form
-);
+      <div className="flex justify-center">
 
-navigate("/dashboard/hiring");
+        <form onSubmit={handleSubmit} className="bg-white w-full max-w-xl p-6 rounded-xl shadow space-y-4">
 
-};
+          <input className="border p-3 rounded w-full"
+            value={form.name}
+            onChange={(e)=>setForm({...form,name:e.target.value})}
+          />
 
-return(
+          <input className="border p-3 rounded w-full"
+            value={form.position}
+            onChange={(e)=>setForm({...form,position:e.target.value})}
+          />
 
-<DashboardLayout>
+          <input className="border p-3 rounded w-full"
+            value={form.phone}
+            onChange={(e)=>setForm({...form,phone:e.target.value})}
+          />
 
-<div className="p-8">
+          <button className="w-full sm:w-auto bg-blue-600 text-white px-4 py-2 rounded">
+            Update
+          </button>
 
-<h1 className="text-2xl font-bold mb-6 text-blue-600">
-Edit Candidate
-</h1>
+        </form>
 
-<form onSubmit={handleSubmit} className="space-y-4">
+      </div>
 
-<input
-className="border p-2 w-full text-gray-900"
-value={form.name}
-onChange={(e)=>setForm({...form,name:e.target.value})}
-/>
-
-<input
-className="border p-2 w-full text-gray-900"
-value={form.position}
-onChange={(e)=>setForm({...form,position:e.target.value})}
-/>
-
-<input
-className="border p-2 w-full text-gray-900"
-value={form.phone}
-onChange={(e)=>setForm({...form,phone:e.target.value})}
-/>
-
-<button className="bg-blue-600 text-white px-4 py-2 rounded text-sm font-medium hover:bg-blue-700 transition">
-Update
-</button>
-
-</form>
-
-</div>
-
-</DashboardLayout>
-
-)
-
+    </DashboardLayout>
+  )
 }
 
 export default EditHiring;

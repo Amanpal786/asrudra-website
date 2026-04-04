@@ -5,107 +5,87 @@ import DashboardLayout from "../components/DashboardLayout";
 
 const EditEmployee = () => {
 
-const {id} = useParams();
-const navigate = useNavigate();
+  const {id} = useParams();
+  const navigate = useNavigate();
 
-const [form,setForm] = useState({
-name:"",
-role:"",
-phone:"",
-email:"",
-status:"Active"
-});
+  const [form,setForm] = useState({
+    name:"",
+    role:"",
+    phone:"",
+    email:"",
+    status:"Active"
+  });
 
-useEffect(()=>{
-fetchEmployee();
-},[]);
+  useEffect(()=>{
+    fetchEmployee();
+  },[]);
 
-const fetchEmployee = async () => {
+  const fetchEmployee = async () => {
+    try{
+      const res = await axios.get(
+        `https://asrudra-backend-1.onrender.com/api/employees/${id}`
+      );
+      setForm(res.data);
+    }catch(err){
+      console.log(err);
+    }
+  };
 
-try{
+  const handleSubmit = async (e:any) => {
+    e.preventDefault();
 
-const res = await axios.get(
-`https://asrudra-backend-1.onrender.com/api/employees/${id}`
-);
+    try{
+      await axios.put(
+        `https://asrudra-backend-1.onrender.com/api/employees/${id}`,
+        form
+      );
+      navigate("/dashboard/employees");
+    }catch(err){
+      console.log(err);
+    }
+  };
 
-setForm(res.data);
+  return(
+    <DashboardLayout>
 
-}catch(err){
-console.log(err);
-}
+      <h1 className="text-xl sm:text-2xl font-bold mb-6 text-blue-600">
+        Edit Employee
+      </h1>
 
-};
+      <div className="flex justify-center">
 
-const handleSubmit = async (e:any) => {
+        <form onSubmit={handleSubmit} className="bg-white w-full max-w-xl p-6 rounded-xl shadow space-y-4">
 
-e.preventDefault();
+          <input className="border p-3 rounded w-full"
+            value={form.name}
+            onChange={(e)=>setForm({...form,name:e.target.value})}
+          />
 
-try{
+          <input className="border p-3 rounded w-full"
+            value={form.role}
+            onChange={(e)=>setForm({...form,role:e.target.value})}
+          />
 
-await axios.put(
-`https://asrudra-backend-1.onrender.com/api/employees/${id}`,
-form
-);
+          <input className="border p-3 rounded w-full"
+            value={form.phone}
+            onChange={(e)=>setForm({...form,phone:e.target.value})}
+          />
 
-navigate("/dashboard/employees");
+          <input className="border p-3 rounded w-full"
+            value={form.email}
+            onChange={(e)=>setForm({...form,email:e.target.value})}
+          />
 
-}catch(err){
-console.log(err);
-}
+          <button className="w-full sm:w-auto bg-blue-600 text-white px-4 py-2 rounded">
+            Update
+          </button>
 
-};
+        </form>
 
-return(
+      </div>
 
-<DashboardLayout>
-
-<div className="p-8">
-
-<h1 className="text-2xl font-bold mb-6 text-blue-600">
-Edit Employee
-</h1>
-
-<form onSubmit={handleSubmit} className="space-y-4">
-
-<input
-className="border p-3 rounded w-full text-gray-900"
-value={form.name}
-onChange={(e)=>setForm({...form,name:e.target.value})}
-/>
-
-<input
-className="border p-3 rounded w-full text-gray-900"
-value={form.role}
-onChange={(e)=>setForm({...form,role:e.target.value})}
-/>
-
-<input
-className="border p-3 rounded w-full text-gray-900"
-value={form.phone}
-onChange={(e)=>setForm({...form,phone:e.target.value})}
-/>
-
-<input
-className="border p-3 rounded w-full text-gray-900"
-value={form.email}
-onChange={(e)=>setForm({...form,email:e.target.value})}
-/>
-
-<button
-type="submit"
-className="bg-blue-600 text-white px-4 py-2 rounded text-sm font-medium hover:bg-blue-700 transition"
->
-Update
-</button>
-
-</form>
-
-</div>
-
-</DashboardLayout>
-
-);
-
+    </DashboardLayout>
+  );
 };
 
 export default EditEmployee;

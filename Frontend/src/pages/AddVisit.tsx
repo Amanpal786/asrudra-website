@@ -5,72 +5,62 @@ import DashboardLayout from "../components/DashboardLayout";
 
 const AddVisit = ()=>{
 
-const navigate = useNavigate();
+  const navigate = useNavigate();
 
-const [form,setForm] = useState({
-client:"",
-property:"",
-date:"",
-status:"Scheduled"
-});
+  const [form,setForm] = useState({
+    client:"",
+    property:"",
+    date:"",
+    status:"Scheduled"
+  });
 
-const handleSubmit = async(e:any)=>{
+  const handleSubmit = async(e:any)=>{
+    e.preventDefault();
 
-e.preventDefault();
+    await axios.post(
+      "https://asrudra-backend-1.onrender.com/api/visits",
+      form
+    );
 
-await axios.post(
-"https://asrudra-backend-1.onrender.com/api/visits",
-form
-);
+    navigate("/dashboard/visits");
+  };
 
-navigate("/dashboard/visits");
+  return(
+    <DashboardLayout>
 
-};
+      <h1 className="text-xl sm:text-2xl font-bold mb-6 text-blue-600">
+        Add Client Visit
+      </h1>
 
-return(
+      <div className="flex justify-center">
 
-<DashboardLayout>
+        <form onSubmit={handleSubmit} className="bg-white w-full max-w-xl p-6 rounded-xl shadow space-y-4">
 
-<div className="p-8">
+          <input className="border p-3 rounded w-full"
+            placeholder="Client Name"
+            onChange={(e)=>setForm({...form,client:e.target.value})}
+          />
 
-<h1 className="text-2xl font-bold mb-6 text-blue-600">
-Add Client Visit
-</h1>
+          <input className="border p-3 rounded w-full"
+            placeholder="Property"
+            onChange={(e)=>setForm({...form,property:e.target.value})}
+          />
 
-<form onSubmit={handleSubmit} className="space-y-4">
+          <input type="date"
+            className="border p-3 rounded w-full"
+            onChange={(e)=>setForm({...form,date:e.target.value})}
+          />
 
-<input
-placeholder="Client Name"
-className="border p-3 w-full text-gray-700"
-onChange={(e)=>setForm({...form,client:e.target.value})}
-/>
+          <button className="w-full sm:w-auto bg-blue-600 text-white px-4 py-2 rounded">
+            Save
+          </button>
 
-<input
-placeholder="Property"
-className="border p-3 w-full text-gray-700"
-onChange={(e)=>setForm({...form,property:e.target.value})}
-/>
+        </form>
 
-<input
-type="date"
-className="border p-3 w-full text-gray-700"
-onChange={(e)=>setForm({...form,date:e.target.value})}
-/>
+      </div>
 
-<button
-className="bg-blue-600 text-white px-5 py-2 rounded hover:bg-blue-500 transition"
->
-Save
-</button>
-
-</form>
-
-</div>
-
-</DashboardLayout>
-
-)
-
+    </DashboardLayout>
+  )
 }
 
 export default AddVisit;

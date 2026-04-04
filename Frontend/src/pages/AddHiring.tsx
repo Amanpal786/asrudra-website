@@ -5,71 +5,56 @@ import DashboardLayout from "../components/DashboardLayout";
 
 const AddHiring = () => {
 
-const navigate = useNavigate();
+  const navigate = useNavigate();
 
-const [form,setForm] = useState({
-name:"",
-position:"",
-phone:"",
-status:"Pending"
-});
+  const [form,setForm] = useState({
+    name:"",
+    position:"",
+    phone:"",
+    status:"Pending"
+  });
 
-const handleSubmit = async(e:any)=>{
-e.preventDefault();
+  const handleSubmit = async(e:any)=>{
+    e.preventDefault();
 
-await axios.post(
-"https://asrudra-backend-1.onrender.com/api/hiring",
-form
-);
+    await axios.post(
+      "https://asrudra-backend-1.onrender.com/api/hiring",
+      form
+    );
 
-navigate("/dashboard/hiring");
+    navigate("/dashboard/hiring");
+  };
 
-};
+  return(
+    <DashboardLayout>
 
-return(
+      <h1 className="text-xl sm:text-2xl font-bold mb-6 text-blue-600">
+        Add Candidate
+      </h1>
 
-<DashboardLayout>
+      <div className="flex justify-center">
 
-<div className="p-8">
+        <form onSubmit={handleSubmit} className="bg-white w-full max-w-xl p-6 rounded-xl shadow space-y-4">
 
-<h1 className="text-2xl font-bold mb-6 text-blue-600">
-Add Candidate
-</h1>
+          <input className="border p-3 rounded w-full" placeholder="Name"
+            onChange={(e)=>setForm({...form,name:e.target.value})} />
 
-<form onSubmit={handleSubmit} className="space-y-4">
+          <input className="border p-3 rounded w-full" placeholder="Position"
+            onChange={(e)=>setForm({...form,position:e.target.value})} />
 
-<input
-className="border p-2 w-full text-gray-900"
-placeholder="Name"
-onChange={(e)=>setForm({...form,name:e.target.value})}
-/>
+          <input className="border p-3 rounded w-full" placeholder="Phone"
+            onChange={(e)=>setForm({...form,phone:e.target.value})} />
 
-<input
-className="border p-2 w-full text-gray-900"
-placeholder="Position"
-onChange={(e)=>setForm({...form,position:e.target.value})}
-/>
+          <button className="w-full sm:w-auto bg-blue-600 text-white px-4 py-2 rounded">
+            Save
+          </button>
 
-<input
-className="border p-2 w-full text-gray-900"
-placeholder="Phone"
-onChange={(e)=>setForm({...form,phone:e.target.value})}
-/>
+        </form>
 
-<button
-className="bg-blue-600 text-white px-4 py-2 rounded text-sm font-medium hover:bg-blue-700 transition"
->
-Save
-</button>
+      </div>
 
-</form>
-
-</div>
-
-</DashboardLayout>
-
-)
-
+    </DashboardLayout>
+  )
 }
 
 export default AddHiring;

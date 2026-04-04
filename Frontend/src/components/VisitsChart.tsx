@@ -16,33 +16,35 @@ const COLORS = ["#4F46E5", "#06B6D4", "#22C55E"];
 
 const VisitsChart = () => {
   return (
-    <div className="bg-white p-6 rounded-xl border border-gray-100 shadow-sm">
+    <div className="bg-white p-4 sm:p-6 rounded-xl border shadow w-full overflow-hidden">
 
-    <h2 className="text-lg font-semibold text-gray-800 mb-4">
+      <h2 className="text-base sm:text-lg font-semibold text-gray-800 mb-4">
         Client Visits
-    </h2>
+      </h2>
 
-      <ResponsiveContainer width="100%" height={250}>
-        <PieChart>
-          <Pie
-            data={data}
-            innerRadius={60}
-            outerRadius={90}
-            dataKey="value"
-          >
-            {data.map((entry, index) => (
-              <Cell key={index} fill={COLORS[index]} />
-            ))}
-          </Pie>
+      <div className="w-full h-[220px] sm:h-[280px] md:h-[300px]">
+        <ResponsiveContainer width="100%" height="100%">
+          <PieChart>
 
-          <Tooltip />
+            <Pie
+              data={data}
+              innerRadius={50}
+              outerRadius={80}
+              dataKey="value"
+            >
+              {data.map((entry, index) => (
+                <Cell key={index} fill={COLORS[index]} />
+              ))}
+            </Pie>
 
-        </PieChart>
-      </ResponsiveContainer>
+            <Tooltip />
+
+          </PieChart>
+        </ResponsiveContainer>
+      </div>
 
     </div>
   );
 };
 
 export default VisitsChart;
-

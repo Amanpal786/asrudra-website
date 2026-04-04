@@ -5,139 +5,130 @@ import { useNavigate } from "react-router-dom";
 import TableSearch from "../components/ui/TableSearch";
 
 const Prospectus = ()=>{
-    const [search, setSearch] = useState("");
 
-    const [prospects,setProspects] = useState([]);
-    const navigate = useNavigate();
+  const [search, setSearch] = useState("");
+  const [prospects,setProspects] = useState<any[]>([]);
+  const navigate = useNavigate();
 
-useEffect(()=>{
-fetchProspects();
-},[]);
-const filteredProspects = prospects.filter((item:any) =>
-  item.name?.toLowerCase().includes(search.toLowerCase()) ||
-  item.phone?.includes(search) ||
-  item.interest?.toLowerCase().includes(search.toLowerCase())
-);
+  const fetchProspects = async()=>{
+    try{
+      const res = await axios.get(
+        "https://asrudra-backend-1.onrender.com/api/prospects"
+      );
+      setProspects(res.data || []);
+    }catch(err){
+      console.log(err);
+    }
+  };
 
-const fetchProspects = async()=>{
+  useEffect(()=>{ fetchProspects(); },[]);
 
-const res = await axios.get(
-"https://asrudra-backend-1.onrender.com/api/prospects"
-);
+  const filteredProspects = prospects.filter((item:any) =>
+    item.name?.toLowerCase().includes(search.toLowerCase()) ||
+    item.phone?.includes(search) ||
+    item.interest?.toLowerCase().includes(search.toLowerCase())
+  );
 
-setProspects(res.data);
+  const deleteProspect = async(id:any)=>{
+    if(!confirm("Delete this prospect?")) return;
 
-};
+    await axios.delete(
+      `https://asrudra-backend-1.onrender.com/api/prospects/${id}`
+    );
 
-const deleteProspect = async(id:any)=>{
+    fetchProspects();
+  };
 
-if(!confirm("Delete this prospect?")) return;
+  return(
+    <DashboardLayout>
 
-await axios.delete(
-`https://asrudra-backend-1.onrender.com/api/prospects/${id}`
-);
+      <div className="p-4 sm:p-6 lg:p-8">
 
-fetchProspects();
+        {/* HEADER */}
+        <div className="flex flex-col lg:flex-row justify-between items-start lg:items-center gap-4 mb-6">
 
-};
+          <h1 className="text-xl sm:text-2xl lg:text-3xl font-bold text-blue-600">
+            Prospectus
+          </h1>
 
-return(
+          <div className="flex flex-col sm:flex-row gap-3 w-full lg:w-auto">
 
-<DashboardLayout>
+            <TableSearch
+              value={search}
+              onChange={setSearch}
+              placeholder="Search prospect..."
+            />
 
-<div className="p-8">
+            <button
+              onClick={()=>navigate("/dashboard/add-prospect")}
+              className="w-full sm:w-auto bg-blue-600 text-white px-4 py-2 rounded-lg"
+            >
+              + Add Prospect
+            </button>
 
-<div className="flex justify-between mb-6">
+          </div>
+        </div>
 
-<h1 className="text-3xl font-bold text-blue-600">
-Prospectus
-</h1>
+        {/* TABLE */}
+        <div className="bg-white rounded-xl shadow text-gray-700 overflow-x-auto">
 
-<TableSearch
- value={search}
- onChange={setSearch}
- placeholder="Search prospect..."
-/>
+          <table className="min-w-[700px] w-full">
 
-<button
-onClick={()=>navigate("/dashboard/add-prospect")}
-className="bg-blue-600 text-white px-5 py-2 rounded-lg"
->
-+ Add Prospect
-</button>
+            <thead className="bg-gray-100">
+              <tr>
+                <th className="p-4 text-left">Name</th>
+                <th className="p-4 text-left">Phone</th>
+                <th className="p-4 text-left">Interest</th>
+                <th className="p-4 text-left">Status</th>
+                <th className="p-4 text-left">Action</th>
+              </tr>
+            </thead>
 
-</div>
+            <tbody>
+              {filteredProspects.map((item:any)=>(
+                <tr key={item._id} className="border-t">
 
-<div className="bg-white rounded-xl shadow text-gray-700">
+                  <td className="p-4 whitespace-nowrap">{item.name}</td>
+                  <td className="p-4 whitespace-nowrap">{item.phone}</td>
+                  <td className="p-4">{item.interest}</td>
 
-<table className="w-full text-gray-700">
+                  <td className="p-4">
+                    <span className="bg-blue-100 text-blue-700 px-2 py-1 rounded text-xs">
+                      {item.status}
+                    </span>
+                  </td>
 
-<thead className="bg-gray-100">
+                  <td className="p-4">
+                    <div className="flex gap-2">
 
-<tr>
+                      <button
+                        onClick={()=>navigate(`/dashboard/edit-prospect/${item._id}`)}
+                        className="bg-yellow-400 text-white px-3 py-1 rounded text-xs"
+                      >
+                        Edit
+                      </button>
 
-<th className="p-4 text-left">Name</th>
-<th className="p-4 text-left">Phone</th>
-<th className="p-4 text-left">Interest</th>
-<th className="p-4 text-left">Status</th>
-<th className="p-4 text-left">Action</th>
+                      <button
+                        onClick={()=>deleteProspect(item._id)}
+                        className="bg-red-500 text-white px-3 py-1 rounded text-xs"
+                      >
+                        Delete
+                      </button>
 
-</tr>
+                    </div>
+                  </td>
 
-</thead>
+                </tr>
+              ))}
+            </tbody>
 
-<tbody>
+          </table>
+        </div>
 
-{filteredProspects.map((item:any)=>(
+      </div>
 
-<tr key={item._id} className="border-t">
-
-<td className="p-4">{item.name}</td>
-<td className="p-4">{item.phone}</td>
-<td className="p-4">{item.interest}</td>
-
-<td className="p-4">
-
-<span className="bg-blue-100 text-blue-700 px-2 py-1 rounded">
-{item.status}
-</span>
-
-</td>
-
-<td className="p-4 flex gap-3">
-
-<button
-onClick={()=>navigate(`/dashboard/edit-prospect/${item._id}`)}
-className="flex items-center gap-1 bg-yellow-400 hover:bg-yellow-500 text-white px-3 py-1.5 rounded-md text-xs font-semibold transition"
->
-✏ Edit
-</button>
-
-<button
-onClick={()=>deleteProspect(item._id)}
-className="flex items-center gap-1 bg-red-500 hover:bg-red-600 text-white px-3 py-1.5 rounded-md text-xs font-semibold transition"
->
-🗑 Delete
-</button>
-
-</td>
-
-</tr>
-
-))}
-
-</tbody>
-
-</table>
-
-</div>
-
-</div>
-
-</DashboardLayout>
-
-)
-
+    </DashboardLayout>
+  )
 }
 
 export default Prospectus;

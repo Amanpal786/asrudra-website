@@ -5,87 +5,74 @@ import DashboardLayout from "../components/DashboardLayout";
 
 const EditProspect = ()=>{
 
-const {id} = useParams();
-const navigate = useNavigate();
+  const {id} = useParams();
+  const navigate = useNavigate();
 
-const [form,setForm] = useState({
-name:"",
-phone:"",
-interest:"",
-status:""
-});
+  const [form,setForm] = useState({
+    name:"",
+    phone:"",
+    interest:"",
+    status:""
+  });
 
-useEffect(()=>{
-fetchProspect();
-},[]);
+  useEffect(()=>{
+    fetchProspect();
+  },[]);
 
-const fetchProspect = async()=>{
+  const fetchProspect = async()=>{
+    const res = await axios.get(
+      `https://asrudra-backend-1.onrender.com/api/prospects/${id}`
+    );
+    setForm(res.data);
+  };
 
-const res = await axios.get(
-`https://asrudra-backend-1.onrender.com/api/prospects/${id}`
-);
+  const handleSubmit = async(e:any)=>{
+    e.preventDefault();
 
-setForm(res.data);
+    await axios.put(
+      `https://asrudra-backend-1.onrender.com/api/prospects/${id}`,
+      form
+    );
 
-};
+    navigate("/dashboard/prospectus");
+  };
 
-const handleSubmit = async(e:any)=>{
+  return(
+    <DashboardLayout>
 
-e.preventDefault();
+      <h1 className="text-xl sm:text-2xl font-bold mb-6 text-blue-600">
+        Edit Prospect
+      </h1>
 
-await axios.put(
-`https://asrudra-backend-1.onrender.com/api/prospects/${id}`,
-form
-);
+      <div className="flex justify-center">
 
-navigate("/dashboard/prospectus");
+        <form onSubmit={handleSubmit} className="bg-white w-full max-w-xl p-6 rounded-xl shadow space-y-4">
 
-};
+          <input className="border p-3 rounded w-full"
+            value={form.name}
+            onChange={(e)=>setForm({...form,name:e.target.value})}
+          />
 
-return(
+          <input className="border p-3 rounded w-full"
+            value={form.phone}
+            onChange={(e)=>setForm({...form,phone:e.target.value})}
+          />
 
-<DashboardLayout>
+          <input className="border p-3 rounded w-full"
+            value={form.interest}
+            onChange={(e)=>setForm({...form,interest:e.target.value})}
+          />
 
-<div className="p-8">
+          <button className="w-full sm:w-auto bg-blue-600 text-white px-4 py-2 rounded">
+            Update
+          </button>
 
-<h1 className="text-2xl font-bold mb-6 text-blue-600">
-Edit Prospect
-</h1>
+        </form>
 
-<form onSubmit={handleSubmit} className="space-y-4">
+      </div>
 
-<input
-value={form.name}
-className="border p-3 w-full text-gray-700"
-onChange={(e)=>setForm({...form,name:e.target.value})}
-/>
-
-<input
-value={form.phone}
-className="border p-3 w-full text-gray-700"
-onChange={(e)=>setForm({...form,phone:e.target.value})}
-/>
-
-<input
-value={form.interest}
-className="border p-3 w-full text-gray-700"
-onChange={(e)=>setForm({...form,interest:e.target.value})}
-/>
-
-<button
-className="bg-blue-600 text-white px-5 py-2 rounded hover:bg-blue-500 transition"
->
-Update
-</button>
-
-</form>
-
-</div>
-
-</DashboardLayout>
-
-)
-
+    </DashboardLayout>
+  )
 }
 
 export default EditProspect;

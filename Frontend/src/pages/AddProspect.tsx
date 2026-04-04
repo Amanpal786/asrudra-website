@@ -5,72 +5,62 @@ import DashboardLayout from "../components/DashboardLayout";
 
 const AddProspect = ()=>{
 
-const navigate = useNavigate();
+  const navigate = useNavigate();
 
-const [form,setForm] = useState({
-name:"",
-phone:"",
-interest:"",
-status:"New"
-});
+  const [form,setForm] = useState({
+    name:"",
+    phone:"",
+    interest:"",
+    status:"New"
+  });
 
-const handleSubmit = async(e:any)=>{
+  const handleSubmit = async(e:any)=>{
+    e.preventDefault();
 
-e.preventDefault();
+    await axios.post(
+      "https://asrudra-backend-1.onrender.com/api/prospects",
+      form
+    );
 
-await axios.post(
-"https://asrudra-backend-1.onrender.com/api/prospects",
-form
-);
+    navigate("/dashboard/prospectus");
+  };
 
-navigate("/dashboard/prospectus");
+  return(
+    <DashboardLayout>
 
-};
+      <h1 className="text-xl sm:text-2xl font-bold mb-6 text-blue-600">
+        Add Prospect
+      </h1>
 
-return(
+      <div className="flex justify-center">
 
-<DashboardLayout>
+        <form onSubmit={handleSubmit} className="bg-white w-full max-w-xl p-6 rounded-xl shadow space-y-4">
 
-<div className="p-8">
+          <input className="border p-3 rounded w-full"
+            placeholder="Name"
+            onChange={(e)=>setForm({...form,name:e.target.value})}
+          />
 
-<h1 className="text-2xl font-bold mb-6 text-blue-600">
-Add Prospect
-</h1>
+          <input className="border p-3 rounded w-full"
+            placeholder="Phone"
+            onChange={(e)=>setForm({...form,phone:e.target.value})}
+          />
 
-<form onSubmit={handleSubmit} className="space-y-4">
+          <input className="border p-3 rounded w-full"
+            placeholder="Interest"
+            onChange={(e)=>setForm({...form,interest:e.target.value})}
+          />
 
-<input
-placeholder="Name"
-className="border p-3 w-full text-gray-700"
-onChange={(e)=>setForm({...form,name:e.target.value})}
-/>
+          <button className="w-full sm:w-auto bg-blue-600 text-white px-4 py-2 rounded">
+            Save
+          </button>
 
-<input
-placeholder="Phone"
-className="border p-3 w-full    text-gray-700"
-onChange={(e)=>setForm({...form,phone:e.target.value})}
-/>
+        </form>
 
-<input
-placeholder="Interest"
-className="border p-3 w-full text-gray-700"
-onChange={(e)=>setForm({...form,interest:e.target.value})}
-/>
+      </div>
 
-<button
-className="bg-blue-600 text-white px-5 py-2 rounded hover:bg-blue-500 transition"
->
-Save
-</button>
-
-</form>
-
-</div>
-
-</DashboardLayout>
-
-)
-
+    </DashboardLayout>
+  )
 }
 
 export default AddProspect;

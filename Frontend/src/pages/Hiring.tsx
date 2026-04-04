@@ -5,142 +5,131 @@ import { useNavigate } from "react-router-dom";
 import TableSearch from "../components/ui/TableSearch";
 
 const Hiring = ()=>{
-    const [search, setSearch] = useState("");
 
-const [data,setData] = useState([]);
-const navigate = useNavigate();
+  const [search, setSearch] = useState("");
+  const [data,setData] = useState<any[]>([]);
+  const navigate = useNavigate();
 
-useEffect(()=>{
-fetchHiring();
-},[]);
+  const fetchHiring = async ()=>{
+    try{
+      const res = await axios.get(
+        "https://asrudra-backend-1.onrender.com/api/hiring"
+      );
+      setData(res.data || []);
+    }catch(err){
+      console.log(err);
+    }
+  };
 
-const filteredHiring = data.filter((item:any) =>
-  item.name?.toLowerCase().includes(search.toLowerCase()) ||
-  item.position?.toLowerCase().includes(search.toLowerCase()) ||
-  item.phone?.includes(search)
-);
+  useEffect(()=>{ fetchHiring(); },[]);
 
-const fetchHiring = async ()=>{
+  const filteredHiring = data.filter((item:any) =>
+    item.name?.toLowerCase().includes(search.toLowerCase()) ||
+    item.position?.toLowerCase().includes(search.toLowerCase()) ||
+    item.phone?.includes(search)
+  );
 
-const res = await axios.get(
-"https://asrudra-backend-1.onrender.com/api/hiring"
-);
+  const deleteHiring = async(id:any)=>{
+    if(!confirm("Delete candidate?")) return;
 
-setData(res.data);
+    await axios.delete(
+      `https://asrudra-backend-1.onrender.com/api/hiring/${id}`
+    );
 
-};
+    fetchHiring();
+  };
 
-/* DELETE */
+  return(
+    <DashboardLayout>
 
-const deleteHiring = async(id:any)=>{
+      <div className="p-4 sm:p-6 lg:p-8">
 
-if(!confirm("Delete candidate?")) return;
+        {/* HEADER */}
+        <div className="flex flex-col lg:flex-row justify-between items-start lg:items-center gap-4 mb-6">
 
-await axios.delete(
-`https://asrudra-backend-1.onrender.com/api/hiring/${id}`
-);
+          <h1 className="text-xl sm:text-2xl lg:text-3xl font-bold text-blue-600">
+            Hiring Management
+          </h1>
 
-fetchHiring();
+          <div className="flex flex-col sm:flex-row gap-3 w-full lg:w-auto">
 
-};
+            <TableSearch
+              value={search}
+              onChange={setSearch}
+              placeholder="Search candidate..."
+            />
 
-return(
+            <button
+              onClick={()=>navigate("/dashboard/add-hiring")}
+              className="w-full sm:w-auto bg-blue-600 text-white px-4 py-2 rounded-lg"
+            >
+              + Add Candidate
+            </button>
 
-<DashboardLayout>
+          </div>
 
-<div className="p-8">
+        </div>
 
-<div className="flex justify-between mb-6">
+        {/* TABLE */}
+        <div className="bg-white rounded-xl shadow text-gray-900 overflow-x-auto">
 
-<h1 className="text-3xl font-bold text-blue-600">
-Hiring Management
-</h1>
+          <table className="min-w-[700px] w-full">
 
-<TableSearch
- value={search}
- onChange={setSearch}
- placeholder="Search candidate..."
-/>
+            <thead className="bg-gray-100">
+              <tr>
+                <th className="p-4 text-left">Name</th>
+                <th className="p-4 text-left">Position</th>
+                <th className="p-4 text-left">Phone</th>
+                <th className="p-4 text-left">Status</th>
+                <th className="p-4 text-left">Action</th>
+              </tr>
+            </thead>
 
-<button
-onClick={()=>navigate("/dashboard/add-hiring")}
-className="bg-blue-600 text-white px-5 py-2 rounded-lg"
->
-+ Add Candidate
-</button>
+            <tbody>
+              {filteredHiring.map((item:any)=>(
+                <tr key={item._id} className="border-t text-sm hover:bg-gray-50">
 
-</div>
+                  <td className="p-4 whitespace-nowrap">{item.name}</td>
+                  <td className="p-4">{item.position}</td>
+                  <td className="p-4 whitespace-nowrap">{item.phone}</td>
 
-<div className="bg-white rounded-xl shadow text-gray-900">
+                  <td className="p-4">
+                    <span className="bg-blue-100 text-blue-600 px-2 py-1 rounded text-xs">
+                      {item.status}
+                    </span>
+                  </td>
 
-<table className="w-full">
+                  <td className="p-4">
+                    <div className="flex gap-2">
 
-<thead className="bg-gray-100">
+                      <button
+                        onClick={()=>navigate(`/dashboard/edit-hiring/${item._id}`)}
+                        className="bg-yellow-400 text-white px-3 py-1 rounded text-xs"
+                      >
+                        Edit
+                      </button>
 
-<tr>
+                      <button
+                        onClick={()=>deleteHiring(item._id)}
+                        className="bg-red-500 text-white px-3 py-1 rounded text-xs"
+                      >
+                        Delete
+                      </button>
 
-<th className="p-4 text-left">Name</th>
-<th className="p-4 text-left">Position</th>
-<th className="p-4 text-left">Phone</th>
-<th className="p-4 text-left">Status</th>
-<th className="p-4 text-left">Action</th>
+                    </div>
+                  </td>
 
-</tr>
+                </tr>
+              ))}
+            </tbody>
 
-</thead>
+          </table>
+        </div>
 
-<tbody>
+      </div>
 
-{filteredHiring.map((item:any)=>(
-
-<tr key={item._id} className="border-t text-sm hover:bg-gray-50 transition">
-
-<td className="p-4">{item.name}</td>
-<td className="p-4">{item.position}</td>
-<td className="p-4">{item.phone}</td>
-
-<td className="p-4">
-
-<span className="bg-blue-100 text-blue-600 px-2 py-1 rounded">
-{item.status}
-</span>
-
-</td>
-
-<td className="p-4 flex gap-3">
-
-<button
-onClick={()=>navigate(`/dashboard/edit-hiring/${item._id}`)}
-className="flex items-center gap-1 bg-yellow-400 hover:bg-yellow-500 text-white px-3 py-1.5 rounded-md text-xs font-semibold transition"
->
-✏ Edit
-</button>
-
-<button
-onClick={()=>deleteHiring(item._id)}
-className="flex items-center gap-1 bg-red-500 hover:bg-red-600 text-white px-3 py-1.5 rounded-md text-xs font-semibold transition"
->
-🗑 Delete
-</button>
-
-</td>
-
-</tr>
-
-))}
-
-</tbody>
-
-</table>
-
-</div>
-
-</div>
-
-</DashboardLayout>
-
-)
-
+    </DashboardLayout>
+  )
 }
 
 export default Hiring;

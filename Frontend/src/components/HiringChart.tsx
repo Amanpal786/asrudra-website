@@ -4,7 +4,8 @@ import {
   XAxis,
   YAxis,
   Tooltip,
-  ResponsiveContainer
+  ResponsiveContainer,
+  CartesianGrid
 } from "recharts";
 
 const data = [
@@ -15,22 +16,31 @@ const data = [
 
 const HiringChart = () => {
   return (
-    <div className="bg-white p-6 rounded-xl border border-gray-100 shadow-sm">
+    <div className="bg-white p-4 sm:p-6 rounded-xl border shadow w-full overflow-hidden">
 
-    <h2 className="text-lg font-semibold text-black mb-4">
+      <h2 className="text-base sm:text-lg font-semibold text-gray-800 mb-4">
         Hiring Status
-    </h2>
+      </h2>
 
-      <ResponsiveContainer width="100%" height={250}>
-        <BarChart data={data}>
-          <XAxis dataKey="role" />
-          <YAxis />
-          <Tooltip />
+      <div className="w-full h-[220px] sm:h-[280px] md:h-[300px]">
+        <ResponsiveContainer width="100%" height="100%">
+          <BarChart data={data}>
 
-          <Bar dataKey="count" fill="#6366F1" radius={[6,6,0,0]} />
+            <CartesianGrid strokeDasharray="3 3" />
 
-        </BarChart>
-      </ResponsiveContainer>
+            <XAxis dataKey="role" tick={{ fontSize: 12 }} />
+            <YAxis tick={{ fontSize: 12 }} />
+            <Tooltip />
+
+            <Bar
+              dataKey="count"
+              fill="#6366F1"
+              radius={[6, 6, 0, 0]}
+            />
+
+          </BarChart>
+        </ResponsiveContainer>
+      </div>
 
     </div>
   );
