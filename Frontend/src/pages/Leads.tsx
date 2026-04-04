@@ -3,25 +3,22 @@ import LeadsTable from "../components/LeadsTable";
 import axios from "axios";
 import { useEffect, useState } from "react";
 import { useNavigate } from "react-router-dom";
-import { Download } from "lucide-react";
 
 const Leads = () => {
 
-  // ✅ STATES (yahin hone chahiye component ke andar)
-  const [leads, setLeads] = useState([]);
+  const [leads, setLeads] = useState<any[]>([]);
   const [search, setSearch] = useState("");
   const [currentPage, setCurrentPage] = useState(1);
 
   const leadsPerPage = 10;
-
   const navigate = useNavigate();
 
-  // ✅ FETCH DATA
   const fetchLeads = async () => {
     try {
-      const res = await axios.get("https://asrudra-backend-1.onrender.com/api/enquiries");
-      console.log("API DATA:", res.data);
-      setLeads(res.data);
+      const res = await axios.get(
+        "https://asrudra-backend-1.onrender.com/api/enquiries"
+      );
+      setLeads(res.data || []);
     } catch (error) {
       console.error(error);
     }
@@ -31,79 +28,83 @@ const Leads = () => {
     fetchLeads();
   }, []);
 
-  // ✅ SEARCH FILTER
-  const filteredLeads = leads.filter((lead) =>
+  // 🔥 FILTER
+  const filteredLeads = leads.filter((lead: any) =>
     lead.fullName?.toLowerCase().includes(search.toLowerCase()) ||
     lead.phoneNumber?.includes(search)
   );
 
-  // ✅ PAGINATION LOGIC
+  // 🔥 PAGINATION
+  const totalPages = Math.max(1, Math.ceil(filteredLeads.length / leadsPerPage));
+
   const indexOfLastLead = currentPage * leadsPerPage;
   const indexOfFirstLead = indexOfLastLead - leadsPerPage;
   const currentLeads = filteredLeads.slice(indexOfFirstLead, indexOfLastLead);
 
-  const totalPages = Math.ceil(filteredLeads.length / leadsPerPage);
-
   return (
     <DashboardLayout>
 
-      <div className="flex justify-between items-center mb-8">
+      {/* 🔥 HEADER */}
+      <div className="flex flex-col lg:flex-row justify-between items-start lg:items-center gap-4 mb-6">
 
-        <h1 className="text-3xl font-bold text-blue-600">
+        <h1 className="text-xl sm:text-2xl lg:text-3xl font-bold text-blue-600">
           Leads Management
         </h1>
-        
 
-        <input
-          type="text"
-          placeholder="Search lead..."
-          value={search}
-          onChange={(e) => {
-            setSearch(e.target.value);
-            setCurrentPage(1); // ✅ search pe page reset
-          }}
-          className="border px-4 py-2 rounded-lg w-80 text-gray-700 focus:outline-none focus:ring-2 focus:ring-blue-600"
-        />
+        <div className="flex flex-col sm:flex-row gap-3 w-full lg:w-auto">
 
-        <button
-          onClick={() => navigate("/dashboard/add-lead")}
-          className="bg-blue-600 text-white px-4 py-2 rounded-lg"
-        >
-          + Add Lead
-        </button>
+          <input
+            type="text"
+            placeholder="Search lead..."
+            value={search}
+            onChange={(e) => {
+              setSearch(e.target.value);
+              setCurrentPage(1);
+            }}
+            className="w-full sm:w-64 border px-4 py-2 rounded-lg text-gray-700 focus:outline-none focus:ring-2 focus:ring-blue-600"
+          />
+
+          <button
+            onClick={() => navigate("/dashboard/add-lead")}
+            className="w-full sm:w-auto bg-blue-600 text-white px-4 py-2 rounded-lg hover:bg-blue-700 transition"
+          >
+            + Add Lead
+          </button>
+
+        </div>
 
       </div>
 
-      {/* ✅ TABLE */}
-      <LeadsTable leads={currentLeads} setLeads={setLeads} />
+      {/* TABLE */}
+      <LeadsTable leads={currentLeads} fetchLeads={fetchLeads} />
 
-      {/* ✅ PAGINATION UI */}
-      <div className="flex justify-between items-center mt-6 px-2">
+      {/* PAGINATION */}
+      <div className="flex flex-col sm:flex-row justify-between items-center gap-4 mt-6 px-2">
 
         <span className="text-sm text-gray-500">
-          Page {currentPage} of {totalPages || 1}
+          Page {currentPage} of {totalPages}
         </span>
 
-        <div className="flex gap-2">
+        <div className="flex flex-wrap gap-2 justify-center">
 
           {/* PREV */}
           <button
             onClick={() => setCurrentPage((prev) => Math.max(prev - 1, 1))}
             disabled={currentPage === 1}
-            className="px-3 py-1 rounded-lg border text-sm bg-white hover:bg-gray-100 disabled:opacity-50 text-gray-500"
+            className="px-3 py-1 rounded-lg border text-sm bg-white hover:bg-gray-100 disabled:opacity-50"
           >
             Prev
           </button>
 
-          {/* PAGE NUMBERS */}
-          {Array.from({ length: totalPages || 1 }, (_, i) => i + 1).map((num) => (
+          {/* NUMBERS */}
+          {Array.from({ length: totalPages }, (_, i) => i + 1).map((num) => (
             <button
               key={num}
               onClick={() => setCurrentPage(num)}
-              className={`px-3 py-1 rounded-lg text-sm  ${
+              className={`px-3 py-1 rounded-lg text-sm ${
                 currentPage === num
-                  ? "bg-blue-600 text-gray-100 border-blue-600"
-                  : "bg-white border text-gray-500 hover:bg-gray-100"
+                  ? "bg-blue-600 text-white"
+                  : "bg-white border hover:bg-gray-100"
               }`}
             >
               {num}
@@ -116,12 +117,13 @@ const Leads = () => {
               setCurrentPage((prev) => Math.min(prev + 1, totalPages))
             }
             disabled={currentPage === totalPages}
-            className="px-3 py-1 rounded-lg border text-sm bg-white hover:bg-gray-100 disabled:opacity-50 text-gray-500"
+            className="px-3 py-1 rounded-lg border text-sm bg-white hover:bg-gray-100 disabled:opacity-50"
           >
             Next
           </button>
 
         </div>
+
       </div>
 
     </DashboardLayout>
