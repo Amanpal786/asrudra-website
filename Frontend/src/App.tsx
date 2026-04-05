@@ -38,6 +38,7 @@ import NotFound from "./pages/NotFound";
 import Rent from "./pages/Rent"; // ✅ Buy Page
 import Dashboard from "./pages/Dashboard";
 import Leads from "./pages/Leads";
+import FeedbackManager from "./pages/FeedbackManager";
 // import NewLaunch from "./pages/NewLaunch";// new launch page
 // import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 
@@ -95,6 +96,7 @@ const App = () => {
           <Route path="/dashboard/prospectus" element={<Prospectus/>}/>
           <Route path="/dashboard/add-prospect" element={<AddProspect/>}/>
           <Route path="/dashboard/edit-prospect/:id" element={<EditProspect/>}/>
+          <Route path="/dashboard/feedback" element={<FeedbackManager />} />
                     
 
           <Route

@@ -7,7 +7,8 @@ import {
   UserCheck,
   Briefcase,
   MapPin,
-  FileText
+  FileText,
+  MessageSquare
 } from "lucide-react";
 
 const role = localStorage.getItem("role");
@@ -18,7 +19,8 @@ const menu = [
   { name: "Employees", path: "/dashboard/employees", icon: UserCheck },
   { name: "Hiring", path: "/dashboard/hiring", icon: Briefcase },
   { name: "Client Visits", path: "/dashboard/visits", icon: MapPin },
-  { name: "Prospectus", path: "/dashboard/prospectus", icon: FileText }
+  { name: "Prospectus", path: "/dashboard/prospectus", icon: FileText },
+  { name: "Feedback", path: "/dashboard/feedback", icon: MessageSquare }
 ];
 
 const DashboardLayout = ({ children }: any) => {
