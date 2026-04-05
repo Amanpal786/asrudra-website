@@ -34,7 +34,7 @@ const AddHiring = () => {
 
       <div className="flex justify-center">
 
-        <form onSubmit={handleSubmit} className="bg-white w-full max-w-xl p-6 rounded-xl shadow space-y-4">
+        <form onSubmit={handleSubmit} className="bg-white w-full max-w-xl p-6 rounded-xl shadow space-y-4 text-gray-700">
 
           <input className="border p-3 rounded w-full" placeholder="Name"
             onChange={(e)=>setForm({...form,name:e.target.value})} />
