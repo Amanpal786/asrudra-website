@@ -540,7 +540,7 @@ const TeamMemberCard = ({ member, onClick }: { member: any, onClick: () => void 
         
         <div className="absolute bottom-0 left-0 p-4 w-full">
           <h3 className="text-xl font-bold text-white truncate">{member.name}</h3>
-          <p className="text-sky-200 text-sm">{member.role}</p>
+          <p className="text-sky-500 text-sm">{member.role}</p>
         </div>
       </div>
       
