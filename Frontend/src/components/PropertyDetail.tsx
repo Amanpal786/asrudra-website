@@ -2354,7 +2354,7 @@ The company believes in delivering utmost satisfaction to the customers by intro
     propertyAge: "New Project",
     brochure: {
       available: true,
-      downloadLink: "/Team Photo/APEX-PARK-SQUARE-BROCHURE.pdf",
+      downloadLink: "/Team Photo/Apex-Park-Square-Brochure.pdf",
       description: "Project brochure detailing unit sizes, pricing, and commercial facilities"
     },
     locationAdvantages: [

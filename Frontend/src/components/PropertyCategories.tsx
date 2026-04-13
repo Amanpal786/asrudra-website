@@ -893,7 +893,7 @@ const PropertyCategories = () => {
 
           {/* Bottom CTA */}
           <div className="text-center mt-12">
-            <div className="bg-gradient-to-r from-blue-600 to-purple-600 rounded-2xl p-8 text-white shadow-lg">
+            <div className="bg-gradient-to-r from-blue-600 to-black rounded-2xl p-8 text-white shadow-lg">
               <h3 className="text-2xl font-bold mb-3">Need Help Finding the Right Property?</h3>
               <p className="text-blue-100 text-sm mb-6 max-w-md mx-auto">
                 Our expert team will help you find the perfect property that matches all your requirements.
