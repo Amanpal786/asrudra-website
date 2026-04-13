@@ -189,23 +189,23 @@ const teamMembers = [
     ],
     personalInterests: ["Reading", "Hiking", "Modern Art"]
   },
-  {
-    name: "Mr. Sumit Negi",
-    role: "BDM",
-    image: "/Team Photo/sumit negi.jpg",
-    experience: 13,
-    qualification: {
-      degree: "MBA",
-      year: 2015
-    },
-    professionalBackground: "Sumit specializes in real estate law and regulatory compliance. He has successfully navigated complex legal processes for over 15 major property developments, ensuring smooth and secure transactions.",
-    keyAchievements: [
-        "Handled legal compliance for 15+ major projects.",
-        "Zero litigation cases on managed projects.",
-        "Developed a streamlined compliance checklist for the company."
-    ],
-    personalInterests: ["Chess", "History Books", "Cycling"]
-  },
+  // {
+  //   name: "Mr. Sumit Negi",
+  //   role: "BDM",
+  //   image: "/Team Photo/sumit negi.jpg",
+  //   experience: 13,
+  //   qualification: {
+  //     degree: "MBA",
+  //     year: 2015
+  //   },
+  //   professionalBackground: "Sumit specializes in real estate law and regulatory compliance. He has successfully navigated complex legal processes for over 15 major property developments, ensuring smooth and secure transactions.",
+  //   keyAchievements: [
+  //       "Handled legal compliance for 15+ major projects.",
+  //       "Zero litigation cases on managed projects.",
+  //       "Developed a streamlined compliance checklist for the company."
+  //   ],
+  //   personalInterests: ["Chess", "History Books", "Cycling"]
+  // },
   {
     name: "Ms. Aishwarya Sharma",
     role: "BDM",
