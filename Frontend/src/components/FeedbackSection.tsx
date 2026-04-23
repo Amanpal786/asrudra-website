@@ -100,41 +100,43 @@ const FeedbackSection = () => {
       </div>
 
       {/* CARDS */}
-      <div className="max-w-6xl mx-auto px-4 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4 sm:gap-6 md:gap-8 relative z-10">
-        {feedbacks.map((fb) => (
-          <div
-            key={fb._id} // ✅ FIX
-            className="bg-white/5 backdrop-blur-xl border border-white/10 rounded-xl sm:rounded-2xl p-4 sm:p-6 shadow-xl hover:shadow-blue-500/20 hover:scale-[1.02] transition"
-          >
+     <div className="max-w-6xl mx-auto px-4">
+     <div className="flex gap-6 overflow-x-auto overflow-y-hidden scroll-smooth no-scrollbar py-6">
 
-            <div className="flex items-center gap-3 sm:gap-4 mb-3 sm:mb-4">
-              <img
-                src={fb.avatar}
-                className="w-10 h-10 sm:w-12 sm:h-12 rounded-full object-cover border border-white/20"
-              />
+    {feedbacks.map((fb) => (
+      <div
+        key={fb._id}
+        className="w-[calc(33.333%-1rem)] flex-shrink-0 bg-white/5 backdrop-blur-xl border border-white/10 rounded-2xl p-6 shadow-xl hover:shadow-blue-500/20 hover:scale-[1.03] transition"
+      >
+        <div className="flex items-center gap-4 mb-4">
+          <img
+            src={fb.avatar}
+            className="w-12 h-12 rounded-full border border-white/20"
+          />
 
-              <div>
-                <h3 className="font-semibold text-sm sm:text-base text-white">
-                  {fb.name}
-                </h3>
+          <div>
+            <h3 className="font-semibold text-white">
+              {fb.name}
+            </h3>
 
-                <div className="flex text-yellow-400 text-xs sm:text-sm">
-                  {[1,2,3,4,5].map((star) => (
-                    <span key={star}>
-                      {star <= fb.rating ? "★" : "☆"}
-                    </span>
-                  ))}
-                </div>
-              </div>
+            <div className="text-yellow-400 text-sm">
+              {[1,2,3,4,5].map((star) => (
+                <span key={star}>
+                  {star <= fb.rating ? "★" : "☆"}
+                </span>
+              ))}
             </div>
-
-            <p className="text-gray-300 text-xs sm:text-sm leading-relaxed italic">
-              “{fb.message}”
-            </p>
           </div>
-        ))}
-      </div>
+        </div>
 
+        <p className="text-gray-300 text-sm italic">
+          “{fb.message}”
+        </p>
+      </div>
+    ))}
+
+  </div>
+</div>
       {/* MODAL SAME */}
       {showForm && (
         <div className="fixed inset-0 bg-black/60 backdrop-blur-md flex justify-center items-center z-50 px-4">
