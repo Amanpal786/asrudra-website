@@ -1186,8 +1186,8 @@ Sikka Group projects are recognized for strong infrastructure planning, lifestyl
 
 "20": {
   id: 20,
-  title: "Godrej ",
-  price: "₹ 1.22 - ₹7.51 Cr",
+  title: "Godrej Majesty",
+  price: "₹ 3.74 Cr",
   location: "Greater Noida West (Noida Extension)",
 
   brochure: {
@@ -1210,7 +1210,7 @@ Sikka Group projects are recognized for strong infrastructure planning, lifestyl
   bedrooms: 4,
   bathrooms: 3,
   parking: 1,
-  area: "15315 per sq ft",
+  area: "3 & 4 BHK",
 
   rating: 4.9,
   reviews: 210,
@@ -1265,7 +1265,7 @@ Godrej Properties combines cutting-edge design with environmental responsibility
     possession: "Ready to Move",
     totalUnits: 350,
     towers: 4,
-    priceRange: "₹ 1.22 Cr - ₹7.51 Cr"
+    priceRange: "₹ 3.74 Cr onwords"
   },
 
   /* ---------------- FEATURES ---------------- */

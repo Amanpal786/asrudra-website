@@ -262,13 +262,13 @@ const Residential = () => {
 
     {
       "id": 20,
-      "title": "Godrej",
+      "title": "Godrej Majesty",
       "location": "Noida Extension",
-      "price": "₹1.22 - 7.51 Cr",
+      "price": "₹3.74Cr",
       "type": "residential",
       "bedrooms": 4,
       "bathrooms": 3,
-      "area": "1085 - 2065 sq ft",
+      "area": "3 & 4 BHK",
       "image": "https://res.cloudinary.com/jll-global-gdim/image/upload/IN/Horizon/Resi/Prod/JLL_Ggn_Godrej_Air_27_ELV_primary.jpg",
       "features": ["Panoramic City Views", "Smart Automation", "Private Terrace"],
       "amenities": {
@@ -277,7 +277,7 @@ const Residential = () => {
       },
       "rating": 4.9,
       "developer": "Godrej",
-      "possession": "Mar 2027",
+      "possession": "Mar 2030",
       "approvals": ["RERA Approved", "MCD Approved"],
       "popularity": 99,
       "dateAdded": "2024-03-12"
