@@ -284,7 +284,27 @@ const DirectorsSection = () => {
       image: '/director/pankaj sir.jpg',
       projects: 190,
       clients: 900
+    },
+    {
+      id: 6,
+      name: 'Farhad Khan',
+      position: 'Director',
+      experience: 'Real estate expert with 15+ years of experience',
+      education: 'MBA (IB)',
+      background: 'Successfully managed the clients in India and BTW, demonstrating strong operational and relationship management skills. Played a key role in the establishment of Touchstone Solutions, and further enriched professional experience by working with Builders before joining A.S. Rudra Solutions.',
+      achievements: [
+        'Worked in Builder Firms for 15+ years',
+        'Exceptional customer relationship skills',
+        'Leads CRM department'
+      ],
+      description: 'A Bold and strategic leader who adeptly manages the sensitive responsibility of maintaining strong builder relationships. His insightful contributions have consistently driven seamless operations and contributed to the organization’s steady growth.',
+      hobbies: ['Travelling', 'Shayari', 'Gaming'],
+      image: '/director/fsir.jpeg',
+      projects: 250,
+      clients: 1000
     }
+
+
   ];
 
   const stats: StatItem[] = [
