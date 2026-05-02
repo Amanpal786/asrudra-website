@@ -852,12 +852,12 @@ With a commitment to timely possession and premium construction standards, CRC G
 "16": {
   id: 16,
   title: "SOBHA",
-  price: "₹ Prelauching",
-  location: "Sector 10, Greater Noida West (Noida Extension)",
+  price: "₹ 2.30 - 4.60 Cr",
+  location: " Greater Noida West (Noida Extension)",
 
   brochure: {
     available: true,
-    downloadLink: "/brochures/sobha.pdf",
+    downloadLink: "/brochures/shobha.pdf",
     description: "Official Sobha Dream Acres brochure with floor plans, amenities, specifications and pricing details."
   },
 
@@ -872,10 +872,10 @@ With a commitment to timely possession and premium construction standards, CRC G
   video: null,
   videoThumbnail: null,
 
-  bedrooms: 3,
+  bedrooms: 4,
   bathrooms: 3,
   parking: 1,
-  area: "Notify soon sq ft",
+  area: "1375 -2715sq ft",
 
   rating: 4.7,
   reviews: 150,
@@ -930,7 +930,7 @@ Sobha follows a backward integration model which ensures complete control over c
     possession: "Ready to Move",
     totalUnits: 500,
     towers: 4,
-    priceRange: "₹67.68 L - ₹1.03 Cr"
+    priceRange: "₹2.30 - 4.60 Cr"
   },
 
   /* ---------------- FEATURES ---------------- */
@@ -980,7 +980,7 @@ Sobha follows a backward integration model which ensures complete control over c
   possession: "Ready to Move",
   totalFloors: 15,
   totalUnits: 500,
-  carpetArea: "850 - 1400 sq ft",
+  carpetArea: "1375 - 2715 sq ft",
   facing: "East / North Facing Options Available",
   badge: "Premium",
   status: "For Sale",
