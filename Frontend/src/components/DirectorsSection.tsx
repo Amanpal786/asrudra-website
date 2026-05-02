@@ -289,11 +289,11 @@ const DirectorsSection = () => {
       id: 6,
       name: 'Farhad Khan',
       position: 'Director',
-      experience: ' 15+ years of experience in Real Estate',
-      education: 'MBA (IB)',
+      experience: ' 17+ years of experience in Real Estate',
+      education: 'MBA (Intrnational Business)',
       background: 'Successfully managed the clients in India and BTW, demonstrating strong operational and relationship management skills. Played a key role in the establishment of Touchstone Solutions, and further enriched professional experience by working with Builders before joining A.S. Rudra Solutions.',
       achievements: [
-        'Worked in Builder Firms for 15+ years',
+        'Worked in Builder Firms for 17+ years',
         'Exceptional customer relationship skills',
         'Leads CRM department'
       ],
