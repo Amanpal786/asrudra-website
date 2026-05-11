@@ -70,11 +70,11 @@ const Commercial = () => {
     },
 
     {
-      "id": 5,
+      "id": 9,
       "title":"Apex Park Square",
       "location":"Sector 16B, Greater Noida (West)",
       "price":"₹30 LAKH ",
-      "type":"Studio ",
+      "type":"Retail Shops ",
       "bedrooms": 1,
       "bathrooms": 1,
       "area": "100 sq ft",
@@ -113,28 +113,28 @@ const Commercial = () => {
       "popularity": 99,
       "dateAdded": "2024-02-28"
     },
-    {
-      "id": 9,
-      "title": "Apex Park Square",
-      "location": "Sector 16B, Greater Noida (West)",
-      "price": "₹30 Lakh - ₹1.45 crores",
-      "type": "office space",
-      "bedrooms": 0,
-      "bathrooms": "comman",
-      "area": "120sq.ft-3200sq ft",
-      "image": "/images/apex.jpg",
-      "features": ["IT/ITES Ready", "Plug-and-Play Offices", "Conference Facilities", "Ample Parking"],
-      "amenities": {
-        "Business": ["Training Center", "Meeting Rooms"],
-        "Convenience": ["Banking Facility", "Medical Room"]
-      },
-      "rating": 4.5,
-      "developer": "Apex Group",
-      "possession": "Aug 2024",
-      "approvals": ["RERA Approved", "PMC Approved"],
-      "popularity": 92,
-      "dateAdded": "2024-03-12"
-    },
+    // {
+    //   "id": 9,
+    //   "title": "Apex Park Square",
+    //   "location": "Sector 16B, Greater Noida (West)",
+    //   "price": "₹30 Lakh - ₹1.45 crores",
+    //   "type": "office space",
+    //   "bedrooms": 0,
+    //   "bathrooms": "comman",
+    //   "area": "120sq.ft-3200sq ft",
+    //   "image": "/images/apex.jpg",
+    //   "features": ["IT/ITES Ready", "Plug-and-Play Offices", "Conference Facilities", "Ample Parking"],
+    //   "amenities": {
+    //     "Business": ["Training Center", "Meeting Rooms"],
+    //     "Convenience": ["Banking Facility", "Medical Room"]
+    //   },
+    //   "rating": 4.5,
+    //   "developer": "Apex Group",
+    //   "possession": "Aug 2024",
+    //   "approvals": ["RERA Approved", "PMC Approved"],
+    //   "popularity": 92,
+    //   "dateAdded": "2024-03-12"
+    // },
     {
       "id": 11,
       "title": "ATS Kabana High",
