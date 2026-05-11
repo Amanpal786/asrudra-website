@@ -2231,7 +2231,7 @@ The company believes in delivering utmost satisfaction to the customers by intro
   "9": {
     id: 9,
     title: "Apex Park Square",
-    price: "₹27.6 Lakh – ₹1.34 Crore",
+    price: "₹ 30 lakhs onwards",
     location: "Sector 16B, Greater Noida West (Noida Extension)",
     images: [
       "/images/apex.jpg",
@@ -2245,7 +2245,7 @@ The company believes in delivering utmost satisfaction to the customers by intro
     videoThumbnail: null,
     bathrooms: "Common / Shared Washrooms",
     parking: "Ample Parking",
-    area: "2.38 acres",
+    area: "100 sq ft",
     rating: 4.3,
     reviews: 67,
     description: "Apex Park Square is a 100% commercial project developed by Viable Venture Pvt. Ltd. & Apex Floral Group in Greater Noida West. The project offers retail shops, offices, food court, multiplex and other high-street commercial spaces in a prime location.\n\nStrategically located in Sector 16B with excellent connectivity, the project is surrounded by a large residential catchment area and is near to a proposed metro station, making it an ideal commercial investment opportunity in the rapidly developing Noida Extension region.",
@@ -2284,7 +2284,7 @@ The company believes in delivering utmost satisfaction to the customers by intro
       possession: "Ready for Possession",
       totalUnits: 287,
       towers: "Single Integrated Commercial Complex",
-      priceRange: "₹27.6 Lakh – ₹1.34 Crore",
+      priceRange: "₹ 30 Lakh – ₹1.34 Crore",
       projectArea: "2.38 acres"
     },
     features: [
@@ -2840,7 +2840,7 @@ The company believes in delivering utmost satisfaction to the customers by intro
   "3": {
     id: 3,
     title: "Golden-I Commercial Hub - Ocean Infrastructures",
-    price: "₹85 Lakhs - ₹2.5 Crores",
+    price: "₹72 Lakhs ",
     location: "Techzone IV, Amprapali Dream Valley, Itehra, Greater Noida, Uttar Pradesh 201009",
     images: [
       "/images/golden-i.jpg",
@@ -2854,12 +2854,12 @@ The company believes in delivering utmost satisfaction to the customers by intro
     // videoThumbnail: "/public/Team Photo/golden i 5.jpg",
     bathrooms: "Common & Private Toilets",
     parking: 2,
-    area: "600 - 2000 sq ft",
+    area: " 840 sq ft",
     rating: 4.7,
     reviews: 89,
     description: `Golden-I stands as a magnificent commercial marvel developed by Ocean Infrastructures Pvt Ltd, strategically positioned in the thriving Retail and Technology hub of Greater Noida West. Spanning across 25 acres of prime real estate, this project is enveloped by 1,000 acres of residential development that will accommodate over 1 million residents within the next three to five years.
 
-Situated in the heart of Techzone IV, Golden-I offers unparalleled investment opportunities in one of Delhi NCR's fastest-growing commercial corridors. With the trust of 1800+ satisfied customers, Ocean Infrastructures has established itself as the most rapidly expanding commercial real estate firm in the region, creating sought-after business destinations that promise exceptional value and returns.`,
+Situated in the heart of Techzone IV, Golden-I offers unparalleled investment opportunities in one of Delhi NCR's fastest-growing commercial corridors. With the trust of 1800+ satisfied customers, Ocean Infrastructures has established itself as the most rapidly expanding commercial real estate firm in the region, creating sought-after business destinations that promise exceptional value and returns`,
 
     // About Ocean Infrastructures
     developerInfo: {
@@ -2904,7 +2904,7 @@ The company's vision focuses on creating premium business destinations that comb
       possession: "Under Construction",
       totalUnits: "Multiple configurations",
       towers: "Integrated Commercial Complex",
-      priceRange: "₹85 Lakhs - ₹2.5 Crores"
+      priceRange: "₹72 Lakh - ₹2.5 Crores"
     },
 
     features: [
