@@ -149,7 +149,7 @@ export const propertyData: Record<string, any> = {
   "6": {
   id: 6,
   title: "Nirala Estate",
-  price: "₹1.5 Cr -3 Cr",
+  price: "₹1.55 Cr -3 Cr",
   location: "GH-04, Techzone 4, Greater Noida West (Noida Extension)",
 
   brochure: {
@@ -172,7 +172,7 @@ export const propertyData: Record<string, any> = {
   bedrooms: 3,
   bathrooms: 2,
   parking: 1,
-  area: "995 - 1897 sq ft",
+  area: "1250 - 1897 sq ft",
 
   rating: 4.6,
   reviews: 148,
@@ -1187,7 +1187,7 @@ Sikka Group projects are recognized for strong infrastructure planning, lifestyl
 "20": {
   id: 20,
   title: "Godrej Majesty",
-  price: "₹ 3.74 Cr",
+  price: "₹ 3.49 - 4.84Cr",
   location: "Greater Noida West (Noida Extension)",
 
   brochure: {
@@ -1265,7 +1265,7 @@ Godrej Properties combines cutting-edge design with environmental responsibility
     possession: "Ready to Move",
     totalUnits: 350,
     towers: 4,
-    priceRange: "₹ 3.74 Cr onwords"
+    priceRange: "₹ 3.49 - 4.84 Cr"
   },
 
   /* ---------------- FEATURES ---------------- */
@@ -1990,7 +1990,7 @@ The company believes in delivering utmost satisfaction to the customers by intro
   "7": {
     id: 7,
     title: "Commercial Investment - Ashrai Golden Grande",
-    price: "Varied Budget Options",
+    price: " 60 lakhs",
     location: "Techzone 4 Greater Noida West, Greater Noida",
     images: [
       "/images/golden-grande.jpg",
@@ -2004,7 +2004,7 @@ The company believes in delivering utmost satisfaction to the customers by intro
     videoThumbnail: "/Team Photo/golden grande 5.jpg",
     bathrooms: "Common Toilet",
     parking: "Ample Parking",
-    area: "12.63 acres",
+    area: "548 sqft",
     rating: 4.5,
     reviews: 85,
     description: "Looking for property investment opportunities in Greater Noida, Ashrai Golden Grande can be the right bet for you. It is an under construction project in Techzone 4 Greater Noida West, Greater Noida, offering investment options within your budget. For those looking for exciting returns on investment, Ashrai Golden Grande is Greater Noida's most desirable commercial project, where property options are available in varied budget range. Ashrai Golden Grande Techzone 4 Greater Noida West has commercial properties, offering maximum visibility and high footfalls.\n\nAshrai Golden Grande Greater Noida is spread over 12.63 acres and have 1686 units to offer. This project has all major facilities to offer to cater to all kinds of working professionals. Ashrai Golden Grande is a new-generation project, which has all modern facilities and amenities. Not just strategic location, Techzone 4 Greater Noida West has promising infrastructure as compared to other commercial zones in Greater Noida with improving connectivity.",
@@ -2399,7 +2399,7 @@ The company believes in delivering utmost satisfaction to the customers by intro
   "11": {
   "id": 11,
   "title": "ATS Kabana High - Premium Commercial Tower",
-  "price": "₹47 Lakhs – ₹55.25 Lakhs",
+  "price": "₹40 Lakhs",
   "location": "Techzone IV, Amprapali Dream Valley, Greater Noida / Sector 4, Greater Noida West",
   "images": [
     "/images/ATS1.png",
@@ -2463,7 +2463,7 @@ The company believes in delivering utmost satisfaction to the customers by intro
     "possession": "Ready for Possession (partial) & Dec 2025",
     "totalUnits": "Multiple units across 29 floors",
     "towers": "Single 29-story tower",
-    "priceRange": "₹47 Lakhs – ₹55.25 Lakhs",
+    "priceRange": "₹40 Lakhs onwards",
     "projectArea": "2.5 acres"
   },
   
@@ -2521,7 +2521,7 @@ The company believes in delivering utmost satisfaction to the customers by intro
   "possession": "Ready for Possession (partial) & December 2025",
   "totalFloors": "29 Floors",
   "totalUnits": "Multiple Commercial Units",
-  "carpetArea": "Varied Sizes (171 sq ft – 650+ sq ft)",
+  "carpetArea": "Varied Sizes (163 sq ft – 650+ sq ft)",
   "facing": "Multiple Orientations Available",
   "badge": "STPI Approved Tech Campus",
   "status": "For Sale / Investment",
@@ -2605,8 +2605,8 @@ The company believes in delivering utmost satisfaction to the customers by intro
     {
       "unitId": "KBN001",
       "type": "Office and Retail Shop",
-      "price": "₹47 Lakhs",
-      "carpetArea": "171 sq ft",
+      "price": "₹40 Lakhs",
+      "carpetArea": "163 sq ft",
       "configuration": "0 Bedroom, 8 Bathrooms",
       "possession": "December 2025",
       "status": "Under Construction",
@@ -2617,7 +2617,7 @@ The company believes in delivering utmost satisfaction to the customers by intro
       "type": "Ready-to-Move Office Space",
       "price": "₹55.25 Lakhs",
       "superBuiltupArea": "650 sq ft",
-      "carpetArea": "425 sq ft",
+      "carpetArea": "163 sq ft",
       "capacity": "8-10 seats",
       "floors": "7 floors (8th to 14th)",
       "facilities": "1 meeting room, 2 cabins, 2 shared washrooms",
