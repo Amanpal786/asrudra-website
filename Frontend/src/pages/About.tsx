@@ -405,7 +405,7 @@ const backendTeam = [
     name: "AMAN PAL",
     role: "FULL STACK DEVELOPER",
     image: "/Team Photo/aman1.jpg",
-    experience: 1 ,
+    experience: 2 ,
     qualification: {
       degree: "BTECH CS (AIML) + HONS(Cyber Security)",
       year: 2026
@@ -704,7 +704,6 @@ const TeamSection = () => {
             Rudra Solutions.
           </p>
         </motion.div>
-
         {/* Sales Team */}
         <div className="mb-20">
           <h3 className="text-2xl font-bold text-sky-800 mb-8 text-center">
