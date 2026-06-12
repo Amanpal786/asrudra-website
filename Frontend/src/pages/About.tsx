@@ -257,23 +257,23 @@ const teamMembers = [
 ],
     personalInterests: ["BOXING", "Bike Riding", "Cycling"]
   },
-  {
-    name: "Mr. Sandeep Bansal",
-    role: "BDM",
-    image: "/Team Photo/sandeep sir.jpg",
-    experience: "5",
-    qualification: {
-      degree: "BA",
-      year: 2018
-    },
-    professionalBackground: "Sandeep specializes in real estate and regulatory compliance. He has successfully navigated complex legal processes for over 15 major property developments, ensuring smooth and secure transactions.",
-    keyAchievements: [
-        "Handled legal compliance for 15+ major projects.",
-        "Zero litigation cases on managed projects.",
-        "Developed a streamlined compliance checklist for the company."
-    ],
-    personalInterests: ["BOXING", "History Books", "Cycling"]
-  },
+  // {
+  //   name: "Mr. Sandeep Bansal",
+  //   role: "BDM",
+  //   image: "/Team Photo/sandeep sir.jpg",
+  //   experience: "5",
+  //   qualification: {
+  //     degree: "BA",
+  //     year: 2018
+  //   },
+  //   professionalBackground: "Sandeep specializes in real estate and regulatory compliance. He has successfully navigated complex legal processes for over 15 major property developments, ensuring smooth and secure transactions.",
+  //   keyAchievements: [
+  //       "Handled legal compliance for 15+ major projects.",
+  //       "Zero litigation cases on managed projects.",
+  //       "Developed a streamlined compliance checklist for the company."
+  //   ],
+  //   personalInterests: ["BOXING", "History Books", "Cycling"]
+  // },
   {
     name: "Mr. Samaksh Tyagi",
     role: "BDM",
