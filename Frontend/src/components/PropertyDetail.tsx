@@ -4153,7 +4153,7 @@ The company's vision focuses on creating premium business destinations that comb
     // Brochure information
     brochure: {
       available: true,
-      downloadLink: "/Team Photo/surya.pdf",
+      downloadLink: "/Team Photo/urbbro.pdf",
       description: "Comprehensive project brochure detailing investment opportunities, features, and growth potential"
     },
 
