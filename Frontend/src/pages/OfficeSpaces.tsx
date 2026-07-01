@@ -209,6 +209,29 @@ const Commercial = () => {
       "dateAdded": "2019-01-20"
     },
 
+    {
+      "id": 23,
+      "title": " UrbTech NPX ",
+      "location": "Sector 153 Noida Expressway, Noida",
+      "price": "₹58 Lakhs-1.25 Cr",
+      "type": "Studio Apartments",
+      "bedrooms": 1,
+      "bathrooms": "1",
+      "area": "412 sqft - 850 sqft",
+      "image": "/images/urb2.jpg",
+      "features": ["Tech-Enabled Campus", "Collaborative Workspaces", "Innovation Labs", "Dedicated IT Infrastructure"],
+      "amenities": {
+        "Innovation": ["Incubation Center", "R&D Facilities"],
+        "Recreation": ["Sports Complex", "Entertainment Zone"]
+      },
+      "rating": 4.8,
+      "developer": "UrbTech GROUP",
+      "possession": "2025",
+      "approvals": ["RERA Approved", "STPI Approved"],
+      "popularity": 97,
+      "dateAdded": "2019-01-20"
+    },
+
 
     // More odd ID properties can be added here
     // {
