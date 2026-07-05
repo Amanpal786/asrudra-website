@@ -291,7 +291,7 @@ const teamMembers = [
    {
     name: "Mr. Manish Sharma",
     role: "SBDM",
-    image: "/Team Photo/",
+    image: "/Team Photo/manish3.jpeg",
     experience: "15",
     qualification: { 
       degree: "MBA(PGEM)",
@@ -305,7 +305,7 @@ const teamMembers = [
    {
     name: "Mr. Vivek Tiwari",
     role: "BDM",
-    image: "/Team Photo/",
+    image: "/Team Photo/vivek.jpeg",
     experience: "3",
     qualification: { 
       degree: "MBA(International Bussness",
