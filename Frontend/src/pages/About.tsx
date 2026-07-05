@@ -189,6 +189,19 @@ const teamMembers = [
     ],
     personalInterests: ["Reading", "Hiking", "Modern Art"]
   },
+  {
+    name: "Mr. Manish Sharma",
+    role: "SBDM",
+    image: "/Team Photo/manish3.jpeg",
+    experience: "15",
+    qualification: { 
+      degree: "MBA(PGEM)",
+      year: 2018
+    },
+    professionalBackground: "Manish Sharma is a seasoned real estate professional with **15+ years of industry experience**, specializing in real estate consulting, property development, and regulatory compliance. Having successfully managed a wide range of residential and commercial projects, he brings deep market expertise and strategic insight to every transaction. His international experience in **Dubai's real estate sector** has further strengthened his understanding of global property markets, enabling him to deliver reliable, compliant, and result-driven real estate solutions.",
+    keyAchievements: ["Successfully managed end-to-end legal and regulatory compliance for 15+ high-value real estate projects, ensuring timely approvals and full statutory adherence Achieved a 100% litigation-free record across all supervised developments through proactive risk assessment and legal due diligence Developed and implemented a structured compliance framework and checklist, optimizing internal processes and accelerating regulatory clearances"],
+    personalInterests: ["Basketball", "chess", "Pool & snooker"]
+  },
   // {
   //   name: "Mr. Sumit Negi",
   //   role: "BDM",
@@ -288,19 +301,7 @@ const teamMembers = [
     personalInterests: ["athletics", "gaming", "adventure"]
   },
 
-   {
-    name: "Mr. Manish Sharma",
-    role: "SBDM",
-    image: "/Team Photo/manish3.jpeg",
-    experience: "15",
-    qualification: { 
-      degree: "MBA(PGEM)",
-      year: 2018
-    },
-    professionalBackground: "Manish Sharma is a seasoned real estate professional with **15+ years of industry experience**, specializing in real estate consulting, property development, and regulatory compliance. Having successfully managed a wide range of residential and commercial projects, he brings deep market expertise and strategic insight to every transaction. His international experience in **Dubai's real estate sector** has further strengthened his understanding of global property markets, enabling him to deliver reliable, compliant, and result-driven real estate solutions.",
-    keyAchievements: ["Successfully managed end-to-end legal and regulatory compliance for 15+ high-value real estate projects, ensuring timely approvals and full statutory adherence Achieved a 100% litigation-free record across all supervised developments through proactive risk assessment and legal due diligence Developed and implemented a structured compliance framework and checklist, optimizing internal processes and accelerating regulatory clearances"],
-    personalInterests: ["Basketball", "chess", "Pool & snooker"]
-  },
+   
 
    {
     name: "Mr. Vivek Tiwari",
