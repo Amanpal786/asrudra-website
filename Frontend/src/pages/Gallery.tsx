@@ -107,12 +107,12 @@ const Gallery = () => {
       description: 'Premium villas with modern amenities and spacious designs in exclusive locations',
       count: 1000,
       images: [
-        'https://www.villasinnoida.com/images/greater-noida/villas-in-greater-noida.jpg',
-        'https://im.proptiger.com/1/3292215/6/signature-villas-elevation-148847820.jpeg?width=1336&height=768',
+        'https://images.unsplash.com/photo-1512917774080-9991f1c4c750?q=80&w=1170&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D',
+        'https://images.unsplash.com/photo-1613977257365-aaae5a9817ff?q=80&w=687&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D',
         'https://4.bp.blogspot.com/-EPIvqqOG7iM/V5BtWSRstlI/AAAAAAAADt0/lqq6rWLDzpUGf0-HIns2Z3ps0v9yG9o7QCLcB/s1600/contemporary%2Bbungalow%2Barchitect%2Brendering.jpg',
-        'https://www.villasinnoida.com/images/escon-villas/escon-villas-in-noida.jpg',
-        'https://www.villasinnoida.com/images/godrej-exquisite/godrej-exquisite-villas-in-greater-noida.jpg',
-        'https://www.billionyards.com/images/folio/atspristinegolfvillas.jpg'
+        'https://images.unsplash.com/photo-1706808849780-7a04fbac83ef?q=80&w=1332&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D',
+        'https://images.unsplash.com/photo-1582268611958-ebfd161ef9cf?q=80&w=1170&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D',
+        'https://images.unsplash.com/photo-1600596542815-ffad4c1539a9?q=80&w=1175&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D'
       ],
       icon: Home
     },
