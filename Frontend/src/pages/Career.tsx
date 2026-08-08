@@ -36,7 +36,7 @@ const jobs: Job[] = [
   {
     title: "Sales Executive",
     location: "Greater Noida",
-    salary: "₹20,000 - ₹35,000",
+    salary: "₹15,000 - ₹35,000",
     experience: "0 - 3 Years",
     type: "Full Time",
     description:
@@ -59,7 +59,7 @@ const jobs: Job[] = [
   {
     title: "Telecaller",
     location: "Noida",
-    salary: "₹18,000 - ₹28,000",
+    salary: "₹15,000 - ₹25,000",
     experience: "Fresher / Experienced",
     type: "Full Time",
     description:
@@ -83,7 +83,7 @@ const jobs: Job[] = [
   {
     title: "Digital Marketing Executive",
     location: "Greater Noida",
-    salary: "₹25,000 - ₹40,000",
+    salary: "₹20,000 - ₹40,000",
     experience: "1+ Years",
     type: "Full Time",
     description:
