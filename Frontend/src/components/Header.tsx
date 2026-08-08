@@ -2,6 +2,7 @@ import { useState } from "react";
 import { Link, useLocation } from "react-router-dom";
 import { motion } from "framer-motion";
 import { LayoutDashboard } from "lucide-react";
+import { Briefcase } from "lucide-react";
 import {
   Menu,
   X,
@@ -26,6 +27,11 @@ const Header = () => {
     // { name: "Wishlist", path: "/wishlist", icon: Heart },
     // { name: "Dashboard", path: "/dashboard", icon: LayoutDashboard },
     { name: "Dashboard", path: "/admin-login", icon: LayoutDashboard },
+    {
+      name: "Career",
+      path: "/career",
+      icon: Briefcase,
+    },
     
     
   ];
