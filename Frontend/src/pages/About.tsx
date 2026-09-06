@@ -155,23 +155,23 @@ const teamMembers = [
   //   ],
   //   personalInterests: ["Photography", "Cricket", "Documentaries"]
   // },
-  {
-    name: "Mr. Sagar Handa",
-    role: "SBDM",
-    image: "/Team Photo/sagarsir.png",
-    experience: 7,
-    qualification: {
-      degree: "BBA + (Property Law)",
-      year: 2017
-    },
-    professionalBackground: "Sagar is a results-driven real estate professional with a Bachelor of Business Administration (BBA) and over 7 years of proven success in the real estate industry. He brings a strong blend of strategic thinking, market intelligence, and hands-on transactional expertise that consistently drives revenue growth and client satisfaction With extensive experience across residential and commercial real estate, Sagar has successfully managed high-value property transactions, negotiated complex deals, and built long-term relationships with investors, developers, and end clients. His in-depth understanding of market dynamics, pricing strategies, and investment analysis enables him to identify lucrative opportunities and deliver measurable returnsRecognized for his professionalism, integrity, and performance-focused approach, Sagar has a strong track record of exceeding sales targets and contributing to organizational growth. His ability to combine business acumen with customer-centric strategies positions him as a trusted advisor in the real estate sector Ambitious, strategic, and growth-oriented, Sagar continues to elevate his impact by leveraging industry insights, strong negotiation skills, and a commitment to excellence",
-    keyAchievements: [
-        "Increased team conversion rates by 35% in Q2 2023.",
-        "Developed a new sales training module adopted company-wide.",
-        "Awarded 'Sales Strategist of the Year' in 2022,23,24."
-    ],
-    personalInterests: ["Trekking", "Board games", "Podcasts"]
-  },
+  // {
+  //   name: "Mr. Sagar Handa",
+  //   role: "SBDM",
+  //   image: "/Team Photo/sagarsir.png",
+  //   experience: 7,
+  //   qualification: {
+  //     degree: "BBA + (Property Law)",
+  //     year: 2017
+  //   },
+  //   professionalBackground: "Sagar is a results-driven real estate professional with a Bachelor of Business Administration (BBA) and over 7 years of proven success in the real estate industry. He brings a strong blend of strategic thinking, market intelligence, and hands-on transactional expertise that consistently drives revenue growth and client satisfaction With extensive experience across residential and commercial real estate, Sagar has successfully managed high-value property transactions, negotiated complex deals, and built long-term relationships with investors, developers, and end clients. His in-depth understanding of market dynamics, pricing strategies, and investment analysis enables him to identify lucrative opportunities and deliver measurable returnsRecognized for his professionalism, integrity, and performance-focused approach, Sagar has a strong track record of exceeding sales targets and contributing to organizational growth. His ability to combine business acumen with customer-centric strategies positions him as a trusted advisor in the real estate sector Ambitious, strategic, and growth-oriented, Sagar continues to elevate his impact by leveraging industry insights, strong negotiation skills, and a commitment to excellence",
+  //   keyAchievements: [
+  //       "Increased team conversion rates by 35% in Q2 2023.",
+  //       "Developed a new sales training module adopted company-wide.",
+  //       "Awarded 'Sales Strategist of the Year' in 2022,23,24."
+  //   ],
+  //   personalInterests: ["Trekking", "Board games", "Podcasts"]
+  // },
   {
     name: "Ms. Vishakha Sharma",
     role: "SBDM",
@@ -189,19 +189,19 @@ const teamMembers = [
     ],
     personalInterests: ["Reading", "Hiking", "Modern Art"]
   },
-  {
-    name: "Mr. Manish Sharma",
-    role: "SBDM",
-    image: "/Team Photo/manish3.jpeg",
-    experience: "15",
-    qualification: { 
-      degree: "MBA(PGEM)",
-      year: 2018
-    },
-    professionalBackground: "Manish Sharma is a seasoned real estate professional with **15+ years of industry experience**, specializing in real estate consulting, property development, and regulatory compliance. Having successfully managed a wide range of residential and commercial projects, he brings deep market expertise and strategic insight to every transaction. His international experience in **Dubai's real estate sector** has further strengthened his understanding of global property markets, enabling him to deliver reliable, compliant, and result-driven real estate solutions.",
-    keyAchievements: ["Successfully managed end-to-end legal and regulatory compliance for 15+ high-value real estate projects, ensuring timely approvals and full statutory adherence Achieved a 100% litigation-free record across all supervised developments through proactive risk assessment and legal due diligence Developed and implemented a structured compliance framework and checklist, optimizing internal processes and accelerating regulatory clearances"],
-    personalInterests: ["Basketball", "chess", "Pool & snooker"]
-  },
+  // {
+  //   name: "Mr. Manish Sharma",
+  //   role: "SBDM",
+  //   image: "/Team Photo/manish3.jpeg",
+  //   experience: "15",
+  //   qualification: { 
+  //     degree: "MBA(PGEM)",
+  //     year: 2018
+  //   },
+  //   professionalBackground: "Manish Sharma is a seasoned real estate professional with **15+ years of industry experience**, specializing in real estate consulting, property development, and regulatory compliance. Having successfully managed a wide range of residential and commercial projects, he brings deep market expertise and strategic insight to every transaction. His international experience in **Dubai's real estate sector** has further strengthened his understanding of global property markets, enabling him to deliver reliable, compliant, and result-driven real estate solutions.",
+  //   keyAchievements: ["Successfully managed end-to-end legal and regulatory compliance for 15+ high-value real estate projects, ensuring timely approvals and full statutory adherence Achieved a 100% litigation-free record across all supervised developments through proactive risk assessment and legal due diligence Developed and implemented a structured compliance framework and checklist, optimizing internal processes and accelerating regulatory clearances"],
+  //   personalInterests: ["Basketball", "chess", "Pool & snooker"]
+  // },
   // {
   //   name: "Mr. Sumit Negi",
   //   role: "BDM",
@@ -253,23 +253,23 @@ const teamMembers = [
     ],
     personalInterests: ["Chess", "History Books", "Cycling"]
   },
-  {
-    name: "Mr. Narendra Singh",
-    role: "BDM",
-    image: "/Team Photo/narendre sir.jpg",
-    experience: "5",
-    qualification: {
-      degree: "BA",
-      year: 2018
-    },
-    professionalBackground: "Narendra is a seasoned expert in real estate and regulatory compliance, known for his strategic approach to complex legal frameworks. With hands-on experience across more than 15 major property developments, he has consistently ensured seamless approvals, risk mitigation, and legally secure transactions. His in-depth understanding of regulatory requirements and property laws enables clients to move forward with confidence, transparency, and long-term stability.",
-    keyAchievements: [
-  "Successfully led end-to-end legal and regulatory compliance for 15+ large-scale real estate developments.",
-  "Maintained a 100% clean track record with zero litigation across all managed projects.",
-  "Designed and implemented a comprehensive compliance framework and checklist, significantly improving approval timelines and operational efficiency."
-],
-    personalInterests: ["BOXING", "Bike Riding", "Cycling"]
-  },
+//   {
+//     name: "Mr. Narendra Singh",
+//     role: "BDM",
+//     image: "/Team Photo/narendre sir.jpg",
+//     experience: "5",
+//     qualification: {
+//       degree: "BA",
+//       year: 2018
+//     },
+//     professionalBackground: "Narendra is a seasoned expert in real estate and regulatory compliance, known for his strategic approach to complex legal frameworks. With hands-on experience across more than 15 major property developments, he has consistently ensured seamless approvals, risk mitigation, and legally secure transactions. His in-depth understanding of regulatory requirements and property laws enables clients to move forward with confidence, transparency, and long-term stability.",
+//     keyAchievements: [
+//   "Successfully led end-to-end legal and regulatory compliance for 15+ large-scale real estate developments.",
+//   "Maintained a 100% clean track record with zero litigation across all managed projects.",
+//   "Designed and implemented a comprehensive compliance framework and checklist, significantly improving approval timelines and operational efficiency."
+// ],
+//     personalInterests: ["BOXING", "Bike Riding", "Cycling"]
+//   },
   // {
   //   name: "Mr. Sandeep Bansal",
   //   role: "BDM",
@@ -287,19 +287,19 @@ const teamMembers = [
   //   ],
   //   personalInterests: ["BOXING", "History Books", "Cycling"]
   // },
-  {
-    name: "Mr. Samaksh Tyagi",
-    role: "BDM",
-    image: "/Team Photo/ss.jpg",
-    experience: "3",
-    qualification: { 
-      degree: "MBA(International Bussness",
-      year: 2024
-    },
-    professionalBackground: "Samaksh specializes in real estate and regulatory compliance. He has successfully navigated complex legal processes for over 15 major property developments, ensuring smooth and secure transactions.",
-    keyAchievements: ["Successfully managed end-to-end legal and regulatory compliance for 15+ high-value real estate projects, ensuring timely approvals and full statutory adherence Achieved a 100% litigation-free record across all supervised developments through proactive risk assessment and legal due diligence Developed and implemented a structured compliance framework and checklist, optimizing internal processes and accelerating regulatory clearances"],
-    personalInterests: ["athletics", "gaming", "adventure"]
-  },
+  // {
+  //   name: "Mr. Samaksh Tyagi",
+  //   role: "BDM",
+  //   image: "/Team Photo/ss.jpg",
+  //   experience: "3",
+  //   qualification: { 
+  //     degree: "MBA(International Bussness",
+  //     year: 2024
+  //   },
+  //   professionalBackground: "Samaksh specializes in real estate and regulatory compliance. He has successfully navigated complex legal processes for over 15 major property developments, ensuring smooth and secure transactions.",
+  //   keyAchievements: ["Successfully managed end-to-end legal and regulatory compliance for 15+ high-value real estate projects, ensuring timely approvals and full statutory adherence Achieved a 100% litigation-free record across all supervised developments through proactive risk assessment and legal due diligence Developed and implemented a structured compliance framework and checklist, optimizing internal processes and accelerating regulatory clearances"],
+  //   personalInterests: ["athletics", "gaming", "adventure"]
+  // },
 
    
 
@@ -879,7 +879,7 @@ const About = () => {
               </h2>
               <div className="space-y-6 text-sky-700 text-lg leading-relaxed">
                 <p>
-                  Established in October 2022 by five co-founders with a shared vision 
+                  Established in October 2022 by six co-founders with a shared vision 
                   to transform India's real estate landscape, A.S. Rudra Solutions 
                   began as a small but ambitious venture.
                 </p>
@@ -904,7 +904,7 @@ const About = () => {
             >
               <Stats icon={Building} value="1.5k+ units" label="Property Sales" />
               <Stats icon={Users} value="100+" label="Team Members" />
-              <Stats icon={Award} value="5" label="Founders" />
+              <Stats icon={Award} value="6" label="Founders" />
               <Stats icon={TrendingUp} value="2022" label="Founded Year" />
             </motion.div>
           </div>
