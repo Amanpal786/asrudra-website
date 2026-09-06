@@ -210,8 +210,8 @@ const DirectorsSection = () => {
       description: 'Dynamic leader with sharp focus on driving sales and enhancing revenue. His strategic vision has been instrumental in the company\'s expansion and continued excellence.',
       hobbies: ['Networking', 'Business strategy', 'Market analysis'],
       image: '/director/anew.jpg',
-      projects: '10K',
-      clients: '8K'
+      projects: '100',
+      clients: '2000'
     },
     {
       id: 2,
@@ -228,8 +228,8 @@ const DirectorsSection = () => {
       description: 'Visionary leader with energetic approach to work. Heads the Sales department and is the driving force behind company growth.',
       hobbies: ['Cricket', 'Badminton', 'Poetry', 'Shayari'],
       image: '/director/snew.jpg',
-      projects: 320,
-      clients: 2100
+      projects: 90,
+      clients: 1800
     },
     {
       id: 3,
@@ -246,7 +246,7 @@ const DirectorsSection = () => {
       description: 'Brings vast knowledge of market, clientele and business aptitude to the company. Ensures ethical and moral business practices.',
       hobbies: ['Interior design', 'Furniture manufacturing', 'Fashion'],
       image: '/director/image.png',
-      projects: 180,
+      projects: 75,
       clients: 950
     },
     {
@@ -264,8 +264,8 @@ const DirectorsSection = () => {
       description: 'Tactful leader who handles sensitive task of maintaining Builder relationships. His inputs have resulted in smooth company progress.',
       hobbies: ['Singing', 'Chess', 'Cricket'],
       image: '/director/anil sir.jpg',
-      projects: 280,
-      clients: 1200
+      projects: 95,
+      clients: 1700
     },
     {
       id: 5,
@@ -282,8 +282,8 @@ const DirectorsSection = () => {
       description: 'Maintains cordial relationships with customers for life through exceptional soft skills and trust-building.',
       hobbies: ['Badminton', 'Chess', 'Gaming'],
       image: '/director/pankaj sir.jpg',
-      projects: 190,
-      clients: 900
+      projects: 60,
+      clients: 1200
     },
     {
       id: 6,
@@ -300,8 +300,8 @@ const DirectorsSection = () => {
       description: 'A Bold and strategic leader who adeptly manages the sensitive responsibility of maintaining strong builder relationships. His insightful contributions have consistently driven seamless operations and contributed to the organization’s steady growth.',
       hobbies: ['Travelling', 'Shayari', 'Gaming'],
       image: '/director/fsir.jpeg',
-      projects: 250,
-      clients: 1000
+      projects: 95,
+      clients: 1710
     }
 
 
