@@ -210,8 +210,8 @@ const DirectorsSection = () => {
       description: 'Dynamic leader with sharp focus on driving sales and enhancing revenue. His strategic vision has been instrumental in the company\'s expansion and continued excellence.',
       hobbies: ['Networking', 'Business strategy', 'Market analysis'],
       image: '/director/anew.jpg',
-      projects: '100',
-      clients: '2000'
+      projects: '70',
+      clients: '1500+'
     },
     {
       id: 2,
@@ -228,8 +228,8 @@ const DirectorsSection = () => {
       description: 'Visionary leader with energetic approach to work. Heads the Sales department and is the driving force behind company growth.',
       hobbies: ['Cricket', 'Badminton', 'Poetry', 'Shayari'],
       image: '/director/snew.jpg',
-      projects: 90,
-      clients: 1800
+      projects: 50,
+      clients: 1200
     },
     {
       id: 3,
@@ -264,7 +264,7 @@ const DirectorsSection = () => {
       description: 'Tactful leader who handles sensitive task of maintaining Builder relationships. His inputs have resulted in smooth company progress.',
       hobbies: ['Singing', 'Chess', 'Cricket'],
       image: '/director/anil sir.jpg',
-      projects: 95,
+      projects: 80,
       clients: 1700
     },
     {
@@ -282,7 +282,7 @@ const DirectorsSection = () => {
       description: 'Maintains cordial relationships with customers for life through exceptional soft skills and trust-building.',
       hobbies: ['Badminton', 'Chess', 'Gaming'],
       image: '/director/pankaj sir.jpg',
-      projects: 60,
+      projects: 50,
       clients: 1200
     },
     {
@@ -300,7 +300,7 @@ const DirectorsSection = () => {
       description: 'A Bold and strategic leader who adeptly manages the sensitive responsibility of maintaining strong builder relationships. His insightful contributions have consistently driven seamless operations and contributed to the organization’s steady growth.',
       hobbies: ['Travelling', 'Shayari', 'Gaming'],
       image: '/director/fsir.jpeg',
-      projects: 95,
+      projects: 70,
       clients: 1710
     }
 

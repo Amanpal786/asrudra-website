@@ -32,7 +32,7 @@ const Residential = () => {
       "bedrooms": 3,
       "bathrooms": 2,
       "area": "1250 - 1897 sq ft",
-      "image": "https://www.nirala-estate.in/img/nirala-estate-1.jpg",
+      "image": "Team Photo/nes3.jpg",
       "features": ["Swimming Pool", "Gymnasium", "Club House", "Parking"],
       "amenities": {
         "Lifestyle": ["Landscaped Gardens", "Party Hall"],
@@ -191,7 +191,7 @@ const Residential = () => {
       "bedrooms": 4,
       "bathrooms": 3,
       "area": "1375 -2715sq ft",
-      "image": "https://sobhaapartments.com/wp-content/uploads/2022/06/Sobha-Dream-Garden-Images-10.jpg",
+      "image": "Team Photo/sd1.webp",
       "features": ["Vastu Compliant", "Landscaped Gardens", "Clubhouse"],
       "amenities": {
         "Sports": ["Tennis Court", "Basketball Court"],
