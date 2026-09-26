@@ -219,23 +219,23 @@ const teamMembers = [
   //   ],
   //   personalInterests: ["Chess", "History Books", "Cycling"]
   // },
-  {
-    name: "Ms. Aishwarya Sharma",
-    role: "BDM",
-    image: "/Team Photo/aishwarya sharma.jpg",
-    experience: 9,
-    qualification: {
-      degree: "BBA",
-      year: 2015
-    },
-    professionalBackground: "Aishwarya specializes in real estate law and regulatory compliance. She has successfully navigated complex legal processes for over 15 major property developments, ensuring smooth and secure transactions.",
-    keyAchievements: [
-        "Handled legal compliance for 15+ major projects.",
-        "Zero litigation cases on managed projects.",
-        "Developed a streamlined compliance checklist for the company."
-    ],
-    personalInterests: ["Chess", "History Books", "Cycling"]
-  },
+  // {
+  //   name: "Ms. Aishwarya Sharma",
+  //   role: "BDM",
+  //   image: "/Team Photo/aishwarya sharma.jpg",
+  //   experience: 9,
+  //   qualification: {
+  //     degree: "BBA",
+  //     year: 2015
+  //   },
+  //   professionalBackground: "Aishwarya specializes in real estate law and regulatory compliance. She has successfully navigated complex legal processes for over 15 major property developments, ensuring smooth and secure transactions.",
+  //   keyAchievements: [
+  //       "Handled legal compliance for 15+ major projects.",
+  //       "Zero litigation cases on managed projects.",
+  //       "Developed a streamlined compliance checklist for the company."
+  //   ],
+  //   personalInterests: ["Chess", "History Books", "Cycling"]
+  // },
   {
     name: "Mr. Rajesh Kumar",
     role: "BDM",
