@@ -98,6 +98,17 @@ const Gallery = () => {
         '/images/EMPLOYEE OF THE YEAR.png ',
         '/images/event.jpeg ' ,      ]
     }
+    ,
+    {
+      id: 9,
+      title: 'ATS COLLABORATION WITH AS RUDRA SOLUTIONS',
+      date: 'October 12, 2026',
+      description: 'AS Rudra Solutions is proud to announce its strategic collaboration with ATS, a renowned real estate developer in Noida Extension, near Gaur City Mall. This partnership reflects the shared vision and commitment of our leadership team, including Anil Sir, Lamba Sir, and Pankaj Sir, toward building strong business relationships and delivering exceptional real estate solutions. Together, we aim to create valuable opportunities for our customers, strengthen our market presence, and build a foundation for long-term growth and success in the real estate sector. This collaboration marks a significant milestone in our journey, and we look forward to achieving new heights together with ATS.',
+      images: [
+        '/images/ATS1.jpeg',
+        '/images/ATS2.jpeg',
+        '/images/ATS1.jpeg',]
+    },
   ];
 
   const propertyCategories: PropertyCategory[] = [
